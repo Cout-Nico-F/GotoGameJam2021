@@ -253,10 +253,10 @@ MonoBehaviour:
   sounds:
   - name: TestFiesta
     clip: {fileID: 8300000, guid: a5821ce8922d94f4785ef7b722c3c2fc, type: 3}
-    volume: 1
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
+    volume: 0.707
+    volumeVariance: 0.033
+    pitch: 0.31
+    pitchVariance: 0.013
     loop: 1
     mixerGroup: {fileID: -1123602607838286784, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
