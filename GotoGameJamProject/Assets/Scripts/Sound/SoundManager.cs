@@ -7,7 +7,6 @@ namespace AudioJam
 
     public class SoundManager : MonoBehaviour
     {
-        //Brackey's Style AudioManager
         public static SoundManager instance;
 
         public AudioMixerGroup mixerGroup;
