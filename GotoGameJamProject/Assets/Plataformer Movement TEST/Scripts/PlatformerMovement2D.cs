@@ -8,10 +8,6 @@ public class PlatformerMovement2D : MonoBehaviour
     [Header("Movement")]
     [SerializeField]
     float Speed = 0;
-    [SerializeField]
-    float RaycastDistanceLeft_Right;
-    [SerializeField]
-    Vector3 OffsetRaycastLeft_Right;
     Rigidbody2D rb2d;
 
     /******Salto********/
