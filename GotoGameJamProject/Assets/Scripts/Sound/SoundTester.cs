@@ -10,7 +10,6 @@ namespace AudioJam
         public void Awake()
         {
             SoundManager.instance.Play("TestFiesta");
-            Debug.Log("wtf");
         }
     }
 
