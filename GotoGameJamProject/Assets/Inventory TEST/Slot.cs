@@ -12,5 +12,10 @@ namespace InventoryJam
         {
             isFree = false;
         }
+
+        public void Insert(Item item)
+        {
+
+        }
     }
 }
