@@ -43,7 +43,7 @@ public class PlatformerMovement2D : MonoBehaviour
         if (hit.collider != null)
         {
             if (hit.collider.CompareTag("Floor"))
-            { Debug.Log("Suelo"); return true; }
+            {return true; }
         }
         return false;
     }
