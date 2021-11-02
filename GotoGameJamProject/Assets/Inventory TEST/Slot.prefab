@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a88fc7b3c103b6409ad969303b0915f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemImage: {fileID: 3890426797517344081}
 --- !u!1 &2330270937856339757
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +103,7 @@ GameObject:
   - component: {fileID: 7573468517242173940}
   - component: {fileID: 3890426797517344081}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Item_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

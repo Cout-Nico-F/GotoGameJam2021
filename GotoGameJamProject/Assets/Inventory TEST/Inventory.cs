@@ -10,7 +10,7 @@ namespace InventoryJam
 
         private void AddItem(Item item)
         {
-            FindSlot().Insert(item);
+            FindNextEmptySlot().Insert(item);
         }
         
         private void RemoveItem(Item item)
@@ -23,8 +23,9 @@ namespace InventoryJam
             return false;
         }
 
-        private Slot FindSlot()
+        private Slot FindNextEmptySlot()
         {
+
             return new Slot();
         }
     }
