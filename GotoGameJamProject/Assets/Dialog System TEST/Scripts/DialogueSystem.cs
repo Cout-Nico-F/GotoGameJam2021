@@ -11,14 +11,14 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private Color textColor;
     [SerializeField] private Font textFont;
     [SerializeField] private float delay;
-    [SerializeField] private int textSize;
+    [SerializeField] private int fontSize;
     [SerializeField] private string nameFXsound;
-    private Text TextHolder;
+    private Text textHolder;
 
     public void Start()
     {
-        TextHolder = GetComponent<Text>();
-        StartCoroutine(WriteText(input, TextHolder, textColor, textFont, delay, textSize, nameFXsound));
+        textHolder = GetComponent<Text>();
+        StartCoroutine(WriteText(input, textHolder, textColor, textFont, delay, fontSize, nameFXsound));       
     }
 
     public IEnumerator WriteText(string input, Text textHolder, Color textColor, Font textFont, float delay, int textSize, string nameFXsound)
@@ -30,7 +30,7 @@ public class DialogueSystem : MonoBehaviour
         {
             textHolder.text += input[i];
             SoundManager.instance.Play(nameFXsound);
-            yield return new WaitForSeconds(delay);
+            yield return new WaitForSeconds(delay / Random.Range(0.2f, 0.5f) );
         }
     }
 }

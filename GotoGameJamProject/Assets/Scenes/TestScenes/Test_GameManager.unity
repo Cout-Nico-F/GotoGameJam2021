@@ -914,12 +914,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Input: Hola, como estas?
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  TextFont: {fileID: 12800000, guid: afee404fc8d448e42984669f735beb0d, type: 3}
-  Delay: 0.1
-  TextSize: 30
-  NameFXsound: SansFX
+  input: Hola, lo rompi pero lo arregle :D lol
+  textColor: {r: 0.9716981, g: 0.70159686, b: 0.3254272, a: 0}
+  textFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  delay: 0.03
+  fontSize: 12
+  nameFXsound: SansFX
 --- !u!114 &1213291467
 MonoBehaviour:
   m_ObjectHideFlags: 0
