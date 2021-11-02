@@ -1159,6 +1159,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypeWritter
       objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textInput.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: delayBetweenDialogues
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textInput.Array.data[0]
+      value: Hola como estas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textInput.Array.data[1]
+      value: Bien y vos??
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textInput.Array.data[2]
+      value: "Todo tranqui \xF1eri"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textInput.Array.data[3]
+      value: "Todo tranqui \xF1eri"
+      objectReference: {fileID: 0}
     - target: {fileID: 5044187245246949323, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
