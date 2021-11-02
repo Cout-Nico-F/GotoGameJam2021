@@ -13,12 +13,14 @@ namespace DialogueJam
         [SerializeField] private float delayBetweenDialogues;
         [SerializeField] private TextoValues[] textValues;
         private TextMeshProUGUI textHolder;
+        private Image imgageHolder;
         private bool NextText;
 
         [System.Serializable]
         public class TextoValues
         {
-            
+            [Header("Character Sprite")]
+            [SerializeField] public Sprite characterSprite;
             [Header("Personalize Text")]
             [SerializeField] public Color textColor;
             [SerializeField] public TMP_FontAsset textFont;
@@ -32,20 +34,22 @@ namespace DialogueJam
         public void Start()
         {
             textHolder = GetComponentInChildren<TextMeshProUGUI>();
+            imgageHolder = this.transform.Find("CharacterFace").GetComponentInChildren<Image>();
             StartCoroutine(RecibeText());
         }
         public IEnumerator RecibeText()
         {
             for (int i = 0; i < textValues.Length; i++)
             {
-                StartCoroutine(WriteText(textValues[i].input, textHolder, textValues[i].textColor, textValues[i].textFont, textValues[i].delay, textValues[i].fontSize, textValues[i].nameFXsound));
+                StartCoroutine(WriteText(textValues[i].input, textHolder, textValues[i].textColor, textValues[i].textFont, textValues[i].delay, textValues[i].fontSize, textValues[i].nameFXsound,textValues[i].characterSprite));
                 yield return new WaitUntil(() => NextText == true);
                 yield return new WaitForSeconds(delayBetweenDialogues);
             }
         }
-        public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound)
+        public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound,Sprite characterSprite)
         {
             NextText = false;
+            imgageHolder.sprite = characterSprite;
             textHolder.text = "";
             textHolder.font = textFont;
             textHolder.color = textColor;
