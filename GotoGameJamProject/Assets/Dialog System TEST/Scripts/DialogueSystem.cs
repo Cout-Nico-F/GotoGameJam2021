@@ -13,6 +13,7 @@ namespace DialogueJam
         [SerializeField] private float delayBetweenDialogues;
         [SerializeField] private TextoValues[] textValues;
         private TextMeshProUGUI textHolder;
+        private bool NextText;
 
         [System.Serializable]
         public class TextoValues
@@ -38,11 +39,13 @@ namespace DialogueJam
             for (int i = 0; i < textValues.Length; i++)
             {
                 StartCoroutine(WriteText(textValues[i].input, textHolder, textValues[i].textColor, textValues[i].textFont, textValues[i].delay, textValues[i].fontSize, textValues[i].nameFXsound));
+                yield return new WaitUntil(() => NextText == true);
                 yield return new WaitForSeconds(delayBetweenDialogues);
             }
         }
         public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound)
         {
+            NextText = false;
             textHolder.text = "";
             textHolder.font = textFont;
             textHolder.color = textColor;
@@ -53,6 +56,7 @@ namespace DialogueJam
                 SoundManager.instance.Play(nameFXsound);
                 yield return new WaitForSeconds(delay / Random.Range(0.2f, 1f));
             }
+            NextText = true;
         }
     }
 }

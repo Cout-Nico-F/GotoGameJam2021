@@ -1180,8 +1180,20 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: TextoValue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
       propertyPath: delayBetweenDialogues
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: objetoTexto.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
       propertyPath: textInput.Array.data[0]
@@ -1198,6 +1210,82 @@ PrefabInstance:
     - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
       propertyPath: textInput.Array.data[3]
       value: "Todo tranqui \xF1eri"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: objetoTexto.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].delay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].input
+      value: Hola como estas??
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].delay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].input
+      value: MUERE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].textFont
+      value: 
+      objectReference: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].fontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].textFont
+      value: 
+      objectReference: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].nameFXsound
+      value: SansFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].textColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].textColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].textColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[0].textColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].nameFXsound
+      value: SansFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].textColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].textColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].textColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044187245246949322, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
+      propertyPath: textValues.Array.data[1].textColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5044187245246949323, guid: 0857dcaafe3cb77498d146c261d78281, type: 3}
       propertyPath: m_Pivot.x
