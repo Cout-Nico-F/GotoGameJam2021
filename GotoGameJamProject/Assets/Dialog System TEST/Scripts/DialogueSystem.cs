@@ -9,27 +9,35 @@ namespace DialogueJam
 {
     public class DialogueSystem : MonoBehaviour
     {
-        [Header("Personalize Text")]
-        [SerializeField] private Color textColor;
-        [SerializeField] private TMP_FontAsset textFont;
-        [SerializeField] private float delay;
-        [SerializeField] private int fontSize;
-        [SerializeField] private string nameFXsound;
-        [Header("Dialogues")]
+        [Header("Configuration")]
         [SerializeField] private float delayBetweenDialogues;
-        [SerializeField] private string[] textInput;
+        [SerializeField] private TextoValues[] textValues;
         private TextMeshProUGUI textHolder;
+
+        [System.Serializable]
+        public class TextoValues
+        {
+            
+            [Header("Personalize Text")]
+            [SerializeField] public Color textColor;
+            [SerializeField] public TMP_FontAsset textFont;
+            [SerializeField] public float delay;
+            [SerializeField] public int fontSize;
+            [SerializeField] public string nameFXsound;
+            [Header("Dialogue")]
+            [SerializeField] public string input;
+        };
 
         public void Start()
         {
             textHolder = GetComponentInChildren<TextMeshProUGUI>();
-            StartCoroutine(RecibeText(textInput));
+            StartCoroutine(RecibeText());
         }
-        public IEnumerator RecibeText(string[] textInput)
+        public IEnumerator RecibeText()
         {
-            for (int i = 0; i < textInput.Length; i++)
+            for (int i = 0; i < textValues.Length; i++)
             {
-                StartCoroutine(WriteText(textInput[i], textHolder, textColor, textFont, delay, fontSize, nameFXsound));
+                StartCoroutine(WriteText(textValues[i].input, textHolder, textValues[i].textColor, textValues[i].textFont, textValues[i].delay, textValues[i].fontSize, textValues[i].nameFXsound));
                 yield return new WaitForSeconds(delayBetweenDialogues);
             }
         }
