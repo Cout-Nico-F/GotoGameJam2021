@@ -30,8 +30,7 @@ namespace DialogueJam
             [Header("Dialogue")]
             [SerializeField] public string input;
         };
-
-        public void Start()
+        public void OnEnable()
         {
             textHolder = GetComponentInChildren<TextMeshProUGUI>();
             imgageHolder = this.transform.Find("CharacterFace").GetComponentInChildren<Image>();
@@ -45,6 +44,7 @@ namespace DialogueJam
                 yield return new WaitUntil(() => NextText == true);
                 yield return new WaitForSeconds(delayBetweenDialogues);
             }
+            gameObject.SetActive(false);
         }
         public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound,Sprite characterSprite)
         {
