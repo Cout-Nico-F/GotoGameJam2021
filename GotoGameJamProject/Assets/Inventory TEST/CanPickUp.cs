@@ -10,8 +10,16 @@ public class CanPickUp : MonoBehaviour
     {
         if (collision.CompareTag("Item"))
         {
-            inventory.AddItem(collision.gameObject.GetComponent<Item>());
-            collision.gameObject.SetActive(false);
+            if (inventory.HasSpace())
+            {
+                inventory.AddItem(collision.gameObject.GetComponent<Item>());
+                collision.gameObject.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("Inventory Full");
+                //Aca podemos usar un sonido y una animacion de movimiento sobre el inventario o un popup pequeño sobre el item.
+            }
         }
     }
 }

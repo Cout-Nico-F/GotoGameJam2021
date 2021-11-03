@@ -20,6 +20,13 @@ namespace InventoryJam
 
         public bool HasSpace()
         {
+            foreach (var slot in slots)
+            {
+                if (slot.IsFree)
+                {
+                    return true;
+                }
+            }
             return false;
         }
 
