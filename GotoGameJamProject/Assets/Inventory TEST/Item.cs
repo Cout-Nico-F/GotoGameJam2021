@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField] private Image image;
+    [SerializeField] private Sprite sprite;
+    public Sprite Sprite { get => sprite; }
 
-    public Image Image { get => image; }
 }

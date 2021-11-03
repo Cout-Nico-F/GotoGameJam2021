@@ -7,22 +7,23 @@ namespace InventoryJam
 {
     public class Slot : MonoBehaviour
     {
-        [SerializeField] private Image itemImageHolder = default;
+        [SerializeField] private Image itemImageHolder;
 
-        protected bool isFree = default;
+        private bool isFree;
         private Item item;
 
         public Item Item { get => item; }
+        public bool IsFree { get => isFree; }
 
         private void Awake()
         {
-            isFree = false;
+            isFree = true;
         }
 
         public void Insert(Item item)
         {
             this.item = item;
-            this.itemImageHolder.sprite = item.Image.sprite;
+            this.itemImageHolder.sprite = item.Sprite;
         }
     }
 }

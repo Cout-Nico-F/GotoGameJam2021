@@ -8,24 +8,31 @@ namespace InventoryJam
     {
         [SerializeField] Slot[] slots = default;
 
-        private void AddItem(Item item)
+        public void AddItem(Item item)
         {
             FindNextEmptySlot().Insert(item);
         }
-        
-        private void RemoveItem(Item item)
+
+        public void RemoveItem(Item item)
         {
             
         }
-        
-        private bool HasSpace()
+
+        public bool HasSpace()
         {
             return false;
         }
 
         private Slot FindNextEmptySlot()
         {
-
+            foreach (var s in slots)
+            {
+                if (s.IsFree)
+                {
+                    return s;
+                }
+            }
+            Debug.LogError("FindNextEmptySlot needs to be called on a non-full inventory!");
             return new Slot();
         }
     }
