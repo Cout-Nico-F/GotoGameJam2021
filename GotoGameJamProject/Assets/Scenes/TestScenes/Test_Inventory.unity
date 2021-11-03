@@ -1297,10 +1297,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416272898}
     m_Modifications:
-    - target: {fileID: 5007774009282993357, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
-      propertyPath: itemImageHolder
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7783368784549248889, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
       propertyPath: m_Name
       value: Inventory

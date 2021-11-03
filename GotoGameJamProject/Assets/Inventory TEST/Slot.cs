@@ -24,6 +24,7 @@ namespace InventoryJam
         {
             this.item = item;
             this.itemImageHolder.sprite = item.Sprite;
+            this.IsFree = false;
         }
     }
 }
