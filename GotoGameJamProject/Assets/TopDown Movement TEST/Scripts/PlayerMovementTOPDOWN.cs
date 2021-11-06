@@ -30,10 +30,7 @@ public class PlayerMovementTOPDOWN : MonoBehaviour
     }
     private void ControlAnimaciones()
     {
-        if (movement != new Vector2(0, 0))
-        { animator.SetBool("run", true); }
-        else
-        { animator.SetBool("run", false); }
+        animator.SetFloat("velocity",movement.sqrMagnitude);
         if (movement.x < 0)
         { spriteRenderer.flipX = true; }
         if (movement.x > 0)
