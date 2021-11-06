@@ -5,10 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SplashScreen 1.unity
     guid: 477f64dcdac17c24bb2b0aee5ff9b6d4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Multiplayer Photon TEST/Loading.unity
+    guid: 44897235c41a3c9488e30c21f1a7cdf0
+  - enabled: 1
+    path: Assets/Multiplayer Photon TEST/Lobby.unity
+    guid: 9122d0cce33bb214d9f34c2b49e74c55
+  - enabled: 1
+    path: Assets/Multiplayer Photon TEST/LevelOne.unity
+    guid: db0f6b26dc0d7604eb7c270f7c8b19c7
   m_configObjects: {}
