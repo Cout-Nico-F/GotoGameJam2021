@@ -1,4 +1,5 @@
 using UnityEngine;
+using GrapplingJam;
 
 public class GrapplingRope : MonoBehaviour
 {
