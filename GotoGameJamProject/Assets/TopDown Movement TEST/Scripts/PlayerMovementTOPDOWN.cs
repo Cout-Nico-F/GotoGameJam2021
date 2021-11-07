@@ -23,19 +23,13 @@ public class PlayerMovementTOPDOWN : MonoBehaviour
 
     void Update()
     {
-        if (photonView.IsMine)
-        {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
             ControlAnimaciones();
-        }
     }
     private void FixedUpdate()
     {
-        if (photonView.IsMine)
-        {
             rb2d.MovePosition(rb2d.position + movement * movementSpeed * Time.fixedDeltaTime);
-        }
     }
     private void ControlAnimaciones()
     {

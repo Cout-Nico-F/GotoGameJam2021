@@ -29,33 +29,33 @@ namespace GrapplingJam
             {
                 if (GGS.grappleRope.enabled)
                 {
-                    GGS.RotateGun(GGS.grapplePoint, false);
+                    GGS.RotateGun(GGS.GrapplePoint, false);
                 }
                 else
                 {
-                    Vector2 mousePos = GGS.m_camera.ScreenToWorldPoint(Input.mousePosition);
+                    Vector2 mousePos = GGS.Camera.ScreenToWorldPoint(Input.mousePosition);
                     GGS.RotateGun(mousePos, true);
                 }
 
-                if (GGS.launchToPoint && GGS.grappleRope.isGrappling)
+                if (GGS.LaunchToPoint && GGS.grappleRope.isGrappling)
                 {
-                    if (GGS.launchType == LaunchType.Transform_Launch)
+                    if (GGS.LaunchType == LaunchType.Transform_Launch)
                     {
-                        Vector2 firePointDistnace = GGS.firePoint.position - GGS.gunHolder.localPosition;
-                        Vector2 targetPos = GGS.grapplePoint - firePointDistnace;
-                        GGS.gunHolder.position = Vector2.Lerp(GGS.gunHolder.position, targetPos, Time.deltaTime * GGS.launchSpeed);
+                        Vector2 firePointDistnace = GGS.FirePoint.position - GGS.GunHolder.localPosition;
+                        Vector2 targetPos = GGS.GrapplePoint - firePointDistnace;
+                        GGS.GunHolder.position = Vector2.Lerp(GGS.GunHolder.position, targetPos, Time.deltaTime * GGS.LaunchSpeed);
                     }
                 }
             }
             else if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 GGS.grappleRope.enabled = false;
-                GGS.m_springJoint2D.enabled = false;
-                GGS.m_rigidbody.gravityScale = 0;
+                GGS.SpringJoint2D.enabled = false;
+                GGS.Rigidbody.gravityScale = 0;
             }
             else
             {
-                Vector2 mousePos = GGS.m_camera.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos = GGS.Camera.ScreenToWorldPoint(Input.mousePosition);
                 GGS.RotateGun(mousePos, true);
             }
         }

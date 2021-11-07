@@ -48,7 +48,7 @@ public class GrapplingRope : MonoBehaviour
     {
         for (int i = 0; i < percision; i++)
         {
-            m_lineRenderer.SetPosition(i, grapplingGun.firePoint.position);
+            m_lineRenderer.SetPosition(i, grapplingGun.FirePoint.position);
         }
     }
 
@@ -62,7 +62,7 @@ public class GrapplingRope : MonoBehaviour
     {
         if (!strightLine)
         {
-            if (m_lineRenderer.GetPosition(percision - 1).x == grapplingGun.grapplePoint.x)
+            if (m_lineRenderer.GetPosition(percision - 1).x == grapplingGun.GrapplePoint.x)
             {
                 strightLine = true;
             }
@@ -99,9 +99,9 @@ public class GrapplingRope : MonoBehaviour
         for (int i = 0; i < percision; i++)
         {
             float delta = (float)i / ((float)percision - 1f);
-            Vector2 offset = Vector2.Perpendicular(grapplingGun.grappleDistanceVector).normalized * ropeAnimationCurve.Evaluate(delta) * waveSize;
-            Vector2 targetPosition = Vector2.Lerp(grapplingGun.firePoint.position, grapplingGun.grapplePoint, delta) + offset;
-            Vector2 currentPosition = Vector2.Lerp(grapplingGun.firePoint.position, targetPosition, ropeProgressionCurve.Evaluate(moveTime) * ropeProgressionSpeed);
+            Vector2 offset = Vector2.Perpendicular(grapplingGun.GrappleDistanceVector).normalized * ropeAnimationCurve.Evaluate(delta) * waveSize;
+            Vector2 targetPosition = Vector2.Lerp(grapplingGun.FirePoint.position, grapplingGun.GrapplePoint, delta) + offset;
+            Vector2 currentPosition = Vector2.Lerp(grapplingGun.FirePoint.position, targetPosition, ropeProgressionCurve.Evaluate(moveTime) * ropeProgressionSpeed);
 
             m_lineRenderer.SetPosition(i, currentPosition);
         }
@@ -109,8 +109,8 @@ public class GrapplingRope : MonoBehaviour
 
     void DrawRopeNoWaves()
     {
-        m_lineRenderer.SetPosition(0, grapplingGun.firePoint.position);
-        m_lineRenderer.SetPosition(1, grapplingGun.grapplePoint);
+        m_lineRenderer.SetPosition(0, grapplingGun.FirePoint.position);
+        m_lineRenderer.SetPosition(1, grapplingGun.GrapplePoint);
     }
 }
 

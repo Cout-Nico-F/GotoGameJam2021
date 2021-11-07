@@ -16,16 +16,16 @@ namespace GrapplingJam
         [SerializeField] private int grappableLayerNumber = 9;
 
         [Header("Main Camera:")]
-        public Camera m_camera;
+        [SerializeField] private Camera m_camera;
 
         [Header("Transform Ref:")]
-        public Transform gunHolder;
-        public Transform gunPivot;
-        public Transform firePoint;
+        [SerializeField] private Transform gunHolder;
+        [SerializeField] private Transform gunPivot;
+        [SerializeField] private Transform firePoint;
 
         [Header("Physics Ref:")]
-        public SpringJoint2D m_springJoint2D;
-        public Rigidbody2D m_rigidbody;
+        [SerializeField] private SpringJoint2D m_springJoint2D;
+        [SerializeField] private Rigidbody2D m_rigidbody;
 
         [Header("Rotation:")]
         [SerializeField] private bool rotateOverTime = true;
@@ -36,17 +36,28 @@ namespace GrapplingJam
         [SerializeField] private float maxDistnace = 20;
 
         [Header("Launching:")]
-        [SerializeField] public bool launchToPoint = true;
-        [SerializeField] public LaunchType launchType = LaunchType.Physics_Launch;
-        [SerializeField] public float launchSpeed = 1;
+        [SerializeField] private bool launchToPoint = true;
+        [SerializeField] private LaunchType launchType = LaunchType.Physics_Launch;
+        [SerializeField] private float launchSpeed = 1;
 
         [Header("No Launch To Point")]
         [SerializeField] private bool autoConfigureDistance = false;
         [SerializeField] private float targetDistance = 3;
         [SerializeField] private float targetFrequncy = 1;
 
-        [HideInInspector] public Vector2 grapplePoint;
-        [HideInInspector] public Vector2 grappleDistanceVector;
+        private Vector2 grapplePoint;
+        private Vector2 grappleDistanceVector;
+
+        public Transform GunHolder { get => gunHolder; set => gunHolder = value; }
+        public Vector2 GrapplePoint { get => grapplePoint; set => grapplePoint = value; }
+        public Vector2 GrappleDistanceVector { get => grappleDistanceVector; set => grappleDistanceVector = value; }
+        public bool LaunchToPoint { get => launchToPoint; set => launchToPoint = value; }
+        public LaunchType LaunchType { get => launchType; set => launchType = value; }
+        public float LaunchSpeed { get => launchSpeed; set => launchSpeed = value; }
+        public Camera Camera { get => m_camera; set => m_camera = value; }
+        public Transform FirePoint { get => firePoint; set => firePoint = value; }
+        public Rigidbody2D Rigidbody { get => m_rigidbody; set => m_rigidbody = value; }
+        public SpringJoint2D SpringJoint2D { get => m_springJoint2D; set => m_springJoint2D = value; }
 
         private void Start()
         {
