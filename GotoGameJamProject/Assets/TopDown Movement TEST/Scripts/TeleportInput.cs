@@ -10,6 +10,7 @@ namespace TeleportJam
         [SerializeField] private GameObject player;
         [SerializeField] private Camera mainCarmera;
         [SerializeField] private TeleportPlayer tpPLayer;
+        [SerializeField] private ParticleSystem teleportParticles;
 
         [Header("Teleport Settings")]
         [SerializeField] private float teleportRange;
@@ -27,7 +28,7 @@ namespace TeleportJam
                                             Mathf.Clamp(transform.position.y, playerPosition.y - teleportRange, playerPosition.y + teleportRange));
            
             if (!teleportCollider && canTeleport && Input.GetMouseButtonDown(0))
-            { tpPLayer.Teleport(player);canTeleport = false; }
+            { teleportParticles.Play(); tpPLayer.Teleport(player);canTeleport = false;}
 
             if (!canTeleport)
             {

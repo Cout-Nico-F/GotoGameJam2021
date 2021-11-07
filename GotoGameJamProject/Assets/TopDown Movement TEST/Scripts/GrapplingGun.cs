@@ -52,7 +52,6 @@ namespace GrapplingJam
         {
             grappleRope.enabled = false;
             m_springJoint2D.enabled = false;
-
         }
 
         public void RotateGun(Vector3 lookPoint, bool allowRotationOverTime)
