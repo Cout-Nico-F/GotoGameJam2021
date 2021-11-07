@@ -7,12 +7,23 @@ namespace GrapplingJam
     public class GrapplingInput : MonoBehaviour
     {
         [SerializeField] private GrapplingGun GGS;
+        [SerializeField] private float maxGrapplingTimer;
+        private float grapplingTimer;
+        private bool canGrappling;
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if(!canGrappling)
             {
-                GGS.SetGrapplePoint();
+                if(grapplingTimer<maxGrapplingTimer)
+                { grapplingTimer += Time.deltaTime; }
+                else
+                { grapplingTimer = 0;canGrappling = true; }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0)&&canGrappling)
+            {
+                GGS.SetGrapplePoint();canGrappling = false;
             }
             else if (Input.GetKey(KeyCode.Mouse0))
             {
