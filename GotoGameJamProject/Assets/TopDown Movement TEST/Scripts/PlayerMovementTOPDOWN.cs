@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PlayerMovementTOPDOWN : MonoBehaviour
 {
+    [SerializeField] private float movementSpeed;
+
+    private PhotonView photonView;
     private Rigidbody2D rb2d;
     private Animator animator;
-    [SerializeField] private float movementSpeed;
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
 
@@ -15,18 +18,24 @@ public class PlayerMovementTOPDOWN : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        photonView = GetComponent<PhotonView>();
     }
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        ControlAnimaciones();
-
+        if (photonView.IsMine)
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+            ControlAnimaciones();
+        }
     }
     private void FixedUpdate()
     {
-        rb2d.MovePosition(rb2d.position + movement * movementSpeed * Time.fixedDeltaTime);
+        if (photonView.IsMine)
+        {
+            rb2d.MovePosition(rb2d.position + movement * movementSpeed * Time.fixedDeltaTime);
+        }
     }
     private void ControlAnimaciones()
     {
