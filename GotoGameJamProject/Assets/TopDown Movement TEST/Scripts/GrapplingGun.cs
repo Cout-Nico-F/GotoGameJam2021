@@ -1,4 +1,5 @@
 using UnityEngine;
+using Photon.Pun;
 namespace GrapplingJam
 {
     public enum LaunchType

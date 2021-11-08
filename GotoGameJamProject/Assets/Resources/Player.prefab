@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grapplingGun: {fileID: 315964611468310360}
-  photonView: {fileID: 7608430545770295764}
+  player: {fileID: 315964610491423185}
   maxGrapplingTimer: 3
 --- !u!114 &7608430545770295764
 MonoBehaviour:

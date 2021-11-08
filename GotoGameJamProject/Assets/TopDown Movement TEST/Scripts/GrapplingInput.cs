@@ -8,15 +8,15 @@ namespace GrapplingJam
     public class GrapplingInput : MonoBehaviour
     {
         [SerializeField] private GrapplingGun grapplingGun;
-        [SerializeField] private PhotonView photonView;
+        [SerializeField] private GameObject player;
         [SerializeField] private float maxGrapplingTimer;
-        private float grapplingTimer;
-        private bool canGrappling;
+        private float grapplingTimer=0;
+        private bool canGrappling=true;
 
 
         private void Update()
         {
-            if (photonView.IsMine)
+            if (player.GetComponent<PhotonView>().IsMine)
             {
                 if (!canGrappling)
                 {
