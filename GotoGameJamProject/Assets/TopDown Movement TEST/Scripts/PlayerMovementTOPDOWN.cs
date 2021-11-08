@@ -6,7 +6,7 @@ using Photon.Pun;
 public class PlayerMovementTOPDOWN : MonoBehaviour
 {
     [SerializeField] private float movementSpeed;
-
+    [SerializeField] private Camera cam;
     private PhotonView photonView;
     private Rigidbody2D rb2d;
     private Animator animator;
@@ -19,6 +19,8 @@ public class PlayerMovementTOPDOWN : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         photonView = GetComponent<PhotonView>();
+        if(!photonView.IsMine)
+        { cam.enabled = false; }
     }
 
     void Update()

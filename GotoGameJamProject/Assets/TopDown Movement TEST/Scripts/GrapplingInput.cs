@@ -38,7 +38,7 @@ namespace GrapplingJam
                     }
                     else
                     {
-                        Vector2 mousePos = grapplingGun.Camera.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.current.nearClipPlane));
+                        Vector2 mousePos = grapplingGun.Camera.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
                         grapplingGun.RotateGun(mousePos, true);
                     }
 
@@ -60,7 +60,7 @@ namespace GrapplingJam
                 }
                 else
                 {
-                    Vector2 mousePos = grapplingGun.Camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.current.nearClipPlane));
+                    Vector2 mousePos = grapplingGun.Camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
                     grapplingGun.RotateGun(mousePos, true);
                 }
             }
