@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 public class GrapplingCrosshair : MonoBehaviour
@@ -12,11 +13,14 @@ public class GrapplingCrosshair : MonoBehaviour
 
     void Update()
     {
-        transform.rotation=Quaternion.Euler(0,0,0);
-        Vector2 mousePosition = mainCarmera.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = mousePosition;
-        Vector2 playerPosition = player.transform.position;
-        transform.position = new Vector2(Mathf.Clamp(transform.position.x, playerPosition.x - aimRange, playerPosition.x + aimRange),
-                                        Mathf.Clamp(transform.position.y, playerPosition.y - aimRange, playerPosition.y + aimRange));
+        if (player.GetPhotonView().IsMine)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            Vector2 mousePosition = mainCarmera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
+            transform.position = mousePosition;
+            Vector2 playerPosition = player.transform.position;
+            transform.position = new Vector2(Mathf.Clamp(transform.position.x, playerPosition.x - aimRange, playerPosition.x + aimRange),
+                                            Mathf.Clamp(transform.position.y, playerPosition.y - aimRange, playerPosition.y + aimRange));
+        } 
     }
 }

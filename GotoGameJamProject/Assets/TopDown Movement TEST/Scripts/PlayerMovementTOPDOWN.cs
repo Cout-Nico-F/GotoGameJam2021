@@ -7,7 +7,7 @@ public class PlayerMovementTOPDOWN : MonoBehaviour
 {
     [SerializeField] private float movementSpeed;
     [SerializeField] private Camera cam;
-    private PhotonView photonView;
+    public PhotonView photonView;
     private Rigidbody2D rb2d;
     private Animator animator;
     private Vector2 movement;
