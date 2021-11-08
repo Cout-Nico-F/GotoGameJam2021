@@ -832,7 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02adc49eae6b72a4f8a4b74e49a22f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GGS: {fileID: 315964611468310360}
+  grapplingGun: {fileID: 315964611468310360}
   photonView: {fileID: 7608430545770295764}
   maxGrapplingTimer: 3
 --- !u!114 &7608430545770295764

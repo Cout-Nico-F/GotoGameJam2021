@@ -82,7 +82,7 @@ namespace GrapplingJam
 
         public void SetGrapplePoint()
         {
-            Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
+            Vector2 distanceVector = m_camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.current.nearClipPlane)) - gunPivot.position;
             if (Physics2D.Raycast(firePoint.position, distanceVector.normalized))
             {
                 RaycastHit2D _hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);

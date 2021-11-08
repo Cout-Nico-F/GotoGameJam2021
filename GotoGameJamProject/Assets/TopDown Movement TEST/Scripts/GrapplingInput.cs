@@ -7,7 +7,7 @@ namespace GrapplingJam
 {
     public class GrapplingInput : MonoBehaviour
     {
-        [SerializeField] private GrapplingGun GGS;
+        [SerializeField] private GrapplingGun grapplingGun;
         [SerializeField] private PhotonView photonView;
         [SerializeField] private float maxGrapplingTimer;
         private float grapplingTimer;
@@ -28,40 +28,40 @@ namespace GrapplingJam
 
                 if (Input.GetKeyDown(KeyCode.Mouse0) && canGrappling)
                 {
-                    GGS.SetGrapplePoint(); canGrappling = false;
+                    grapplingGun.SetGrapplePoint(); canGrappling = false;
                 }
                 else if (Input.GetKey(KeyCode.Mouse0))
                 {
-                    if (GGS.grappleRope.enabled)
+                    if (grapplingGun.grappleRope.enabled)
                     {
-                        GGS.RotateGun(GGS.GrapplePoint, false);
+                        grapplingGun.RotateGun(grapplingGun.GrapplePoint, false);
                     }
                     else
                     {
-                        Vector2 mousePos = GGS.Camera.ScreenToWorldPoint(Input.mousePosition);
-                        GGS.RotateGun(mousePos, true);
+                        Vector2 mousePos = grapplingGun.Camera.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.current.nearClipPlane));
+                        grapplingGun.RotateGun(mousePos, true);
                     }
 
-                    if (GGS.LaunchToPoint && GGS.grappleRope.isGrappling)
+                    if (grapplingGun.LaunchToPoint && grapplingGun.grappleRope.isGrappling)
                     {
-                        if (GGS.LaunchType == LaunchType.Transform_Launch)
+                        if (grapplingGun.LaunchType == LaunchType.Transform_Launch)
                         {
-                            Vector2 firePointDistnace = GGS.FirePoint.position - GGS.GunHolder.localPosition;
-                            Vector2 targetPos = GGS.GrapplePoint - firePointDistnace;
-                            GGS.GunHolder.position = Vector2.Lerp(GGS.GunHolder.position, targetPos, Time.deltaTime * GGS.LaunchSpeed);
+                            Vector2 firePointDistnace = grapplingGun.FirePoint.position - grapplingGun.GunHolder.localPosition;
+                            Vector2 targetPos = grapplingGun.GrapplePoint - firePointDistnace;
+                            grapplingGun.GunHolder.position = Vector2.Lerp(grapplingGun.GunHolder.position, targetPos, Time.deltaTime * grapplingGun.LaunchSpeed);
                         }
                     }
                 }
                 else if (Input.GetKeyUp(KeyCode.Mouse0))
                 {
-                    GGS.grappleRope.enabled = false;
-                    GGS.SpringJoint2D.enabled = false;
-                    GGS.Rigidbody.gravityScale = 0;
+                    grapplingGun.grappleRope.enabled = false;
+                    grapplingGun.SpringJoint2D.enabled = false;
+                    grapplingGun.Rigidbody.gravityScale = 0;
                 }
                 else
                 {
-                    Vector2 mousePos = GGS.Camera.ScreenToWorldPoint(Input.mousePosition);
-                    GGS.RotateGun(mousePos, true);
+                    Vector2 mousePos = grapplingGun.Camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.current.nearClipPlane));
+                    grapplingGun.RotateGun(mousePos, true);
                 }
             }
         }
