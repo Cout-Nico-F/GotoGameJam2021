@@ -1588,6 +1588,8 @@ MonoBehaviour:
   scoreText: {fileID: 3655628437735653755}
   addScoreButton: {fileID: 388358310391518399}
   score: {fileID: 5864892857968279099}
+  playerPhotonView: {fileID: -3382059923018268562}
+  borrrar: {fileID: 1370545653573340583}
 --- !u!1 &6184303263509928362
 GameObject:
   m_ObjectHideFlags: 0
