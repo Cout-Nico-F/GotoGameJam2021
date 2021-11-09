@@ -2,6 +2,6 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    int playerScore = 0;
+    [SerializeField] int playerScore;
     public int PlayerScore { get => playerScore; set => playerScore = value; }
 }
