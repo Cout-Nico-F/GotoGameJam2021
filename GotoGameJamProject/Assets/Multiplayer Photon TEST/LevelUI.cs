@@ -1,33 +1,36 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class LevelUI : MonoBehaviour
 {
-    private int score;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private Button addScoreButton;
+    [SerializeField] private Score score;
 
-    [SerializeField]
-    private TextMeshProUGUI scoreText;
+    public Score Score { get => score; set => score = value; }
 
     private void Awake()
     {
-        score = 0;
+        score.PlayerScore = 0;
+        addScoreButton.onClick.AddListener(AddScore);
     }
 
     private void Start()
     {
-        scoreText.text = score + "/" ;
+        scoreText.text = score.PlayerScore + "/" ;
     }
 
     public void AddScore()
     {
-        score++;
-        scoreText.text = score + "/";
+        score.PlayerScore++;
+        scoreText.text = score.PlayerScore + "/";
     }
 
     public void ResetScore()
     {
-        score = 0;
-        scoreText.text = score + "/" ;
+        score.PlayerScore = 0;
+        scoreText.text = score.PlayerScore + "/" ;
     }
 }
 
