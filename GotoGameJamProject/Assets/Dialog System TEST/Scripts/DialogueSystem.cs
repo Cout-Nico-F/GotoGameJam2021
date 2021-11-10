@@ -12,8 +12,8 @@ namespace DialogueJam
         [Header("Configuration")]
         [SerializeField] private float delayBetweenDialogues;
         [SerializeField] private TextoValues[] textValues;
-        private TextMeshProUGUI textHolder;
-        private Image imgageHolder;
+        [SerializeField] private TextMeshProUGUI textHolder;
+        [SerializeField] private Image imgageHolder;
         private bool NextText;
 
         [System.Serializable]
@@ -32,8 +32,6 @@ namespace DialogueJam
         };
         public void OnEnable()
         {
-            textHolder = GetComponentInChildren<TextMeshProUGUI>();
-            imgageHolder = this.transform.Find("CharacterFace").GetComponentInChildren<Image>();
             StartCoroutine(RecibeText());
         }
         public IEnumerator RecibeText()

@@ -37,8 +37,6 @@ public class RaycastTextActivator : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Debug.LogError("WTF amigo");
-
                     myObjectsHitResult.Interact();//run function here
                 }
             }
