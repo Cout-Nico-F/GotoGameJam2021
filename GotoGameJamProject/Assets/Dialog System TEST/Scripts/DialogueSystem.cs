@@ -14,7 +14,9 @@ namespace DialogueJam
         [SerializeField] private TextoValues[] textValues;
         [SerializeField] private TextMeshProUGUI textHolder;
         [SerializeField] private Image imgageHolder;
-        private bool NextText;
+        private bool nextText;
+
+        public bool NextText { get => nextText; set => nextText = value; }
 
         [System.Serializable]
         public class TextoValues
@@ -36,17 +38,18 @@ namespace DialogueJam
         }
         public IEnumerator RecibeText()
         {
+            nextText = false;
             for (int i = 0; i < textValues.Length; i++)
             {
                 StartCoroutine(WriteText(textValues[i].input, textHolder, textValues[i].textColor, textValues[i].textFont, textValues[i].delay, textValues[i].fontSize, textValues[i].nameFXsound,textValues[i].characterSprite));
-                yield return new WaitUntil(() => NextText == true);
+                yield return new WaitUntil(() => nextText == true);
                 yield return new WaitForSeconds(delayBetweenDialogues);
             }
-            gameObject.SetActive(false);
+            gameObject.transform.parent.gameObject.SetActive(false);
         }
         public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound,Sprite characterSprite)
         {
-            NextText = false;
+            nextText = false;
             imgageHolder.sprite = characterSprite;
             textHolder.text = "";
             textHolder.font = textFont;
@@ -54,11 +57,14 @@ namespace DialogueJam
             textHolder.fontSize = textSize;
             for (int i = 0; i < input.Length; i++)
             {
-                textHolder.text += input[i];
-                SoundManager.instance.Play(nameFXsound);
-                yield return new WaitForSeconds(delay / Random.Range(0.2f, 1f));
+                if(!nextText)
+                {
+                    textHolder.text += input[i];
+                    SoundManager.instance.Play(nameFXsound);
+                    yield return new WaitForSeconds(delay / Random.Range(0.2f, 1f));
+                }
             }
-            NextText = true;
+            nextText = true;
         }
     }
 }
