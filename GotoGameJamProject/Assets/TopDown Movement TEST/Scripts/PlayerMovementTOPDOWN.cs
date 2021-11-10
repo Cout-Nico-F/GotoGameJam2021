@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class PlayerMovementTOPDOWN : MonoBehaviour
+[RequireComponent(typeof(PhotonView))]
+[RequireComponent(typeof(SpriteRenderer))]
+public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
 {
     [SerializeField] private float movementSpeed;
     [SerializeField] private Camera cam;
@@ -21,8 +23,26 @@ public class PlayerMovementTOPDOWN : MonoBehaviour
         photonView = GetComponent<PhotonView>();
         if(!photonView.IsMine)
         { cam.enabled = false; }
+        AddObservable();
     }
-
+    private void AddObservable()
+    {
+        if (!photonView.ObservedComponents.Contains(this))
+        {
+            photonView.ObservedComponents.Add(this);
+        }
+    }
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext(spriteRenderer.flipX);
+        }
+        else
+        {
+            spriteRenderer.flipX = (bool)stream.ReceiveNext();
+        }
+    }
     void Update()
     {
         if (photonView.IsMine)
