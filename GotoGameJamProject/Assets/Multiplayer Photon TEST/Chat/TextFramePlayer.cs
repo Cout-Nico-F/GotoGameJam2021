@@ -17,7 +17,6 @@ using UnityEngine;
         }
         public IEnumerator PlayerTalk(string textInput)
         {
-            textMesh.text="";
             textMesh.text=textInput;
 
             yield return new WaitForSeconds(3);
