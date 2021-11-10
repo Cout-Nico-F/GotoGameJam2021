@@ -11,7 +11,9 @@ public class RaycastTextActivator : MonoBehaviour
     [SerializeField] private float rayRadius;//used for assigning length to raycast
 
     private Collider2D[] myObjectsHit = default;
+#nullable enable
     private Interactable? myObjectsHitResult;
+#nullable disable
     private PhotonView photonView;
 
     private void Start()
@@ -35,11 +37,14 @@ public class RaycastTextActivator : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    Debug.LogError("WTF amigo");
+
                     myObjectsHitResult.Interact();//run function here
                 }
             }
         }
     }
+#nullable enable
     Interactable? GetInteractable()
     {
         foreach (var o in myObjectsHit)
@@ -56,4 +61,5 @@ public class RaycastTextActivator : MonoBehaviour
         }
         return null;
     }
+#nullable disable
 }
