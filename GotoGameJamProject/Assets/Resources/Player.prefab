@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 315964610491423184}
   - component: {fileID: 5864892857968279099}
   - component: {fileID: 315964610491423189}
+  - component: {fileID: 6898406460092305058}
   - component: {fileID: 315964610491423179}
   - component: {fileID: 315964610491423188}
   - component: {fileID: 315964610491423178}
@@ -443,6 +444,22 @@ MonoBehaviour:
   movementSpeed: 5
   cam: {fileID: 1233219229155412013}
   photonView: {fileID: -3382059923018268562}
+--- !u!114 &6898406460092305058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315964610491423185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2fbfc3aed0c8464aabbdd5fcd8c6b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labelText: 
+  rayRadius: 2
+  promptWidthPercent: 0
+  promptHeightPercent: 0
 --- !u!50 &315964610491423179
 Rigidbody2D:
   serializedVersion: 4

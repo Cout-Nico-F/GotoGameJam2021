@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Item
+  - Interactuable
   layers:
   - Default
   - TransparentFX

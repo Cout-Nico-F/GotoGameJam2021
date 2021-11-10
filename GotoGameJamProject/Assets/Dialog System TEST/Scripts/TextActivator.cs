@@ -1,27 +1,59 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class TextActivator : MonoBehaviour
 {
-    [SerializeField] private float maxDistance;
     [SerializeField] private GameObject letterE;
     [SerializeField] private GameObject dialog;
+
+    private PhotonView photonView;
+
+    private bool inRange = false;
+
+    private void Start()
+    {
+        photonView = GetComponent<PhotonView>();
+    }
+
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position);
-        if (distance < maxDistance)
+        if (photonView.IsMine)
         {
-            letterE.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
+            if (inRange)
             {
-                dialog.SetActive(true);
+                letterE.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    dialog.SetActive(true);
+                }
+            }
+            else
+            {
+                letterE.SetActive(false);
+                dialog.SetActive(false);
             }
         }
-        else
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (photonView.IsMine)
         {
-            letterE.SetActive(false);
-            dialog.SetActive(false);
+            if (collision.CompareTag("Interactuable"))
+            {
+                inRange = true;
+            }
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (photonView.IsMine)
+        {
+            if (collision.CompareTag("Interactuable"))
+            {
+                inRange = false;
+            }
         }
     }
 }
