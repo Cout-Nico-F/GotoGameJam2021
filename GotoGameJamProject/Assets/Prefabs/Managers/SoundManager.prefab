@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4799309537232920770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4799309537232920769}
+  - component: {fileID: 4799309537232920768}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4799309537232920769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799309537232920770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4799309537232920768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799309537232920770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4216cef698d8d184197e25e3af6f474e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 24300002, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+  sounds:
+  - name: TestFiesta
+    clip: {fileID: 8300000, guid: a5821ce8922d94f4785ef7b722c3c2fc, type: 3}
+    volume: 0.707
+    volumeVariance: 0.033
+    pitch: 0.31
+    pitchVariance: 0.013
+    loop: 1
+    mixerGroup: {fileID: -1123602607838286784, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
+  - name: SansFX
+    clip: {fileID: 8300000, guid: 6dd5487d67ed1e947aacd6d56b9daeaf, type: 3}
+    volume: 0.707
+    volumeVariance: 0.033
+    pitch: 1
+    pitchVariance: 0.013
+    loop: 0
+    mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
+  - name: FriskFX
+    clip: {fileID: 8300000, guid: 6dd5487d67ed1e947aacd6d56b9daeaf, type: 3}
+    volume: 0.707
+    volumeVariance: 0.033
+    pitch: 1.63
+    pitchVariance: 0.013
+    loop: 0
+    mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
