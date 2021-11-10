@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
-    private QuestState questState;
 
     private void Start()
     {
-        if (questState.Finished)
+        if ()
         {
             //mostrar dialogo idle o siguiente mision
         }
