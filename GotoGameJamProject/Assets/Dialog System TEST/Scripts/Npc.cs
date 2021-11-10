@@ -6,7 +6,6 @@ public class Npc : MonoBehaviour, Interactable
 {
     public void Interact()
     {
-        Debug.Log("Soy interactuable y interactuo como un npc");
-        throw new System.NotImplementedException();
+        
     }
 }
