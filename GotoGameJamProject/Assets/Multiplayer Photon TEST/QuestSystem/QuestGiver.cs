@@ -7,7 +7,7 @@ public class QuestGiver : MonoBehaviour
 
     private void Start()
     {
-        if ()
+        if (true)
         {
             //mostrar dialogo idle o siguiente mision
         }
