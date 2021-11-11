@@ -18,7 +18,7 @@ public class Npc : MonoBehaviour, Interactable
         {
             if (questGiver.QuestsAvailable())
             {
-                questGiver.GiveQuest();
+                questGiver.ShowQuest();
             }  
         }
         else
