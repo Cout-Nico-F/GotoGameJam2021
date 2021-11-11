@@ -4,16 +4,42 @@ using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
-
-    private void Start()
+    [SerializeField] private Quest[] quests;
+    [SerializeField] private GameObject dialogueQuest1;
+    [SerializeField] private GameObject dialogueQuest2;
+    public void GiveQuest()
     {
-        if (true)
+        foreach (var quest in quests)
         {
-            //mostrar dialogo idle o siguiente mision
+            if (quest.State.Finished == false) //
+            {
+                DialogueInteract(dialogueQuest1);
+                return;
+            }
+        }
+    }
+
+    private void DialogueInteract(GameObject go)
+    {
+        if (go.activeSelf == false)
+        {
+            go.SetActive(true);
         }
         else
         {
-            //mostrar mision actual
+            go.GetComponentInChildren<DialogueJam.DialogueSystem>().NextText = true;
         }
+    }
+
+    public bool QuestsAvailable()
+    {
+        foreach (var quest in quests)
+        {
+            if (quest.State.Finished == false)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

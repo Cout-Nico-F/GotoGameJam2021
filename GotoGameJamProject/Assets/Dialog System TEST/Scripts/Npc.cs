@@ -6,22 +6,23 @@ using UnityEngine;
 public class Npc : MonoBehaviour, Interactable
 {
     [SerializeField] private GameObject dialogueIdle;
-    [SerializeField] private GameObject dialogueQuest1;
-    [SerializeField] private GameObject dialogueQuest2;
-    private Quest quest1;
-    private Quest quest2;
+
+    [SerializeField] private bool hasQuests;
+    [SerializeField] private QuestGiver questGiver;
+
+    private void Start()
+    {
+        questGiver = GetComponent<QuestGiver>();
+    }
 
     public void Interact()
     {
-        if (quest1.State.Finished == false) //
+        if (questGiver != null)
         {
-            DialogueInteract(dialogueQuest1);
-            return;
-        }
-        else if (quest2.State.Finished == false)
-        {
-            DialogueInteract(dialogueQuest2);
-            return;
+            if (questGiver.QuestsAvailable())
+            {
+                questGiver.GiveQuest();
+            }  
         }
         else
         {
