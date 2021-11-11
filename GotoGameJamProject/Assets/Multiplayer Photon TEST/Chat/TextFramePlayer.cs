@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using Photon.Pun;
 
-public class TextFramePlayer : MonoBehaviour, IPunObservable
+public class TextFramePlayer : MonoBehaviour
 {
     [Header("Enter parameters")]
     [SerializeField] private TextMeshProUGUI textMesh;
@@ -18,20 +18,18 @@ public class TextFramePlayer : MonoBehaviour, IPunObservable
 
     public IEnumerator PlayerTalk(string textInput)
     {
-
-        yield return new WaitForSeconds(3);
-        gameObject.SetActive(false);
+            textMesh.text = "";
+            textMesh.text = textInput;
+            photonView.RPC("SyncText", RpcTarget.All, textInput);
+            yield return new WaitForSeconds(3);
+            photonView.RPC("SyncText", RpcTarget.All, "");
+            gameObject.SetActive(false);
     }
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    [PunRPC]
+    void SyncText(string textInput)
     {
-        if (stream.IsReading)
-        {
-
-        }
-        else
-        {
-
-        }
+            textMesh.text = "";
+            textMesh.text = textInput;
     }
 }
