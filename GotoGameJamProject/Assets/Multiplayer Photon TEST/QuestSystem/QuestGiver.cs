@@ -8,7 +8,7 @@ public class QuestGiver : MonoBehaviour
     {
         foreach (var quest in quests)
         {
-            if (quest.QuestConfig.Finished == false)
+            if (quest.IsFinished == false)
             {
                 //Give quest me suena que va aca pero capas tambien necesitamos que haya Aceptado la mision con alguna interaccion con la ui
                 GiveQuest(quest);
@@ -21,12 +21,13 @@ public class QuestGiver : MonoBehaviour
     {
         DialogueInteract(quest.QuestDialogue);
         //aca deberia dar la quest.
-        //y una clase o metodo aparte hacer los pasos:
         //1) player.activeQuest = quest o Player.ActiveQuests.add(quest)
         questPlayer = FindMyPlayerQuests();
-        questPlayer.QuestList.Add(quest);
-        //y 2) mostrar quest y progreso en UI
-        //tambien podriamos tener o no un booleano que nos diga si ya aceptamos esa mision antes para no volver a preguntar.
+        questPlayer.QuestList.Add(quest);//TODO: prevenir que se agregue mas de una vez la misma mision?
+        quest.IsActive = true;
+        //y 2) mostrar quest y progreso en UI ( la ui podria hacer esto sola ya que quest es un scriptable obj )
+
+        //tambien podriamos tener o no un booleano que nos diga si ya aceptamos esa mision antes para no volver a preguntar si acepta mision.
         //pero haciendo algun refactor porque actualmente no se donde lo pondria
     }
 
@@ -46,7 +47,7 @@ public class QuestGiver : MonoBehaviour
     {
         foreach (var quest in quests)
         {
-            if (quest.QuestConfig.Finished == false)
+            if (quest.IsFinished == false)
             {
                 return true;
             }
