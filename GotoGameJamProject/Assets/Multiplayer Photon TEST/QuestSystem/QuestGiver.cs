@@ -7,9 +7,9 @@ public class QuestGiver : MonoBehaviour
     {
         foreach (var quest in quests)
         {
-            if (quest.State.Finished == false)
+            if (quest.QuestConfig.Finished == false)
             {
-                DialogueInteract(quest.DialogueQuest);
+                DialogueInteract(quest.QuestDialogue);
                 return;
             }
         }
@@ -31,7 +31,7 @@ public class QuestGiver : MonoBehaviour
     {
         foreach (var quest in quests)
         {
-            if (quest.State.Finished == false)
+            if (quest.QuestConfig.Finished == false)
             {
                 return true;
             }

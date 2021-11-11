@@ -5,7 +5,6 @@ public class Npc : MonoBehaviour, Interactable
 {
     [SerializeField] private GameObject dialogueIdle;
 
-    [SerializeField] private bool hasQuests;
     private QuestGiver questGiver;
 
     private void Start()

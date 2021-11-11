@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class Quest : MonoBehaviour
+public class Quest : ScriptableObject
 {
-    [SerializeField] private GameObject dialogueQuest;
+    [SerializeField] private GameObject questDialogue;
     
-    private string name;
+    private QuestConfig questConfig;
+    private string questName;
     private string desc;
     private int id;
-    private QuestState state;
 
-    public QuestState State { get => state; set => state = value; }
-    public GameObject DialogueQuest { get => dialogueQuest; }
+    public QuestConfig QuestConfig { get => questConfig; }
+    public GameObject QuestDialogue { get => questDialogue; }
+    public string QuestName { get => questName; }
+    public string Desc { get => desc; }
+    public int Id { get => id; }
 }
