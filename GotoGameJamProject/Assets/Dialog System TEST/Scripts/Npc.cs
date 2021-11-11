@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using DialogueJam;
 using UnityEngine;
 
@@ -8,7 +6,7 @@ public class Npc : MonoBehaviour, Interactable
     [SerializeField] private GameObject dialogueIdle;
 
     [SerializeField] private bool hasQuests;
-    [SerializeField] private QuestGiver questGiver;
+    private QuestGiver questGiver;
 
     private void Start()
     {
