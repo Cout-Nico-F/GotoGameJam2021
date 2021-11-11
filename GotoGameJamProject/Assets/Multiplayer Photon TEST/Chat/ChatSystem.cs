@@ -9,15 +9,12 @@ public class ChatSystem : MonoBehaviour
     [SerializeField] private PhotonView photonView;
     private void Start()
     {
-        if(!photonView.IsMine)
-        { gameObject.SetActive(false);}
+        if (!photonView.IsMine)
+        { gameObject.SetActive(false); }
     }
     public void ReadInptPlayer(string s)
     {
-        if (photonView.IsMine)
-        {
-            textFramePayer.gameObject.SetActive(true);
-            textFramePayer.StartCoroutine(textFramePayer.PlayerTalk(s));
-        }
+        textFramePayer.gameObject.SetActive(true);
+        textFramePayer.StartCoroutine(textFramePayer.PlayerTalk(s));
     }
 }

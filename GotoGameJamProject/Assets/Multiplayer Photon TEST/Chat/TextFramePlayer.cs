@@ -3,7 +3,9 @@ using TMPro;
 using UnityEngine;
 using Photon.Pun;
 
-public class TextFramePlayer : MonoBehaviour
+[RequireComponent(typeof(PhotonView))]
+[RequireComponent(typeof(TextMeshProUGUI))]
+public class TextFramePlayer : MonoBehaviour, IPunObservable
 {
     [Header("Enter parameters")]
     [SerializeField] private TextMeshProUGUI textMesh;
@@ -13,23 +15,32 @@ public class TextFramePlayer : MonoBehaviour
     private void Start()
     {
         textMesh.color = textColor;
+        AddObservable();
     }
-
-
+    private void AddObservable()
+    {
+        if (!photonView.ObservedComponents.Contains(this))
+        {
+            photonView.ObservedComponents.Add(this);
+        }
+    }
     public IEnumerator PlayerTalk(string textInput)
     {
-            textMesh.text = "";
-            textMesh.text = textInput;
-            photonView.RPC("SyncText", RpcTarget.All, textInput);
-            yield return new WaitForSeconds(3);
-            photonView.RPC("SyncText", RpcTarget.All, "");
-            gameObject.SetActive(false);
+        textMesh.text = textInput;
+        yield return new WaitForSeconds(3);
+        textMesh.text = "";
     }
 
-    [PunRPC]
-    void SyncText(string textInput)
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-            textMesh.text = "";
-            textMesh.text = textInput;
+        if (stream.IsWriting)
+        {
+            stream.SendNext(textMesh.text);
+        }
+        else
+        {
+            textMesh.text = (string)stream.ReceiveNext();
+            Debug.Log("Actualizo: "+textMesh.text);
+        }
     }
 }

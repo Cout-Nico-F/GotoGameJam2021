@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd3d841f960e904eb36f98accfdba34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue1: {fileID: 1573879845}
+  dialogueIdle: {fileID: 1573879845}
 --- !u!1 &883634956
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +899,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2696777105589650688, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
       propertyPath: dialogue1
+      value: 
+      objectReference: {fileID: 1573879845}
+    - target: {fileID: 2696777105589650688, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
+      propertyPath: dialogueIdle
       value: 
       objectReference: {fileID: 1573879845}
     m_RemovedComponents: []
