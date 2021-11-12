@@ -546,7 +546,6 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 315964610491423189}
   - {fileID: 4838556248034346669}
   - {fileID: 8340668286805594248}
   - {fileID: 6518891589131558049}
@@ -1234,7 +1233,7 @@ GameObject:
   - component: {fileID: 1241430263606303275}
   - component: {fileID: 5781493120540557220}
   m_Layer: 0
-  m_Name: CanvasUI
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
