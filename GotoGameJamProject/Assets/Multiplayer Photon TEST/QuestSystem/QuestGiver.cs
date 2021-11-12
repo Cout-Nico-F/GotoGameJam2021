@@ -5,6 +5,7 @@ public class QuestGiver : MonoBehaviour
     [SerializeField] private Quest[] quests;
     private QuestPlayer questPlayer;
     [SerializeField] private GameObject questDialogue;
+    [SerializeField] private GameObject dialogueCanvas;
     public GameObject QuestDialogue { get => questDialogue; }
 
     public void ShowQuest()
@@ -22,24 +23,29 @@ public class QuestGiver : MonoBehaviour
 
     private void GiveQuest(Quest quest)
     {
-        //DialogueInteract(questDialogue);
+        DialogueInteract(questDialogue);
         questPlayer = FindMyPlayerQuests();
-        questPlayer.AddQuest(quest);
+        //questPlayer.AddQuest(quest); //null aca porque?
         quest.IsActive = true;
         //y 2) mostrar quest y progreso en UI ( la ui podria hacer esto sola ya que quest es un scriptable obj )
     }
 
     private void DialogueInteract(GameObject go)
     {
-        Instantiate(go,transform,)
-        if (go.activeSelf == false)
-        {
-            go.SetActive(true);
-        }
-        else
-        {
-            go.GetComponentInChildren<DialogueJam.DialogueSystem>().NextText = true;
-        }
+        var ui = Instantiate(go);
+        ui.transform.SetParent(dialogueCanvas.transform);
+        
+        //ui.GetComponent<RectTransform>().anchoredPosition = dialo
+        ui.SetActive(true);
+            
+        //if (go.activeSelf == false)
+        //{
+        //    go.SetActive(true);
+        //}
+        //else
+        //{
+        //    go.GetComponentInChildren<DialogueJam.DialogueSystem>().NextText = true;
+        //}
     }
 
     public bool QuestsAvailable()
