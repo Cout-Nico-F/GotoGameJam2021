@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Quest : ScriptableObject
 {
-    [SerializeField] private bool isFinished; 
+    [SerializeField] private bool isFinished;
     [SerializeField] private GameObject questDialogue;
 
     private bool isActive;

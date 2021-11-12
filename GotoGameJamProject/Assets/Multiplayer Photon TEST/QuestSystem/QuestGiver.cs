@@ -1,20 +1,66 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
-    private QuestState questState;
-
-    private void Start()
+    [SerializeField] private Quest[] quests;
+    private QuestPlayer questPlayer;
+    public void ShowQuest()
     {
-        if (questState.Finished)
+        foreach (var quest in quests)
         {
-            //mostrar dialogo idle o siguiente mision
+            if (quest.IsFinished == false)
+            {
+                //para simplificar: las misiones no se aceptan.
+                GiveQuest(quest);
+                return;
+            }
+        }
+    }
+
+    private void GiveQuest(Quest quest)
+    {
+        DialogueInteract(quest.QuestDialogue);
+        questPlayer = FindMyPlayerQuests();
+        questPlayer.AddQuest(quest);
+        quest.IsActive = true;
+        //y 2) mostrar quest y progreso en UI ( la ui podria hacer esto sola ya que quest es un scriptable obj )
+    }
+
+    private void DialogueInteract(GameObject go)
+    {
+        if (go.activeSelf == false)
+        {
+            go.SetActive(true);
         }
         else
         {
-            //mostrar mision actual
+            go.GetComponentInChildren<DialogueJam.DialogueSystem>().NextText = true;
         }
+    }
+
+    public bool QuestsAvailable()
+    {
+        foreach (var quest in quests)
+        {
+            if (quest.IsFinished == false)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public QuestPlayer FindMyPlayerQuests()
+    {
+        var a = FindObjectsOfType<QuestPlayer>();
+
+        foreach (var q in a)
+        {
+            if (q.GetComponent<Photon.Pun.PhotonView>().IsMine)
+            {
+                return q;
+            }
+        }
+        return null;
     }
 }
