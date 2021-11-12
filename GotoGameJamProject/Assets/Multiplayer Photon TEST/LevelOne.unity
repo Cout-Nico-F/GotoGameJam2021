@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 842550996}
   - component: {fileID: 842550995}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: InputChat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1031,8 +1031,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1867484025}
   m_HandleRect: {fileID: 1867484024}
   m_Direction: 2
-  m_Value: 1.0000099
-  m_Size: 0.6703986
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1087,6 +1087,7 @@ GameObject:
   - component: {fileID: 1432403438}
   - component: {fileID: 1432403437}
   - component: {fileID: 1432403436}
+  - component: {fileID: 1432403439}
   m_Layer: 5
   m_Name: ChatText
   m_TagString: Untagged
@@ -1147,7 +1148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "al\xF1skdl\xF1aksd\xF1alksd\xF1alskdas\xF1ldkas\xF1ldkas\xF1dlaskdl\xF1askd\xF1alal\xF1skdl\xF1aksd\xF1alksd\xF1alskdas\xF1ldkas\xF1ldkas\xF1dlaskdl\xF1askd\xF1alal\xF1skdl\xF1aksd\xF1alksd\xF1alskdas\xF1ldkas\xF1ldkas\xF1dlaskdl\xF1askd\xF1alal\xF1skdl\xF1aksd\xF1alksd\xF1alskdas\xF1ldkas\xF1ldkas\xF1dlaskdl\xF1askd\xF1alal\xF1skdl\xF1aksd\xF1alksd\xF1alskdas\xF1ldkas\xF1ldkas\xF1dlaskdl\xF1askd\xF1al"
+  m_text: Bienvenidos al chat!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1224,6 +1225,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432403434}
   m_CullTransparentMesh: 1
+--- !u!114 &1432403439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432403434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08a8f7cf05730458a007113e0cd28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMesh: {fileID: 1432403437}
 --- !u!1 &1590718348
 GameObject:
   m_ObjectHideFlags: 0
