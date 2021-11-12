@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 842550997}
   - component: {fileID: 842550996}
   - component: {fileID: 842550995}
+  - component: {fileID: 842550998}
   m_Layer: 5
   m_Name: InputChat
   m_TagString: Untagged
@@ -523,6 +524,18 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 842550998}
+        m_TargetAssemblyTypeName: InputTextChat, Assembly-CSharp
+        m_MethodName: ReadPlayerText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 842550995}
         m_TargetAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
         m_MethodName: set_text
@@ -609,6 +622,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842550993}
   m_CullTransparentMesh: 1
+--- !u!114 &842550998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842550993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b43a647538b324aa13eca6123b004f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chat: {fileID: 1432403439}
 --- !u!1 &883634956
 GameObject:
   m_ObjectHideFlags: 0
