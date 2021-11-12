@@ -12,7 +12,7 @@ public class Npc : MonoBehaviour, Interactable
         questGiver = GetComponent<QuestGiver>();
     }
 
-    public void Interact()
+    public void Interact()//aca recibir al player
     {
         if (questGiver != null)
         {
