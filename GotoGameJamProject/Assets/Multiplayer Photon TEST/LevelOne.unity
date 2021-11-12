@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd3d841f960e904eb36f98accfdba34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueIdle: {fileID: 1573879845}
+  dialogue1: {fileID: 1573879845}
 --- !u!1 &883634956
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,18 +534,6 @@ PrefabInstance:
     - target: {fileID: 2778879938958986989, guid: b0e33af9c185cba4287aac72a4b30221, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5292409721255371896, guid: b0e33af9c185cba4287aac72a4b30221, type: 3}
-      propertyPath: textValues.Array.data[0].delay
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 5292409721255371896, guid: b0e33af9c185cba4287aac72a4b30221, type: 3}
-      propertyPath: textValues.Array.data[1].delay
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5292409721255371896, guid: b0e33af9c185cba4287aac72a4b30221, type: 3}
-      propertyPath: textValues.Array.data[2].delay
-      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 7818110514696020512, guid: b0e33af9c185cba4287aac72a4b30221, type: 3}
       propertyPath: m_Name
@@ -899,10 +887,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2696777105589650688, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
       propertyPath: dialogue1
-      value: 
-      objectReference: {fileID: 1573879845}
-    - target: {fileID: 2696777105589650688, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
-      propertyPath: dialogueIdle
       value: 
       objectReference: {fileID: 1573879845}
     m_RemovedComponents: []

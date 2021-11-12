@@ -1,41 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
 using DialogueJam;
 using UnityEngine;
 
 public class Npc : MonoBehaviour, Interactable
 {
-    [SerializeField] private GameObject dialogueIdle;
-
-    private QuestGiver questGiver;
-
-    private void Start()
-    {
-        questGiver = GetComponent<QuestGiver>();
-    }
-
+    [SerializeField] private GameObject dialogue1;
     public void Interact()
     {
-        if (questGiver != null)
+        if (dialogue1.activeSelf==false)
         {
-            if (questGiver.QuestsAvailable())
-            {
-                questGiver.ShowQuest();
-            }  
+            dialogue1.SetActive(true);
         }
         else
         {
-            DialogueInteract(dialogueIdle);
+            dialogue1.GetComponentInChildren<DialogueSystem>().NextText=true;
         }
-    }
-
-    private void DialogueInteract(GameObject go)
-    {
-        if (go.activeSelf == false)
-        {
-            go.SetActive(true);
-        }
-        else
-        {
-            go.GetComponentInChildren<DialogueSystem>().NextText = true;
-        }
+        
     }
 }
