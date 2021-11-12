@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - Item
   - Interactuable
+  - Chat
   layers:
   - Default
   - TransparentFX

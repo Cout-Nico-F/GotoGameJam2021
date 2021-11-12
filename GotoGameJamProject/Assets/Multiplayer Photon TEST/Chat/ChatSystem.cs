@@ -1,20 +1,12 @@
-using Photon.Pun;
+using TMPro;
 using UnityEngine;
-
 
 public class ChatSystem : MonoBehaviour
 {
-    [Header("Enter parameters")]
-    [SerializeField] private TextFramePlayer textFramePayer;
-    [SerializeField] private PhotonView photonView;
-    private void Start()
+    [SerializeField] private TextMeshProUGUI textMesh;
+
+    public void PlayerTalk(string textInput)
     {
-        if (!photonView.IsMine)
-        { gameObject.SetActive(false); }
-    }
-    public void ReadInptPlayer(string s)
-    {
-        textFramePayer.gameObject.SetActive(true);
-        textFramePayer.StartCoroutine(textFramePayer.PlayerTalk(s));
+        textMesh.text = textMesh.text+"\n"+textInput;
     }
 }
