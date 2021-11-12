@@ -9,6 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cec8bdf564c8a3749a216c0b1c05eac8, type: 3}
+  m_Script: {fileID: 11500000, guid: f59e3e1d77d84d04ea8335ad7668f625, type: 3}
   m_Name: Quest1
   m_EditorClassIdentifier: 
+  isFinished: 0
+  questDialogue: {fileID: 88070658015522448, guid: a851a772f0a42574483ebb7ac976b846, type: 3}

@@ -4,6 +4,9 @@ public class QuestGiver : MonoBehaviour
 {
     [SerializeField] private Quest[] quests;
     private QuestPlayer questPlayer;
+    [SerializeField] private GameObject questDialogue;
+    public GameObject QuestDialogue { get => questDialogue; }
+
     public void ShowQuest()
     {
         foreach (var quest in quests)
@@ -19,7 +22,7 @@ public class QuestGiver : MonoBehaviour
 
     private void GiveQuest(Quest quest)
     {
-        DialogueInteract(quest.QuestDialogue);
+        //DialogueInteract(questDialogue);
         questPlayer = FindMyPlayerQuests();
         questPlayer.AddQuest(quest);
         quest.IsActive = true;
@@ -28,6 +31,7 @@ public class QuestGiver : MonoBehaviour
 
     private void DialogueInteract(GameObject go)
     {
+        Instantiate(go,transform,)
         if (go.activeSelf == false)
         {
             go.SetActive(true);

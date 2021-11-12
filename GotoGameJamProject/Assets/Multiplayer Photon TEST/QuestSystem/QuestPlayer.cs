@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class QuestPlayer : MonoBehaviour
 {
-    private List<Quest> questList = default;
+    private Quest[] questList = default;
 
-    public List<Quest> QuestList { get => questList; }
+    public Quest[] QuestList { get => questList; }
 
     public void AddQuest(Quest quest)
     {
@@ -17,6 +17,6 @@ public class QuestPlayer : MonoBehaviour
                 return;
             }
         }
-        questList.Add(quest);
+        questList[questList.Length] = quest;
     }
 }
