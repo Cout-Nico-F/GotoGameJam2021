@@ -17,7 +17,7 @@ public class ChatSystsem : MonoBehaviour
     [PunRPC]
     public void SyncTextPlayerChat(string textPlayerInput, string name)
     {
-        scrollBar.value = -0.5f;
+        scrollBar.value = -1f;
         textMesh.text = textMesh.text + "\n" + name + ": " + textPlayerInput;
     }
 }
