@@ -25,26 +25,13 @@ public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
         photonView = GetComponent<PhotonView>();
         if(!photonView.IsMine)
         { cam.enabled = false; }
-        AddObservable();
     }
-    private void AddObservable()
-    {
-        if (!photonView.ObservedComponents.Contains(this))
-        {
-            photonView.ObservedComponents.Add(this);
-        }
-    }
+
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        if (stream.IsWriting)
-        {
-            stream.SendNext(spriteRenderer.flipX);
-        }
-        else
-        {
-            spriteRenderer.flipX = (bool)stream.ReceiveNext();
-        }
+
     }
+
     void Update()
     {
         if (photonView.IsMine)
@@ -54,6 +41,7 @@ public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
             ControlAnimaciones();
         }
     }
+
     private void FixedUpdate()
     {
         if (photonView.IsMine)
@@ -61,12 +49,19 @@ public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
             rb2d.MovePosition(rb2d.position + movement * movementSpeed * Time.fixedDeltaTime);
         }
     }
+
     private void ControlAnimaciones()
     {
         animator.SetFloat("velocity",movement.sqrMagnitude);
         if (movement.x < 0)
-        { spriteRenderer.flipX = true; }
+        { photonView.RPC("FlipCharacter", RpcTarget.All, true); }
         if (movement.x > 0)
-        { spriteRenderer.flipX = false; }
+        { photonView.RPC("FlipCharacter", RpcTarget.All, false); }
+    }
+
+    [PunRPC]
+    public void FlipCharacter(bool value)
+    {
+        spriteRenderer.flipX = value;
     }
 }
