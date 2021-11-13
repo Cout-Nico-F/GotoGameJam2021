@@ -4,18 +4,40 @@ using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
-    [SerializeField] private QuestBase[] quests;
+    public GameObject QuestDialogue { get => questDialogue; }
+
+    [SerializeField] private QuestSO[] questSOs;
     [SerializeField] private GameObject questDialogue;
     [SerializeField] private RectTransform dialogueCanvas;
-    public GameObject QuestDialogue { get => questDialogue; }
-    
 
-    public void GiveQuest(QuestBase quest, QuestPlayer questPlayer)
+    private List<Quest> quests;
+
+
+    private void Awake()
+    {
+        quests = new List<Quest>();
+
+        foreach (var questSO in questSOs)
+        {
+            List<Goal> goals = new List<Goal>();
+
+            foreach (var goalSO in questSO.Goals)
+            {
+                Goal goal = new Goal(goalSO.ItemID, goalSO.Description, goalSO.RequiredAmount);
+                goals.Add(goal);
+            }
+
+            Quest quest = new Quest(goals, questSO.QuestName, questSO.Description, questSO.ExperienceReward);
+            quests.Add(quest);
+        }    
+    }
+
+    public void GiveQuest(Quest quest, QuestPlayer questPlayer)
     {
         DialogueInteract(questDialogue);
         
         quest.Asigned = true;
-        questPlayer.AddQuest(quest);
+        questPlayer.AssignQuest(quest);
     }
 
     private void DialogueInteract(GameObject go)
@@ -24,7 +46,7 @@ public class QuestGiver : MonoBehaviour
         ui.SetActive(true);        
     }
 
-    public QuestBase GetNextQuestAvailable()
+    public Quest GetNextQuestAvailable()
     {
         foreach (var quest in quests)
         {

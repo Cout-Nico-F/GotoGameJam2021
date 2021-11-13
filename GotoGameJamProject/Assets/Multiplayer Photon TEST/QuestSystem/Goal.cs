@@ -2,14 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Goal", menuName = "Goals/New Goal")]
-public class Goal : ScriptableObject
+public class Goal
 {
-    public int ItemID;
-    public string Description;
-    public bool Completed;
-    public int CurrentAmount;
-    public int RequiredAmount;
+    public int ItemID { get; set; }
+    public string Description { get; set; }
+    public bool Completed { get; set; }
+    public int CurrentAmount { get; set; }
+    public int RequiredAmount { get; set; }
+
+
+    public Goal(int itemID, string description, int requiredAmount)
+    {
+        ItemID = itemID;
+        Description = description;
+        Completed = false;
+        CurrentAmount = 0;
+        RequiredAmount = requiredAmount;
+    }
 
 
     public void Init()

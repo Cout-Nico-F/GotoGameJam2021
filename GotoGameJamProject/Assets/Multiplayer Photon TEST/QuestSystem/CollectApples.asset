@@ -14,6 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemID: 1
   Description: Recoge 20 manzanas
-  Completed: 0
-  CurrentAmount: 0
   RequiredAmount: 20

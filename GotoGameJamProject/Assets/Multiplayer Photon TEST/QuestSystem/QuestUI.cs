@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class QuestUI : MonoBehaviour
 {
-    [SerializeField] private QuestBase[] quests;
+    private Quest quest;
 
     private void Update()
     {
-        foreach (var quest in quests)
+        List<Goal> goals = quest.Goals;
+
+        foreach (var goal in goals)
         {
             //la ui se va a fijar si la quest esta activa, y si esta activa va a mostrar su shortDesc en un textfield
             //Segun como hagamos la ui, va a tener un maximo de textos para mostrar ( podemos limitarnos a 3 o 5 misiones )
@@ -17,5 +19,10 @@ public class QuestUI : MonoBehaviour
             //saber mover los campos al completar una mision para que el vacio sea siempre el ultimo
 
         }
+    }
+
+    public void AssignQuest(Quest quest)
+    {
+        this.quest = quest;
     }
 }

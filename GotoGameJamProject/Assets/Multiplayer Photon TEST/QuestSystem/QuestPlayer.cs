@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class QuestPlayer : MonoBehaviour
 {
-    [SerializeField] private List<QuestBase> quests;
+    public Quest activeQuest;
 
 
-    public void AddQuest(QuestBase quest)
+    public void AssignQuest(Quest quest)
     {
-        quests.Add(quest);
+        activeQuest = quest;
+        Debug.Log("Quest " + quest.QuestName + "assigned");
+        Debug.Log("Assigned: " + quest.Asigned);
+        Debug.Log("Completed: " + quest.Completed);
+        Debug.Log("GOALS");
+
+        foreach (var goal in quest.Goals)
+        {
+            Debug.Log(goal.Description);
+            Debug.Log(goal.RequiredAmount);
+        }
     }
 }

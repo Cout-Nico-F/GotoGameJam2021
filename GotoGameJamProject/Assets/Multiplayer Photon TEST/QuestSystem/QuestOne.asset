@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5c6bd9e54168b1459d0d2d1c2716f7f, type: 3}
-  m_Name: Quest One
+  m_Name: QuestOne
   m_EditorClassIdentifier: 
   Goals:
-  - {fileID: 11400000, guid: d0138855b39ae6c4187d449ff80a6ffd, type: 2}
   - {fileID: 11400000, guid: af268969643016c49a1ab2e9f826496d, type: 2}
-  QuestName: Ultimate Collection
-  Description: Recoge todos los items
+  - {fileID: 11400000, guid: 08f526425860964458c75a1bcfd30127, type: 2}
+  QuestName: QuestOne
+  Description: Completa todos los goals
   ExperienceReward: 1000
-  Asigned: 1
-  Completed: 0
