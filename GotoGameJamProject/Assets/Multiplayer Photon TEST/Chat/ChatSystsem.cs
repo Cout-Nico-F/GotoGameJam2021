@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 using Photon.Pun;
-
+using Photon.Realtime;
 public class ChatSystsem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMesh;
@@ -9,12 +9,12 @@ public class ChatSystsem : MonoBehaviour
 
     public void PlayerTalk(string textPlayerInput)
     {
-        photonView.RPC("SyncTextPlayerChat", RpcTarget.All, textPlayerInput); 
+        photonView.RPC("SyncTextPlayerChat", RpcTarget.All, textPlayerInput, PhotonNetwork.NickName);
     }
 
     [PunRPC]
-    public void SyncTextPlayerChat(string textPlayerInput)
+    public void SyncTextPlayerChat(string textPlayerInput, string name)
     {
-        textMesh.text = textMesh.text + "\n" + textPlayerInput;
+        textMesh.text = textMesh.text + "\n" + name + ": " + textPlayerInput;
     }
 }
