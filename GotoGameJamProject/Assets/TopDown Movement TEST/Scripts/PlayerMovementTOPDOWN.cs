@@ -17,7 +17,7 @@ public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
 
     public Vector2 Movement { get => movement; }
 
-    void Start()
+    void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

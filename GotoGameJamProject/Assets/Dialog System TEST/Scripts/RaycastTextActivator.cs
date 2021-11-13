@@ -16,7 +16,7 @@ public class RaycastTextActivator : MonoBehaviour
 #nullable disable
     private PhotonView photonView;
 
-    private void Start()
+    private void Awake()
     {
         photonView = GetComponent<PhotonView>();
     }
@@ -25,11 +25,11 @@ public class RaycastTextActivator : MonoBehaviour
     {
         if (photonView.IsMine)
         {
-            if (Time.frameCount % 3 == 0)//runs these functions every three frames to save cpu cycles
+            if (Time.frameCount % 3 == 0)//runs these functions every three frames to save cpu cycles //TODO: porque aca no usamos el ontrigger al final? 
             {
                 myObjectsHit = null;
 
-                myObjectsHit = Physics2D.OverlapCircleAll(transform.position, rayRadius);
+                myObjectsHit = Physics2D.OverlapCircleAll(transform.position, rayRadius); 
                 myObjectsHitResult = GetInteractable();
                 //cual es interactuable? ++por ahora el dev se encarga de que nunca halla 2 interactuables juntos
             }
@@ -37,7 +37,7 @@ public class RaycastTextActivator : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    myObjectsHitResult.Interact();//run function here
+                    myObjectsHitResult.Interact();//aca le puedo pasar al interact el player.  this.gameobject o el componente de player.
                 }
             }
         }

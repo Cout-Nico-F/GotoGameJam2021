@@ -1,20 +1,23 @@
 using TMPro;
 using UnityEngine;
 using Photon.Pun;
-
+using UnityEngine.UI;
 public class ChatSystsem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMesh;
     [SerializeField] private PhotonView photonView;
+    [SerializeField] private Scrollbar scrollBar;
+
 
     public void PlayerTalk(string textPlayerInput)
     {
-        photonView.RPC("SyncTextPlayerChat", RpcTarget.All, textPlayerInput); 
+        photonView.RPC("SyncTextPlayerChat", RpcTarget.All, textPlayerInput, PhotonNetwork.NickName);
     }
 
     [PunRPC]
-    public void SyncTextPlayerChat(string textPlayerInput)
+    public void SyncTextPlayerChat(string textPlayerInput, string name)
     {
-        textMesh.text = textMesh.text + "\n" + textPlayerInput;
+        scrollBar.value = -1f;
+        textMesh.text = textMesh.text + "\n" + name + ": " + textPlayerInput;
     }
 }
