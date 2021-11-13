@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class QuestPlayer : MonoBehaviour
 {
-    [SerializeField] private List<QuestBase> quests;
+    private Quest[] questList = default;
 
+    public Quest[] QuestList { get => questList; }
 
-    public void AddQuest(QuestBase quest)
+    public void AddQuest(Quest quest)
     {
-        quests.Add(quest);
+        foreach (var item in questList)
+        {
+            if (quest.Id == item.Id)
+            {
+                return;
+            }
+        }
+        questList[questList.Length] = quest;
     }
 }

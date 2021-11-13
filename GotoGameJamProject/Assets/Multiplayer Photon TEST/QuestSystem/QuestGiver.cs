@@ -2,38 +2,40 @@ using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
-    [SerializeField] private QuestBase[] quests;
+    [SerializeField] private Quest[] quests;
     private QuestPlayer questPlayer;
     [SerializeField] private GameObject questDialogue;
-    [SerializeField] private RectTransform dialogueCanvas;
+    [SerializeField] private GameObject dialogueCanvas;
     public GameObject QuestDialogue { get => questDialogue; }
 
-    public void ShowQuest(QuestPlayer questPlayer)
+    public void ShowQuest()
     {
         foreach (var quest in quests)
         {
-            if (quest.Completed == false)
+            if (quest.IsFinished == false)
             {
                 //para simplificar: las misiones no se aceptan.
-                GiveQuest(quest, questPlayer);
+                GiveQuest(quest);
                 return;
             }
         }
     }
 
-    private void GiveQuest(QuestBase quest, QuestPlayer questPlayer)
+    private void GiveQuest(Quest quest)
     {
         DialogueInteract(questDialogue);
-        //questPlayer = FindMyPlayerQuests();
-        questPlayer.AddQuest(quest);
+        questPlayer = FindMyPlayerQuests();
+        //questPlayer.AddQuest(quest); //null aca porque?
         quest.IsActive = true;
         //y 2) mostrar quest y progreso en UI ( la ui podria hacer esto sola ya que quest es un scriptable obj )
     }
 
     private void DialogueInteract(GameObject go)
     {
-        var ui = Instantiate(go, dialogueCanvas);
+        var ui = Instantiate(go);
+        ui.transform.SetParent(dialogueCanvas.transform);
         
+        //ui.GetComponent<RectTransform>().anchoredPosition = dialo
         ui.SetActive(true);
             
         //if (go.activeSelf == false)
@@ -50,7 +52,7 @@ public class QuestGiver : MonoBehaviour
     {
         foreach (var quest in quests)
         {
-            if (quest.Completed == false)
+            if (quest.IsFinished == false)
             {
                 return true;
             }
