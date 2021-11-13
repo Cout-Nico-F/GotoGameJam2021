@@ -52,7 +52,7 @@ public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
 
     private void ControlAnimaciones()
     {
-        animator.SetFloat("velocity",movement.sqrMagnitude);
+        animator.SetFloat("velocity", movement.sqrMagnitude);
         if (movement.x < 0)
         { photonView.RPC("FlipCharacter", RpcTarget.All, true); }
         if (movement.x > 0)
