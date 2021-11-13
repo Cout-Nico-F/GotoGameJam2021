@@ -16,7 +16,7 @@ public class RaycastTextActivator : MonoBehaviour
 #nullable disable
     private PhotonView photonView;
 
-    private void Start()
+    private void Awake()
     {
         photonView = GetComponent<PhotonView>();
     }

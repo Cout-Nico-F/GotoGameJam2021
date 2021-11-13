@@ -3,7 +3,7 @@ using Photon.Pun;
 
 public class ChangePlayerName : MonoBehaviour
 {
-    private void Start()
+    private void Awake()
     {
         PhotonNetwork.NickName = "PLAYER";
     }

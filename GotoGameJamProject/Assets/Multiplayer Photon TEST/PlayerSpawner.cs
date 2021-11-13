@@ -11,7 +11,7 @@ public class PlayerSpawner : MonoBehaviour
 
     static int number = 0;
 
-    private void Start()
+    private void Awake()
     {
         Vector2 randomPos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         var a = PhotonNetwork.Instantiate(playerPrefab.name, randomPos, Quaternion.identity);
