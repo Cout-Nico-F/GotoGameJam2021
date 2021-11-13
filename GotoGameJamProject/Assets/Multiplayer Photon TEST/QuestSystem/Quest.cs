@@ -2,14 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Quest
 {
-    public List<Goal> Goals { get; set; }
-    public string QuestName { get; set; }
-    public string Description { get; set; }
-    public int ExperienceReward { get; set; }
-    public bool Asigned { get; set; }
-    public bool Completed { get; set; }
+    public List<Goal> Goals { get => goals; set => goals = value; }
+    public string QuestName { get => questName; set => questName = value; }
+    public string Description { get => description; set => description = value; }
+    public int ExperienceReward { get => experienceReward; set => experienceReward = value; }
+    public bool Asigned { get => asigned; set => asigned = value; }
+    public bool Completed { get => completed; set => completed = value; }
+
+    [SerializeField] private List<Goal> goals;
+    [SerializeField] private string questName;
+    [SerializeField] private string description;
+    [SerializeField] private int experienceReward;
+    [SerializeField] private bool asigned;
+    [SerializeField] private bool completed;
 
 
     public Quest(List<Goal> goals, string questName, string description, int experienceReward)
@@ -21,6 +29,8 @@ public class Quest
         Asigned = false;
         Completed = false;
     }
+
+    
 
     public void CheckGoals()
     {
