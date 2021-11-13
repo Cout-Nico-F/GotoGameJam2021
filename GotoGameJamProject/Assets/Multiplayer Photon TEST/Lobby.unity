@@ -2293,6 +2293,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn_Create: {fileID: 353669717}
   btn_Join: {fileID: 1290701759}
-  loadLevelString: LevelOneJavi
+  loadLevelString: LevelOne
   createInput: {fileID: 1454691543}
   joinInput: {fileID: 1521602106}
