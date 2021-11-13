@@ -37,7 +37,7 @@ public class RaycastTextActivator : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    myObjectsHitResult.Interact();//run function here
+                    myObjectsHitResult.Interact(this.GetComponent<QuestPlayer>());//run function here
                 }
             }
         }

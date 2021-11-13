@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 4838556248034346669}
   - component: {fileID: 8340668286805594248}
   - component: {fileID: 6518891589131558049}
+  - component: {fileID: 7195179809860177586}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -546,6 +547,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 315964610491423189}
   - {fileID: 4838556248034346669}
   - {fileID: 8340668286805594248}
   - {fileID: 6518891589131558049}
@@ -628,6 +630,18 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &7195179809860177586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315964610491423185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8711c178824bc2d4e96d077955827c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &315964611299068056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,13 +2179,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32ef19c0878aea4409c42f8d8662c738, type: 3}
---- !u!4 &315964610283608302 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 414678, guid: 32ef19c0878aea4409c42f8d8662c738, type: 3}
-  m_PrefabInstance: {fileID: 315964610283490104}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &315964610268384638 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 19826246, guid: 32ef19c0878aea4409c42f8d8662c738, type: 3}
+  m_PrefabInstance: {fileID: 315964610283490104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &315964610283608302 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 414678, guid: 32ef19c0878aea4409c42f8d8662c738, type: 3}
   m_PrefabInstance: {fileID: 315964610283490104}
   m_PrefabAsset: {fileID: 0}

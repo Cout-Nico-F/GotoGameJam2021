@@ -12,20 +12,6 @@ public class Npc : MonoBehaviour, Interactable
         questGiver = GetComponent<QuestGiver>();
     }
 
-    public void Interact()
-    {
-        if (questGiver != null)
-        {
-            if (questGiver.QuestsAvailable())
-            {
-                questGiver.ShowQuest();
-            }
-        }
-        else
-        {
-            DialogueInteract(dialogueIdle);
-        }
-    }
 
     private void DialogueInteract(GameObject go)
     {
@@ -36,6 +22,21 @@ public class Npc : MonoBehaviour, Interactable
         else
         {
             go.GetComponentInChildren<DialogueSystem>().NextText = true;
+        }
+    }
+
+    public void Interact(QuestPlayer questPlayer)
+    {
+        if (questGiver != null)
+        {
+            if (questGiver.QuestsAvailable())
+            {
+                questGiver.ShowQuest(questPlayer);
+            }
+        }
+        else
+        {
+            DialogueInteract(dialogueIdle);
         }
     }
 }

@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestBase : MonoBehaviour
+[CreateAssetMenu(fileName = "Quest", menuName = "New Quest")]
+public class QuestBase : ScriptableObject
 {
-    public List<Goal> Goals { get; set; }
-    public string QuestName { get; set; }
-    public string Description { get; set; }
-    public int ExperienceReward { get; set; }
-    public bool Completed { get; set; }
+    public List<Goal> Goals;
+    public string QuestName;
+    public string Description;
+    public int ExperienceReward;
+    public bool Completed;
+    public bool IsActive;
 
-    private void Start()
-    {
-        Goals = new List<Goal>();
-    }
-
+    
     public void CheckGoals()
     {
         foreach (Goal goal in Goals)
@@ -29,9 +27,5 @@ public class QuestBase : MonoBehaviour
 
         Completed = true;
     }
-
-    private void GiveReward()
-    {
-
-    }
+    
 }
