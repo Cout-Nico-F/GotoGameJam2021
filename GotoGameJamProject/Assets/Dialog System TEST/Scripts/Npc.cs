@@ -7,7 +7,7 @@ public class Npc : MonoBehaviour, Interactable
 
     private QuestGiver questGiver;
 
-    private void Start()
+    private void Awake()
     {
         questGiver = GetComponent<QuestGiver>();
     }
