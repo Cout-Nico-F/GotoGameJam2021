@@ -7,23 +7,22 @@ public class Npc : MonoBehaviour, Interactable
 
     private QuestGiver questGiver;
 
+
     private void Awake()
     {
         questGiver = GetComponent<QuestGiver>();
     }
 
-    public void Interact()//aca recibir al player
+    public void Interact(GameObject gameObject)
     {
-        if (questGiver != null)
+        var quest = questGiver.GetNextQuestAvailable();
+
+        if (quest != null) // si el Npc ha devuelto una Quest se la asignamos al Player
         {
-            if (questGiver.QuestsAvailable())
+            if (gameObject.CompareTag("Player"))
             {
-                questGiver.ShowQuest();
+                questGiver.GiveQuest(quest, gameObject.GetComponent<QuestPlayer>());
             }
-        }
-        else
-        {
-            DialogueInteract(dialogueIdle);
         }
     }
 

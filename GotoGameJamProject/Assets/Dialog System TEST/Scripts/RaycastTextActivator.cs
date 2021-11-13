@@ -37,7 +37,7 @@ public class RaycastTextActivator : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    myObjectsHitResult.Interact();//aca le puedo pasar al interact el player.  this.gameobject o el componente de player.
+                    myObjectsHitResult.Interact(this.gameObject);//aca le puedo pasar al interact el player.  this.gameobject o el componente de player.
                 }
             }
         }

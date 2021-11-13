@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class QuestUI : MonoBehaviour
 {
-    [SerializeField] private Quest[] quests;
+    [SerializeField] private QuestBase[] quests;
+
     private void Update()
     {
         foreach (var quest in quests)
