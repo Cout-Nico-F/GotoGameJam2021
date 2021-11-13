@@ -1839,6 +1839,14 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 1876763099}
+    - target: {fileID: 5530679666210368715, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
+      propertyPath: questSOs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530679666210368715, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
+      propertyPath: questSOs.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
 --- !u!1 &2134214491
