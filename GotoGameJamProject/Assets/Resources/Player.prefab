@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  cam: {fileID: 1233219229155412013}
+  cam: {fileID: 9149795511801503450}
   photonView: {fileID: -3382059923018268562}
 --- !u!114 &6898406460092305058
 MonoBehaviour:
@@ -646,6 +646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 315964610491423189}
   stepAudio: {fileID: 440040194371010434}
+  photonView: {fileID: -3382059923018268562}
 --- !u!82 &440040194371010434
 AudioSource:
   m_ObjectHideFlags: 0
@@ -658,7 +659,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
   m_audioClip: {fileID: 8300000, guid: e2e2cabd6ae24ff408b81d1aa78d00ce, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -667,9 +668,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 15
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -702,7 +703,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2377,6 +2378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4969782428858692985}
   - component: {fileID: 1233219229155412013}
+  - component: {fileID: 2575851446728648311}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -2441,6 +2443,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &2575851446728648311
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9149795511801503450}
+  m_Enabled: 1
 --- !u!1001 &315964610283490104
 PrefabInstance:
   m_ObjectHideFlags: 0

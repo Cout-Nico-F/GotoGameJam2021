@@ -8,7 +8,7 @@ using Photon.Pun;
 public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
 {
     [SerializeField] private float movementSpeed;
-    [SerializeField] private Camera cam;
+    [SerializeField] private GameObject cam;
     public PhotonView photonView;
     private Rigidbody2D rb2d;
     private Animator animator;
@@ -23,8 +23,6 @@ public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         photonView = GetComponent<PhotonView>();
-        if(!photonView.IsMine)
-        { cam.enabled = false; }
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -34,6 +32,8 @@ public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
 
     void Update()
     {
+        if (!photonView.IsMine)
+        { Destroy(cam); }
         if (photonView.IsMine)
         {
             movement.x = Input.GetAxisRaw("Horizontal");

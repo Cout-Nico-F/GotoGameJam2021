@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using Photon.Pun;
 public class FootSteps : MonoBehaviour
 {
     [SerializeField] private PlayerMovementTOPDOWN playerMovement;
     [SerializeField] private AudioSource stepAudio;
+    [SerializeField] private PhotonView photonView;
 
     private void Update()
     {
@@ -14,8 +13,13 @@ public class FootSteps : MonoBehaviour
             if (!stepAudio.isPlaying)
             {
                 stepAudio.pitch  = Random.Range(1.95f, 2.4f);
-                stepAudio.Play();
+                photonView.RPC("PlayStepSound", RpcTarget.All);
             }
         }
+    }
+    [PunRPC]
+    public void PlayStepSound()
+    {
+        stepAudio.Play();
     }
 }
