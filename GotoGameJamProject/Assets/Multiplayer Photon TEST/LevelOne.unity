@@ -1266,6 +1266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMesh: {fileID: 1432403437}
   photonView: {fileID: 1432403440}
+  scrollBar: {fileID: 1364533134}
 --- !u!114 &1432403440
 MonoBehaviour:
   m_ObjectHideFlags: 0
