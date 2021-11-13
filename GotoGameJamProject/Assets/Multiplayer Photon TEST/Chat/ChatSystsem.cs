@@ -8,6 +8,7 @@ public class ChatSystsem : MonoBehaviour
     [SerializeField] private PhotonView photonView;
     [SerializeField] private Scrollbar scrollBar;
 
+
     public void PlayerTalk(string textPlayerInput)
     {
         photonView.RPC("SyncTextPlayerChat", RpcTarget.All, textPlayerInput, PhotonNetwork.NickName);
