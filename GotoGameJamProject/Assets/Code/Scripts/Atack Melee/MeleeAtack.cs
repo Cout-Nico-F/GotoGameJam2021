@@ -13,7 +13,7 @@ public class MeleeAtack : MonoBehaviour
     private bool isAtack = false;
     private Vector3 dir;
     private float angle;
-    private Collider2D collisionActual;
+    private GameObject collisionActual;
 
     void Update()
     {
@@ -51,7 +51,7 @@ public class MeleeAtack : MonoBehaviour
     {
         if ((collision.CompareTag("Pushable") || collision.CompareTag("Player")) && isAtack)
         {
-            collisionActual = collision;   
+            collisionActual = collision.gameObject;   
             photonView.RPC("Push", RpcTarget.All);
         }
         if(collision.CompareTag("Hittable") && isAtack)
