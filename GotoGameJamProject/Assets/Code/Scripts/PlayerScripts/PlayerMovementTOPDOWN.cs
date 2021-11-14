@@ -5,7 +5,7 @@ using Photon.Pun;
 
 [RequireComponent(typeof(PhotonView))]
 [RequireComponent(typeof(SpriteRenderer))]
-public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
+public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
 {
     [SerializeField] private float movementSpeed;
     [SerializeField] private GameObject cam;
@@ -63,5 +63,12 @@ public class PlayerMovementTOPDOWN : MonoBehaviour, IPunObservable
     public void FlipCharacter(bool value)
     {
         spriteRenderer.flipX = value;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.GetComponent<PhotonView>()!=null)
+        {
+            collision.gameObject.GetComponent<PhotonView>().TransferOwnership(photonView.Owner);
+        }
     }
 }
