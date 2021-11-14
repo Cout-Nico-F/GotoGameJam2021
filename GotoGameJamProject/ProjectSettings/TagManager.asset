@@ -7,11 +7,12 @@ TagManager:
   - Floor
   - Item
   - Interactuable
+  - Hittable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Hittable
   - Water
   - UI
   - 
