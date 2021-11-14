@@ -46,7 +46,8 @@ public class MeleeAtack : MonoBehaviourPun
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 0.5f);
         isAtack = false;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if ((collision.CompareTag("Pushable") || collision.CompareTag("Player")) && isAtack)
         {
@@ -58,10 +59,6 @@ public class MeleeAtack : MonoBehaviourPun
         {
             StartCoroutine(Shake(0.1f, 0.01f, collision));
         }
-    }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-
     }
      
     public IEnumerator Shake(float duration, float magnitude,Collider2D collision)
