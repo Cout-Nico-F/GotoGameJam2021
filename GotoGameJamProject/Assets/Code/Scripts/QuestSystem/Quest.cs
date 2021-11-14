@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Quest
 {
+    public int Index { get => index; set => index = value; }
     public List<Goal> Goals { get => goals; set => goals = value; }
     public string QuestName { get => questName; set => questName = value; }
     public string Description { get => description; set => description = value; }
@@ -12,6 +13,7 @@ public class Quest
     public bool Asigned { get => asigned; set => asigned = value; }
     public bool Completed { get => completed; set => completed = value; }
 
+    [SerializeField] private int index;
     [SerializeField] private List<Goal> goals;
     [SerializeField] private string questName;
     [SerializeField] private string description;
@@ -20,8 +22,9 @@ public class Quest
     [SerializeField] private bool completed;
 
 
-    public Quest(List<Goal> goals, string questName, string description, int experienceReward)
+    public Quest(int index, List<Goal> goals, string questName, string description, int experienceReward)
     {
+        Index = index;
         Goals = goals;
         QuestName = questName;
         Description = description;
@@ -47,7 +50,7 @@ public class Quest
         Completed = true;
     }
 
-    private void GiveReward()
+    public void GiveReward()
     {
 
     }

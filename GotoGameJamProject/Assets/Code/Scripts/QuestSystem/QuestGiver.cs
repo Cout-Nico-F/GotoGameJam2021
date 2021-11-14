@@ -8,37 +8,57 @@ public class QuestGiver : MonoBehaviour
 
     [SerializeField] private QuestSO[] questSOs;
     [SerializeField] private GameObject questDialogue;
+    [SerializeField] private GameObject dialogueIdle;
     [SerializeField] private RectTransform dialogueCanvas;
+    [SerializeField] private List<Quest> questsInspector;
 
     private List<Quest> quests;
-
+    private int currentQuestId;
 
     private void Awake()
     {
         quests = new List<Quest>();
 
-        foreach (var questSO in questSOs)
+        for (var i = 0; i < questSOs.Length; i++)
         {
             List<Goal> goals = new List<Goal>();
-
-            foreach (var goalSO in questSO.Goals)
+            List<GoalSO> goalSO = questSOs[i].Goals;
+            for (var j = 0; j < goalSO.Count; j++)
             {
-                Goal goal = new Goal(goalSO.ItemID, goalSO.Description, goalSO.RequiredAmount);
+                Goal goal = new Goal(j, goalSO[j].ItemID, goalSO[j].Description, goalSO[j].RequiredAmount);
                 goals.Add(goal);
             }
 
-            Quest quest = new Quest(goals, questSO.QuestName, questSO.Description, questSO.ExperienceReward);
+            Quest quest = new Quest(i, goals, questSOs[i].QuestName, questSOs[i].Description, questSOs[i].ExperienceReward);
             quests.Add(quest);
-        }    
+        }
+
+        questsInspector = quests;
     }
 
-    public void GiveQuest(Quest quest, QuestPlayer questPlayer)
+    public void GiveQuest(int questIndex, QuestPlayer questPlayer)
     {
         DialogueInteract(questDialogue);
-        
+
+        var quest = quests[questIndex];
         quest.Asigned = true;
+
         questPlayer.AssignQuest(quest);
     }
+
+
+    public void RememberQuest()
+    {
+        Debug.Log("Remember Quest");
+        DialogueInteract(questDialogue);
+    }
+
+
+    public void ShowDialogueIdle()
+    {
+        DialogueInteract(dialogueIdle);
+    }
+
 
     private void DialogueInteract(GameObject go)
     {
@@ -52,6 +72,7 @@ public class QuestGiver : MonoBehaviour
         {
             if (!quest.Completed && !quest.Asigned)
             {
+                currentQuestId = quest.Index;
                 return quest;
             }
         }

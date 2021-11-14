@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Goal
 {
+    public int Index { get; set; }
     public int ItemID { get; set; }
     public string Description { get; set; }
     public bool Completed { get; set; }
@@ -11,8 +12,9 @@ public class Goal
     public int RequiredAmount { get; set; }
 
 
-    public Goal(int itemID, string description, int requiredAmount)
+    public Goal(int index, int itemID, string description, int requiredAmount)
     {
+        Index = index;
         ItemID = itemID;
         Description = description;
         Completed = false;
@@ -20,34 +22,18 @@ public class Goal
         RequiredAmount = requiredAmount;
     }
 
-
-    public void Init()
-    {
-        // aqui ira el listener que escuchara el evento de item recogido
-        // Player.OnItemPickedUp += ItemPickedUp;
-    }
-
+    
     // comprobamos si se cumple el Goal
-    public void Evaluate()
+    public void Evaluate(int item)
     {
-        if (CurrentAmount >= RequiredAmount)
-        {
-            Complete();
-        }
-    }
-
-    public void Complete()
-    {
-        Completed = true;
-    }
-
-    // este metodo se llamara cuando un item sea recogido
-    private void ItemPickedUp(int itemID)
-    {
-        if (itemID == ItemID)
+        if (item == ItemID)
         {
             CurrentAmount++;
-            Evaluate();
-        }
+            if (CurrentAmount >= RequiredAmount)
+            {
+                Completed = true;
+            }
+        }        
     }
+
 }

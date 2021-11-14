@@ -757,6 +757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeQuest:
+    index: 0
     questName: 
     description: 
     experienceReward: 0
