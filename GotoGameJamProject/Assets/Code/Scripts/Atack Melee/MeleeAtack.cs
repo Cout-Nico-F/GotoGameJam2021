@@ -54,7 +54,6 @@ public class MeleeAtack : MonoBehaviour
         }
         if(collision.CompareTag("Hittable") && isAtack)
         {
-            Debug.Log("Golpeo Arbol");
             StartCoroutine(Shake(0.1f, 0.01f,collision));
         }
     }
