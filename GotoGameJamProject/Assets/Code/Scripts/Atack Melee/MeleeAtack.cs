@@ -13,6 +13,7 @@ public class MeleeAtack : MonoBehaviour
     private bool isAtack = false;
     private Vector3 dir;
     private float angle;
+    private Collider2D collisionActual;
 
     void Update()
     {
@@ -50,12 +51,18 @@ public class MeleeAtack : MonoBehaviour
     {
         if ((collision.CompareTag("Pushable") || collision.CompareTag("Player")) && isAtack)
         {
-            collision.transform.position = Vector3.MoveTowards(collision.transform.position, new Vector3(dir.x, dir.y, 0), 0.5f);
+            collisionActual = collision;   
+            photonView.RPC("Push", RpcTarget.All);
         }
         if(collision.CompareTag("Hittable") && isAtack)
         {
             StartCoroutine(Shake(0.1f, 0.01f,collision));
         }
+    }
+    [PunRPC]
+    public void Push()
+    {
+        collisionActual.transform.position = Vector3.MoveTowards(collisionActual.transform.position, new Vector3(dir.x, dir.y, 0), 0.5f);
     }
     public IEnumerator Shake(float duration, float magnitude,Collider2D collision)
     {
