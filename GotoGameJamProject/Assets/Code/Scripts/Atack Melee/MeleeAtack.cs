@@ -14,7 +14,6 @@ public class MeleeAtack : MonoBehaviour
     private Vector3 dir;
     private float angle;
 
-
     void Update()
     {
         if (photonView.IsMine)
@@ -49,9 +48,30 @@ public class MeleeAtack : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if ((collision.CompareTag("Hittable") || collision.CompareTag("Player")) && isAtack)
+        if ((collision.CompareTag("Pushable") || collision.CompareTag("Player")) && isAtack)
         {
             collision.transform.position = Vector3.MoveTowards(collision.transform.position, new Vector3(dir.x, dir.y, 0), 0.5f);
         }
+        if(collision.CompareTag("Hittable") && isAtack)
+        {
+            Debug.Log("Golpeo Arbol");
+            StartCoroutine(Shake(0.1f, 0.01f,collision));
+        }
+    }
+    public IEnumerator Shake(float duration, float magnitude,Collider2D collision)
+    {
+        Vector3 orignalPosition = collision.transform.position;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+
+            collision.transform.position += new Vector3(x, y, 0);
+            elapsed += Time.deltaTime;
+            yield return 0;
+        }
+        collision.transform.position = new Vector3(orignalPosition.x,orignalPosition.y,0);
     }
 }
