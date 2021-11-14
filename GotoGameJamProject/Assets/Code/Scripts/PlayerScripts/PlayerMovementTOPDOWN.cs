@@ -23,6 +23,7 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         photonView = GetComponent<PhotonView>();
+
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -46,7 +47,8 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
     {
         if (photonView.IsMine)
         {
-            rb2d.MovePosition(rb2d.position + movement * movementSpeed * Time.fixedDeltaTime);
+            //rb2d.MovePosition(rb2d.position + movement * movementSpeed * Time.fixedDeltaTime);
+            rb2d.velocity = new Vector2(movement.x * movementSpeed, movement.y * movementSpeed);
         }
     }
 
