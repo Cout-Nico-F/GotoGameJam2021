@@ -53,15 +53,18 @@ public class MeleeAtack : MonoBehaviourPun
         {
             collision.GetComponent<PhotonView>().TransferOwnership(photonView.Owner);
             collision.transform.position = Vector3.MoveTowards(collision.transform.position, new Vector3(dir.x, dir.y, 0), 0.5f);
-
         }
         if (collision.CompareTag("Hittable") && isAtack)
         {
-            StartCoroutine(Shake(0.1f, 0.01f, collision));
+            if (collision.GetComponent<HittableObject>().life > 0)
+            {
+                StartCoroutine(Shake(0.1f, 0.05f, collision));
+                collision.gameObject.GetComponent<HittableObject>().life--;
+            }
         }
     }
-     
-    public IEnumerator Shake(float duration, float magnitude,Collider2D collision)
+
+    public IEnumerator Shake(float duration, float magnitude, Collider2D collision)
     {
         Vector3 orignalPosition = collision.transform.position;
         float elapsed = 0f;
@@ -75,6 +78,6 @@ public class MeleeAtack : MonoBehaviourPun
             elapsed += Time.deltaTime;
             yield return 0;
         }
-        collision.transform.position = new Vector3(orignalPosition.x,orignalPosition.y,0);
+        collision.transform.position = new Vector3(orignalPosition.x, orignalPosition.y, 0);
     }
 }
