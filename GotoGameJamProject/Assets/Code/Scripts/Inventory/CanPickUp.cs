@@ -5,7 +5,8 @@ using InventoryJam;
 
 public class CanPickUp : MonoBehaviour
 {
-    [SerializeField] Inventory inventory;
+    [SerializeField] private Inventory inventory;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Item"))
@@ -14,6 +15,7 @@ public class CanPickUp : MonoBehaviour
             {
                 inventory.AddItem(collision.gameObject.GetComponent<Item>());
                 collision.gameObject.SetActive(false);
+                Debug.Log("Recogio el item");
             }
             else
             {
