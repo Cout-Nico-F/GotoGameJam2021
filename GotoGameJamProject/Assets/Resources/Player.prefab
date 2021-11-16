@@ -2899,6 +2899,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5526541965570129601}
     m_Modifications:
+    - target: {fileID: 471109576166600644, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 315964610491423185}
+    - target: {fileID: 4146146842686520589, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 315964610491423185}
+    - target: {fileID: 5007774009282993357, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 315964610491423185}
+    - target: {fileID: 6444993589337669455, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 315964610491423185}
+    - target: {fileID: 7390339671887160097, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 315964610491423185}
     - target: {fileID: 7783368784549248889, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
       propertyPath: m_Name
       value: Inventory
@@ -2999,6 +3019,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8706461491910382370, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 315964610491423185}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c0851653f5f4ea4398be1af4b7b4833, type: 3}
 --- !u!224 &1648191929925111830 stripped

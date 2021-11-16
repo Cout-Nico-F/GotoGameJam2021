@@ -10,6 +10,7 @@ public class HittableObject : MonoBehaviour, IPunObservable
     [SerializeField] Animator animator;
     [SerializeField] Sprite spriteDead;
     [SerializeField] int amountDroped;
+    [SerializeField] GameObject item;
     public int life=3;
     private bool dropOnlyOnce=false;
 
@@ -32,10 +33,6 @@ public class HittableObject : MonoBehaviour, IPunObservable
             if (life <= 0)
             {
                 photonView.RPC("DropAndDead", RpcTarget.All);
-                for (int i = 0; i < amountDroped; i++)
-                {
-                    PhotonNetwork.Instantiate("Item_1", transform.position + new Vector3(Random.value, Random.value, 0), Quaternion.identity, 0);
-                }
             }
         }
     }
@@ -45,6 +42,10 @@ public class HittableObject : MonoBehaviour, IPunObservable
         dropOnlyOnce = true;
         animator.enabled = false;
         spriteRenderer.sprite = spriteDead;
+        for (int i = 0; i < amountDroped; i++)
+        {
+            Instantiate(item, transform.position + new Vector3(Random.value, Random.value, 0), Quaternion.identity);
+        }
     }
 
 }

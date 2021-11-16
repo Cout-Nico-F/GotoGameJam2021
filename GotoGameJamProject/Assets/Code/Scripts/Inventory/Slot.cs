@@ -8,6 +8,7 @@ namespace InventoryJam
     public class Slot : MonoBehaviour
     {
         [SerializeField] private Image itemImageHolder;
+        [SerializeField] private GameObject player;
 
         private bool isFree;
         private Item item;
@@ -25,6 +26,17 @@ namespace InventoryJam
             this.item = item;
             this.itemImageHolder.sprite = item.Sprite;
             this.isFree = false;
+        }
+        public void Drop()
+        {
+            if (this.item != null)
+            {
+                var obj=Instantiate(this.item, player.transform.position - new Vector3(0, 2, 0), Quaternion.identity);
+                obj.gameObject.SetActive(true);
+                this.item = null;
+                this.itemImageHolder.sprite = null;
+                this.isFree = true;
+            }
         }
     }
 }

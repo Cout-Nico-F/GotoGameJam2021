@@ -13,9 +13,9 @@ namespace InventoryJam
             FindNextEmptySlot().Insert(item);
         }
 
-        public void RemoveItem(Item item)
+        public void RemoveItem(int ID)
         {
-            
+            slots[ID].Drop();
         }
 
         public bool HasSpace()
@@ -29,7 +29,7 @@ namespace InventoryJam
             }
             return false;
         }
-
+        
         private Slot FindNextEmptySlot()
         {
             foreach (var s in slots)
