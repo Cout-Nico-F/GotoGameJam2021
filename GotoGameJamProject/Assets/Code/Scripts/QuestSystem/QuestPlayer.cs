@@ -1,33 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using InventoryJam;
+using System;
 
 public class QuestPlayer : MonoBehaviour
 {
     public Quest activeQuest;
     public bool HasActiveQuest;
 
+    [SerializeField] private Inventory inventory;
+
+    private QuestUI questUI;
+    
 
     private void Start()
     {
+        questUI = FindObjectOfType<QuestUI>(true);
         HasActiveQuest = false;
-        // aqui ira el listener que escuchara el evento de item recogido
-        // Player.OnItemPickedUp += ItemPickedUp;
+        inventory.OnPickedItem += HandlePickedItem;
     }
+    
 
     public void AssignQuest(Quest quest)
     {
         activeQuest = quest;
         HasActiveQuest = true;
-        var questUI = FindObjectOfType<QuestUI>(true);
         questUI.Show(quest);
     }
 
 
-    // este metodo se llamara cuando un item sea recogido
-    private void ItemPickedUp(string itemID)
+    private void HandlePickedItem(string itemID)
     {
-        if (activeQuest != null)
+        if (HasActiveQuest)
         {
             foreach (var goal in activeQuest.Goals)
             {
@@ -35,6 +40,7 @@ public class QuestPlayer : MonoBehaviour
             }
 
             activeQuest.CheckGoals();
+            questUI.UpdateQuest(activeQuest);
         }
     }
 }

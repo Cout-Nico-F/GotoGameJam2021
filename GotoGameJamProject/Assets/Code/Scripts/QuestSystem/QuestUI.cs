@@ -25,7 +25,7 @@ public class QuestUI : MonoBehaviour
         {
             var goalEntry = Instantiate(goalEntryViewPrefab, container);
             _goalEntryViews.Add(goalEntry);
-            goalEntry.Configure(goal.Description, goal.CurrentAmount, goal.RequiredAmount);
+            goalEntry.Configure(goal.Completed, goal.Description, goal.CurrentAmount, goal.RequiredAmount);
         }
     }
 

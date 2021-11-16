@@ -54,6 +54,9 @@ MonoBehaviour:
   completedIcon: {fileID: 4532851349162757247}
   description: {fileID: 5301633593929357865}
   amount: {fileID: 952603024191518405}
+  icons:
+  - {fileID: 21300000, guid: d1ebc9509d318ff43b0c22765a0cb8c8, type: 3}
+  - {fileID: 21300000, guid: dbfe4049212363344afb9ac932f4fcee, type: 3}
 --- !u!1 &2883097310827904809
 GameObject:
   m_ObjectHideFlags: 0
