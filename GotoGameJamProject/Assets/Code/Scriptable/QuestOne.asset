@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: QuestOne
   m_EditorClassIdentifier: 
   Goals:
-  - {fileID: 11400000, guid: af268969643016c49a1ab2e9f826496d, type: 2}
-  - {fileID: 11400000, guid: 08f526425860964458c75a1bcfd30127, type: 2}
+  - {fileID: 11400000, guid: 830566597a0549048b72e3e7e5f679ed, type: 2}
   QuestName: QuestOne
   Description: Completa todos los goals
   ExperienceReward: 1000
