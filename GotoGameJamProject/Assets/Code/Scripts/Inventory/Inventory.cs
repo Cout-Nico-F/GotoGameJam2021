@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,9 +9,13 @@ namespace InventoryJam
     {
         [SerializeField] Slot[] slots = default;
 
+        public event Action<string> OnPickedItem;
+
+
         public void AddItem(Item item)
         {
             FindNextEmptySlot().Insert(item);
+            OnPickedItem?.Invoke(item.Id);
         }
 
         public void RemoveItem(int ID)
