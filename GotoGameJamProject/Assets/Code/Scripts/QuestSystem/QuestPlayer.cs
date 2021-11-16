@@ -25,7 +25,7 @@ public class QuestPlayer : MonoBehaviour
 
 
     // este metodo se llamara cuando un item sea recogido
-    private void ItemPickedUp(int itemID)
+    private void ItemPickedUp(string itemID)
     {
         if (activeQuest != null)
         {
