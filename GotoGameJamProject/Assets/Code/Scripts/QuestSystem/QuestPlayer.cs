@@ -19,6 +19,8 @@ public class QuestPlayer : MonoBehaviour
     {
         activeQuest = quest;
         HasActiveQuest = true;
+        var questUI = FindObjectOfType<QuestUI>(true);
+        questUI.Show(quest);
     }
 
 

@@ -3,26 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestUI : MonoBehaviour
-{
-    private Quest quest;
+{    
+    [SerializeField] private RectTransform container;
+    [SerializeField] private GoalEntryView goalEntryViewPrefab;
 
-    private void Update()
+    private QuestPlayer questPlayer;
+    private List<GoalEntryView> _goalEntryViews;
+
+
+    private void Awake()
     {
-        List<Goal> goals = quest.Goals;
+        _goalEntryViews = new List<GoalEntryView>();
+        questPlayer = GetComponent<QuestPlayer>();
+    }
 
-        foreach (var goal in goals)
+    public void Show(Quest quest)
+    {
+        gameObject.SetActive(true);
+        
+        foreach (var goal in quest.Goals)
         {
-            //la ui se va a fijar si la quest esta activa, y si esta activa va a mostrar su shortDesc en un textfield
-            //Segun como hagamos la ui, va a tener un maximo de textos para mostrar ( podemos limitarnos a 3 o 5 misiones )
-            //necesita saber si tiene campos vacios
-            //saber agregar texto al siguiente campo vacio
-            //saber mover los campos al completar una mision para que el vacio sea siempre el ultimo
-
+            var goalEntry = Instantiate(goalEntryViewPrefab, container);
+            _goalEntryViews.Add(goalEntry);
+            goalEntry.Configure(goal.Description, goal.CurrentAmount, goal.RequiredAmount);
         }
     }
 
-    public void AssignQuest(Quest quest)
+
+    public void Hide()
     {
-        this.quest = quest;
+        gameObject.SetActive(false);
+        CleanGoals();
+    }
+
+
+    public void CleanGoals()
+    {
+        foreach (var entry in _goalEntryViews)
+        {
+            Destroy(entry.gameObject);
+        }
+
+        _goalEntryViews.Clear();
+    }
+
+
+    public void UpdateQuest(Quest quest)
+    {
+        CleanGoals();
+        Show(quest);
     }
 }
