@@ -38,8 +38,8 @@ public class Npc : MonoBehaviour, Interactable
             // y si es asi le damos la recompensa
             if (questPlayer.activeQuest.Asigned && questPlayer.activeQuest.Completed)
             {
-                // aqui le dariamos la recompensa
-                Debug.Log("QUEST COMPLETE !!!, Give a Reward");
+                // le damos la recompensa
+                questPlayer.GiveReward();
 
                 // despues intentamos asignarle otra mision
                 AssignNextQuest();

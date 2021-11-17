@@ -768,6 +768,7 @@ MonoBehaviour:
     completed: 0
   HasActiveQuest: 0
   inventory: {fileID: 7560563988939449168}
+  levelUI: {fileID: 6091175416615626770}
 --- !u!114 &7011883595279290965
 MonoBehaviour:
   m_ObjectHideFlags: 0

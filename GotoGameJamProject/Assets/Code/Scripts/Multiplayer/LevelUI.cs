@@ -39,5 +39,11 @@ public class LevelUI : MonoBehaviour
             score.PlayerScore = 0;
             scoreText.text = score.PlayerScore + "/";
     }
+
+    public void AddReward(int amount)
+    {
+        score.PlayerScore += amount;
+        scoreText.text = score.PlayerScore + "/";
+    }
 }
 

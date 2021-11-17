@@ -50,9 +50,5 @@ public class Quest
         Completed = true;
         Debug.Log("Quest completada");
     }
-
-    public void GiveReward()
-    {
-
-    }
+    
 }

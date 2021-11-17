@@ -10,6 +10,7 @@ public class QuestPlayer : MonoBehaviour
     public bool HasActiveQuest;
 
     [SerializeField] private Inventory inventory;
+    [SerializeField] private LevelUI levelUI;
 
     private QuestUI questUI;
     
@@ -42,5 +43,10 @@ public class QuestPlayer : MonoBehaviour
             activeQuest.CheckGoals();
             questUI.UpdateQuest(activeQuest);
         }
+    }
+
+    public void GiveReward()
+    {
+        levelUI.AddReward(activeQuest.ExperienceReward);
     }
 }
