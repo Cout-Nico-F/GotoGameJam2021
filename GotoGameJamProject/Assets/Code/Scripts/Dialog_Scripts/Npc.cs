@@ -39,7 +39,7 @@ public class Npc : MonoBehaviour, Interactable
             if (questPlayer.activeQuest.Asigned && questPlayer.activeQuest.Completed)
             {
                 // aqui le dariamos la recompensa
-                // hay que ver los tipos de recompensa para ver cómo se la entregamos
+                Debug.Log("QUEST COMPLETE !!!, Give a Reward");
 
                 // despues intentamos asignarle otra mision
                 AssignNextQuest();
