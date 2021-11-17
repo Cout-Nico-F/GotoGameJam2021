@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 using AudioJam;
+using System;
 
 namespace DialogueJam
 {
@@ -17,6 +18,7 @@ namespace DialogueJam
         private bool nextText;
 
         public bool NextText { get => nextText; set => nextText = value; }
+        public event Action<bool> OnDialogueEnds;
 
         [System.Serializable]
         public class TextoValues
@@ -45,7 +47,9 @@ namespace DialogueJam
                 yield return new WaitUntil(() => nextText == true);
                 yield return new WaitForSeconds(delayBetweenDialogues);
             }
+            
             gameObject.transform.parent.gameObject.SetActive(false);
+            OnDialogueEnds.Invoke(true);
         }
         public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound,Sprite characterSprite)
         {
@@ -61,10 +65,11 @@ namespace DialogueJam
                 {
                     textHolder.text += input[i];
                     SoundManager.instance.Play(nameFXsound);
-                    yield return new WaitForSeconds(delay / Random.Range(0.2f, 1f));
+                    yield return new WaitForSeconds(delay / UnityEngine.Random.Range(0.2f, 1f));
                 }
             }
             nextText = true;
         }
+        
     }
 }

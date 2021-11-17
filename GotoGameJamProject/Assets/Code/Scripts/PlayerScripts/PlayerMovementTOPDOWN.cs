@@ -14,8 +14,11 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
     private Animator animator;
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
+    private bool isTalking;
 
     public Vector2 Movement { get => movement; }
+    public bool IsTalking { get => isTalking; set => isTalking = value; }
+
 
     void Awake()
     {
@@ -23,7 +26,6 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         photonView = GetComponent<PhotonView>();
-
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -37,8 +39,16 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
         { Destroy(cam); }
         if (photonView.IsMine)
         {
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
+            if (!isTalking)
+            {
+                movement.x = Input.GetAxisRaw("Horizontal");
+                movement.y = Input.GetAxisRaw("Vertical");
+            }
+            else
+            {
+                movement = Vector2.zero;
+            }
+            
             ControlAnimaciones();
         }
     }

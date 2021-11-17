@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueJam;
 
 public class QuestGiver : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class QuestGiver : MonoBehaviour
     [SerializeField] private RectTransform dialogueCanvas;
     [SerializeField] private List<Quest> questsInspector;
 
+    private PlayerMovementTOPDOWN playerMovement;
+    private DialogueSystem dialogueSystem;
     private List<Quest> quests;
     private int currentQuestId;
 
@@ -37,7 +40,7 @@ public class QuestGiver : MonoBehaviour
     }
 
     public void GiveQuest(int questIndex, QuestPlayer questPlayer)
-    {
+    {        
         DialogueInteract(questDialogue);
 
         var quest = quests[questIndex];
@@ -62,8 +65,29 @@ public class QuestGiver : MonoBehaviour
 
     private void DialogueInteract(GameObject go)
     {
+        playerMovement = FindObjectOfType<PlayerMovementTOPDOWN>();
+        if (playerMovement != null)
+        {
+            playerMovement.IsTalking = true;
+        }
+     
         var ui = Instantiate(go, dialogueCanvas.transform);
-        ui.SetActive(true);        
+        ui.SetActive(true);
+
+        dialogueSystem = ui.GetComponentInChildren<DialogueSystem>();
+        if (dialogueSystem != null)
+        {
+            dialogueSystem.OnDialogueEnds += HandleDialogueEnds;
+        }        
+    }
+
+    public void HandleDialogueEnds(bool dialogoEnd)
+    {
+        if (dialogoEnd)
+        {
+            playerMovement.IsTalking = false;
+            dialogueSystem.OnDialogueEnds -= HandleDialogueEnds;
+        }
     }
 
     public Quest GetNextQuestAvailable()
