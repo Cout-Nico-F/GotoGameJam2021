@@ -6,6 +6,7 @@ using DialogueJam;
 public class QuestGiver : MonoBehaviour
 {
     public GameObject QuestDialogue { get => questDialogue; }
+    public bool IsTalking { get => isTalking; set => isTalking = value; }
 
     [SerializeField] private QuestSO[] questSOs;
     [SerializeField] private GameObject questDialogue;
@@ -16,6 +17,7 @@ public class QuestGiver : MonoBehaviour
     private PlayerMovementTOPDOWN playerMovement;
     private DialogueSystem dialogueSystem;
     private List<Quest> quests;
+    private bool isTalking;
     private int currentQuestId;
 
     private void Awake()
@@ -73,6 +75,7 @@ public class QuestGiver : MonoBehaviour
      
         var ui = Instantiate(go, dialogueCanvas.transform);
         ui.SetActive(true);
+        isTalking = true;
 
         dialogueSystem = ui.GetComponentInChildren<DialogueSystem>();
         if (dialogueSystem != null)
@@ -86,6 +89,7 @@ public class QuestGiver : MonoBehaviour
         if (dialogoEnd)
         {
             playerMovement.IsTalking = false;
+            isTalking = false;
             dialogueSystem.OnDialogueEnds -= HandleDialogueEnds;
         }
     }

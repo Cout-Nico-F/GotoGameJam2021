@@ -17,6 +17,10 @@ public class Npc : MonoBehaviour, Interactable
 
     public void Interact(GameObject interactor)
     {
+        // si ya estamos hablando no hacemos nada
+        if (questGiver.IsTalking)
+            return;
+
         // lo normal es que el Player sea el unico que interactua con un Npc
         // pero por si acaso
         if (!interactor.CompareTag("Player"))
