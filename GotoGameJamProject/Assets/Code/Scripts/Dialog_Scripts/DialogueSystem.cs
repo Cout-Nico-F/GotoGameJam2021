@@ -16,6 +16,7 @@ namespace DialogueJam
         [SerializeField] private TextMeshProUGUI textHolder;
         [SerializeField] private Image imgageHolder;
         private bool nextText;
+        private bool skipSentence;
 
         public bool NextText { get => nextText; set => nextText = value; }
         public event Action<bool> OnDialogueEnds;
@@ -43,7 +44,7 @@ namespace DialogueJam
             nextText = false;
             for (int i = 0; i < textValues.Length; i++)
             {
-                StartCoroutine(WriteText(textValues[i].input, textHolder, textValues[i].textColor, textValues[i].textFont, textValues[i].delay, textValues[i].fontSize, textValues[i].nameFXsound,textValues[i].characterSprite));
+                StartCoroutine(WriteText(textValues[i].input, textHolder, textValues[i].textColor, textValues[i].textFont, textValues[i].delay, textValues[i].fontSize, textValues[i].nameFXsound, textValues[i].characterSprite));
                 yield return new WaitUntil(() => nextText == true);
                 yield return new WaitForSeconds(delayBetweenDialogues);
             }
@@ -54,6 +55,7 @@ namespace DialogueJam
         public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound,Sprite characterSprite)
         {
             nextText = false;
+            skipSentence = false;
             imgageHolder.sprite = characterSprite;
             textHolder.text = "";
             textHolder.font = textFont;
@@ -61,6 +63,13 @@ namespace DialogueJam
             textHolder.fontSize = textSize;
             for (int i = 0; i < input.Length; i++)
             {
+                if (skipSentence)
+                {
+                    textHolder.text = input;
+                    skipSentence = false;
+                    break;
+                }
+
                 if(!nextText)
                 {
                     textHolder.text += input[i];
@@ -70,6 +79,13 @@ namespace DialogueJam
             }
             nextText = true;
         }
-        
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                skipSentence = true;
+            }
+        }
     }
 }
