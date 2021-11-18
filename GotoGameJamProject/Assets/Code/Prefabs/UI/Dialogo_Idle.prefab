@@ -411,26 +411,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 1
+  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: d3225209c764bea48ab083b748cdf99d, type: 3}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.1
+    delay: 0.04
     fontSize: 50
     nameFXsound: FriskFX
     input: Hola como estas??
   - characterSprite: {fileID: 21300000, guid: 4b445d90a512228438e1ad2de13dbd76, type: 3}
     textColor: {r: 1, g: 0, b: 0, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.1
+    delay: 0.04
     fontSize: 50
     nameFXsound: SansFX
     input: "No tengo nada para ti, vuelve ma\xF1ana"
   - characterSprite: {fileID: 21300000, guid: d3225209c764bea48ab083b748cdf99d, type: 3}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.1
+    delay: 0.04
     fontSize: 50
     nameFXsound: FriskFX
     input: "Ma\xF1ana ser\xE1 tarde yo quiero una misi\xF3n YA!!!"
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 7942709693977770088}
   m_Layer: 5
   m_Name: Dialogo_Idle
-  m_TagString: Untagged
+  m_TagString: Dialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +468,7 @@ RectTransform:
   m_GameObject: {fileID: 2654096695783543973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.9229214}
+  m_LocalScale: {x: 0.97035, y: 0.97035, z: 1.7911136}
   m_Children:
   - {fileID: 8776618606256394993}
   m_Father: {fileID: 0}

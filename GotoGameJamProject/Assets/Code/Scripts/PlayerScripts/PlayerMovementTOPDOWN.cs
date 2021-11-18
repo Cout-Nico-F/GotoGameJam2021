@@ -43,10 +43,12 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
             {
                 movement.x = Input.GetAxisRaw("Horizontal");
                 movement.y = Input.GetAxisRaw("Vertical");
+                cam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
             }
             else
             {
                 movement = Vector2.zero;
+                cam.transform.position = new Vector3(transform.position.x, transform.position.y, -5);
             }
             
             ControlAnimaciones();
