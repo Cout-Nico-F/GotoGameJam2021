@@ -48,8 +48,15 @@ public class Npc : MonoBehaviour, Interactable
                 // le damos la recompensa
                 questPlayer.GiveReward();
 
-                // despues intentamos asignarle otra mision
-                AssignNextQuest();
+                // si la Quest es infinita la reseteamos para poder asignarla de nuevo
+                if (questPlayer.activeQuest.InfiniteQuest)
+                {
+                    questPlayer.activeQuest.Asigned = false;
+                    questPlayer.activeQuest.Completed = false;
+                }
+
+                // limpiamos la Quest de la UI y del PLayer
+                questPlayer.RemoveCompletedQuest();
             }
             else
             {

@@ -764,6 +764,7 @@ MonoBehaviour:
     questName: 
     description: 
     experienceReward: 0
+    infiniteQuest: 0
     asigned: 0
     completed: 0
   HasActiveQuest: 0

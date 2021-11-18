@@ -12,23 +12,26 @@ public class Quest
     public int ExperienceReward { get => experienceReward; set => experienceReward = value; }
     public bool Asigned { get => asigned; set => asigned = value; }
     public bool Completed { get => completed; set => completed = value; }
+    public bool InfiniteQuest { get => infiniteQuest; set => infiniteQuest = value; }
 
     [SerializeField] private int index;
     [SerializeField] private List<Goal> goals;
     [SerializeField] private string questName;
     [SerializeField] private string description;
     [SerializeField] private int experienceReward;
+    [SerializeField] private bool infiniteQuest;
     [SerializeField] private bool asigned;
     [SerializeField] private bool completed;
 
 
-    public Quest(int index, List<Goal> goals, string questName, string description, int experienceReward)
+    public Quest(int index, List<Goal> goals, string questName, string description, int experienceReward, bool infiniteQuest)
     {
         Index = index;
         Goals = goals;
         QuestName = questName;
         Description = description;
         ExperienceReward = experienceReward;
+        InfiniteQuest = infiniteQuest;
         Asigned = false;
         Completed = false;
     }

@@ -9,4 +9,5 @@ public class QuestSO : ScriptableObject
     public string QuestName;
     public string Description;
     public int ExperienceReward;
+    public bool InfiniteQuest;
 }

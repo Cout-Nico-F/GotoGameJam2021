@@ -31,6 +31,14 @@ public class QuestPlayer : MonoBehaviour
     }
 
 
+    public void RemoveCompletedQuest()
+    {
+        questUI.Hide(activeQuest);
+        activeQuest = null;
+        HasActiveQuest = false;
+    }
+
+
     private void HandlePickedItem(string itemID)
     {
         if (HasActiveQuest)

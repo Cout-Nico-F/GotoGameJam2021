@@ -30,11 +30,11 @@ public class QuestGiver : MonoBehaviour
             List<GoalSO> goalSO = questSOs[i].Goals;
             for (var j = 0; j < goalSO.Count; j++)
             {
-                Goal goal = new Goal(j, goalSO[j].ItemID, goalSO[j].Description, goalSO[j].RequiredAmount);
+                Goal goal = new Goal(j, goalSO[j].ItemID, goalSO[j].Description, goalSO[j].RequiredAmount, goalSO[j].infiniteGoal);
                 goals.Add(goal);
             }
 
-            Quest quest = new Quest(i, goals, questSOs[i].QuestName, questSOs[i].Description, questSOs[i].ExperienceReward);
+            Quest quest = new Quest(i, goals, questSOs[i].QuestName, questSOs[i].Description, questSOs[i].ExperienceReward, questSOs[i].InfiniteQuest);
             quests.Add(quest);
         }
 
@@ -106,5 +106,5 @@ public class QuestGiver : MonoBehaviour
         }
         return null;
     }
-
+    
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,12 +31,21 @@ public class QuestUI : MonoBehaviour
     }
 
 
-    public void Hide()
+    public void Hide(Quest quest)
     {
         gameObject.SetActive(false);
+        ResetGoals(quest);
         CleanGoals();
     }
 
+    private void ResetGoals(Quest quest)
+    {
+        foreach (var goal in quest.Goals)
+        {
+            goal.Completed = false;
+            goal.CurrentAmount = 0;
+        }
+    }
 
     public void CleanGoals()
     {

@@ -10,9 +10,10 @@ public class Goal
     public bool Completed { get; set; }
     public int CurrentAmount { get; set; }
     public int RequiredAmount { get; set; }
+    public bool InfiniteGoal { get; set; }
 
 
-    public Goal(int index, string itemID, string description, int requiredAmount)
+    public Goal(int index, string itemID, string description, int requiredAmount, bool infiniteGoal)
     {
         Index = index;
         ItemID = itemID;
@@ -20,6 +21,7 @@ public class Goal
         Completed = false;
         CurrentAmount = 0;
         RequiredAmount = requiredAmount;
+        InfiniteGoal = infiniteGoal;
     }
 
     
