@@ -9,6 +9,8 @@ TagManager:
   - Interactuable
   - Hittable
   - Pushable
+  - QuestUI
+  - Dialogue
   layers:
   - Default
   - TransparentFX
@@ -43,6 +45,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1147717209
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
