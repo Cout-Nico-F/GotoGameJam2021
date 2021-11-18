@@ -49,7 +49,7 @@ namespace DialogueJam
             }
             
             gameObject.transform.parent.gameObject.SetActive(false);
-            OnDialogueEnds.Invoke(true);
+            OnDialogueEnds?.Invoke(true);
         }
         public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound,Sprite characterSprite)
         {
