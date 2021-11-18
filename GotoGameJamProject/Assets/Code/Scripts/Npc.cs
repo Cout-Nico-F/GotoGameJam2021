@@ -9,21 +9,24 @@ public class Npc : MonoBehaviour, Interactable
 
     private void Awake()
     {
-        questGiver = GetComponent<QuestGiver>();
+        if (GetComponent<QuestGiver>() != null)
+        {
+            questGiver = GetComponent<QuestGiver>();
+        }
     }
 
-    public void Interact(GameObject gameObject)
+    public void Interact(GameObject interactor)
     {
         // lo normal es que el Player sea el unico que interactua con un Npc
         // pero por si acaso
-        if (!gameObject.CompareTag("Player"))
+        if (!interactor.CompareTag("Player"))
         {
             Debug.LogError("El gameobject que interactua no es un Player");
             return;
         }
 
         // recuperamos el QuestPlayer
-        questPlayer = gameObject.GetComponent<QuestPlayer>();
+        questPlayer = interactor.GetComponent<QuestPlayer>();
         if (questPlayer == null)
         {
             Debug.LogError("No existe el componente QuestPlayer en el Player");
