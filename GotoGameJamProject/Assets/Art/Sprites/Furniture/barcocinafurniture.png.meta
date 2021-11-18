@@ -1,43 +1,7 @@
 fileFormatVersion: 2
-guid: c8021d0ae0959c94db2fc02a8afe80a2
+guid: 8a939d09315373842aaf7628c28cf9e2
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -3802019949031394878
-    second: barcocinafurniture_1
-  - first:
-      213: -3471521883774994570
-    second: barcocinafurniture_2
-  - first:
-      213: -4871192850415883658
-    second: barcocinafurniture_3
-  - first:
-      213: -1083096118945528049
-    second: barcocinafurniture_4
-  - first:
-      213: -9166366231440645253
-    second: barcocinafurniture_5
-  - first:
-      213: -4213185829734136870
-    second: barcocinafurniture_6
-  - first:
-      213: 5636709786152721925
-    second: barcocinafurniture_7
-  - first:
-      213: 3696640367426407218
-    second: barcocinafurniture_0
-  - first:
-      213: -2653515508676067874
-    second: barcocinafurniture_8
-  - first:
-      213: -3242273424945646676
-    second: barcocinafurniture_10
-  - first:
-      213: 9103709882874151120
-    second: barcocinafurniture_9
-  - first:
-      213: 1273416998096221613
-    second: barcocinafurniture_11
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -68,7 +32,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -77,12 +41,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,55 +68,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -161,259 +77,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: barcocinafurniture_1
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 87
-        width: 15
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c1f80510038c3bc0800000000000000
-      internalID: -3802019949031394878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_2
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 86
-        width: 21
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 677b8975d3da2dfc0800000000000000
-      internalID: -3471521883774994570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_3
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 86
-        width: 21
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67ae98649eb066cb0800000000000000
-      internalID: -4871192850415883658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_4
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 86
-        width: 21
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f07c5ac71d118f0f0800000000000000
-      internalID: -1083096118945528049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_5
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 49
-        width: 22
-        height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7328dd5a768ac080800000000000000
-      internalID: -9166366231440645253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_6
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 51
-        width: 22
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad3ccfd6fc1c785c0800000000000000
-      internalID: -4213185829734136870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_7
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 48
-        width: 9
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50ed9999fad993e40800000000000000
-      internalID: 5636709786152721925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_0
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 9
-        width: 17
-        height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23b02da14da1d4330800000000000000
-      internalID: 3696640367426407218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_8
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 9
-        width: 77
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edd7f5b24b1dc2bd0800000000000000
-      internalID: -2653515508676067874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_10
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 9
-        width: 19
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca3fc619f712103d0800000000000000
-      internalID: -3242273424945646676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_9
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 68
-        width: 75
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d04deaa7efd65e70800000000000000
-      internalID: 9103709882874151120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barcocinafurniture_11
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 99
-        width: 18
-        height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da5387e43061ca110800000000000000
-      internalID: 1273416998096221613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
