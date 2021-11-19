@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 6eeda779fe1e51348a61ad6c2b5a05f1
+guid: da6db80460c295247b6c2e64e0f9907e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3756555648783989900
-    second: Sprite_Loading_0
+      213: -6694250627791681782
+    second: rocola-Sheet-sheet_0
   - first:
-      213: -735849801444566489
-    second: Sprite_Loading_1
+      213: 447295064703451300
+    second: rocola-Sheet-sheet_1
   - first:
-      213: 7918576622629754296
-    second: Sprite_Loading_2
+      213: 5547703604715686362
+    second: rocola-Sheet-sheet_2
   - first:
-      213: -4738007193794179465
-    second: Sprite_Loading_3
+      213: 8018449506110835078
+    second: rocola-Sheet-sheet_3
   - first:
-      213: -5118467350040624568
-    second: Sprite_Loading_4
+      213: 4942475192329124521
+    second: rocola-Sheet-sheet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Loading_0
+      name: rocola-Sheet-sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 600
+        width: 100
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,20 +120,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4734e3f5a880edbc0800000000000000
-      internalID: -3756555648783989900
+      spriteID: a078a0d858e3913a0800000000000000
+      internalID: -6694250627791681782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Loading_1
+      name: rocola-Sheet-sheet_1
       rect:
         serializedVersion: 2
-        x: 800
+        x: 100
         y: 0
-        width: 800
-        height: 600
+        width: 100
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72adad8118cb9c5f0800000000000000
-      internalID: -735849801444566489
+      spriteID: 4a04f61dd7c153600800000000000000
+      internalID: 447295064703451300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Loading_2
+      name: rocola-Sheet-sheet_2
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 200
         y: 0
-        width: 800
-        height: 600
+        width: 100
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b51f8edb7f64ed60800000000000000
-      internalID: 7918576622629754296
+      spriteID: ad98b3619076dfc40800000000000000
+      internalID: 5547703604715686362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Loading_3
+      name: rocola-Sheet-sheet_3
       rect:
         serializedVersion: 2
-        x: 2400
+        x: 300
         y: 0
-        width: 800
-        height: 600
+        width: 100
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77e07ae6f873f3eb0800000000000000
-      internalID: -4738007193794179465
+      spriteID: 689842d9751474f60800000000000000
+      internalID: 8018449506110835078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Loading_4
+      name: rocola-Sheet-sheet_4
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 400
         y: 0
-        width: 800
-        height: 600
+        width: 100
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 842c46e501d87f8b0800000000000000
-      internalID: -5118467350040624568
+      spriteID: 9aa35f54003379440800000000000000
+      internalID: 4942475192329124521
       vertices: []
       indices: 
       edges: []
