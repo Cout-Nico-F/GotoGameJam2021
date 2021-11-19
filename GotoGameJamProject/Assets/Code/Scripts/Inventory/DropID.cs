@@ -9,7 +9,7 @@ namespace InventoryJam
         [SerializeField] Inventory inventory;
         public void Drop()
         {
-            inventory.RemoveItem(int.Parse(gameObject.name));
+            inventory.DropItem(int.Parse(gameObject.name));
         }
     }
 }

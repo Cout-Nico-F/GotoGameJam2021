@@ -1,19 +1,19 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueJam;
 
 public class QuestGiver : MonoBehaviour
 {
-    public GameObject QuestDialogue { get => questDialogue; }
     public bool IsTalking { get => isTalking; set => isTalking = value; }
 
+    [SerializeField] private GameObject idleDialogue;
     [SerializeField] private QuestSO[] questSOs;
-    [SerializeField] private GameObject questDialogue;
-    [SerializeField] private GameObject dialogueIdle;
     [SerializeField] private RectTransform dialogueCanvas;
     [SerializeField] private List<Quest> questsInspector;
 
+    private GameObject mainDialogue;
+    private GameObject rememberDialogue;
+    private GameObject rewardDialogue;
     private PlayerMovementTOPDOWN playerMovement;
     private DialogueSystem dialogueSystem;
     private List<Quest> quests;
@@ -34,7 +34,8 @@ public class QuestGiver : MonoBehaviour
                 goals.Add(goal);
             }
 
-            Quest quest = new Quest(i, goals, questSOs[i].QuestName, questSOs[i].Description, questSOs[i].ExperienceReward, questSOs[i].InfiniteQuest);
+            Quest quest = new Quest(i, goals, questSOs[i].QuestName, questSOs[i].Description, questSOs[i].ExperienceReward, questSOs[i].InfiniteQuest,
+                                    questSOs[i].MainDialogue, questSOs[i].RememberDialogue, questSOs[i].RewardDialogue);
             quests.Add(quest);
         }
 
@@ -43,25 +44,33 @@ public class QuestGiver : MonoBehaviour
 
     public void GiveQuest(int questIndex, QuestPlayer questPlayer)
     {        
-        DialogueInteract(questDialogue);
-
         var quest = quests[questIndex];
+        mainDialogue = quest.MainDialogue;
+        DialogueInteract(mainDialogue);
         quest.Asigned = true;
-
         questPlayer.AssignQuest(quest);
     }
 
 
-    public void RememberQuest()
+    public void RememberQuest(int questIndex)
     {
-        Debug.Log("Remember Quest");
-        DialogueInteract(questDialogue);
+        var quest = quests[questIndex];
+        rememberDialogue = quest.RememberDialogue;
+        DialogueInteract(rememberDialogue);
     }
 
 
     public void ShowDialogueIdle()
     {
-        DialogueInteract(dialogueIdle);
+        DialogueInteract(idleDialogue);
+    }
+
+
+    public void GiveReward(int questIndex)
+    {
+        var quest = quests[questIndex];
+        rewardDialogue = quest.RewardDialogue;
+        DialogueInteract(rewardDialogue);
     }
 
 

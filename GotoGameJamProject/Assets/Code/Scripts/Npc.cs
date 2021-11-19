@@ -46,6 +46,7 @@ public class Npc : MonoBehaviour, Interactable
             if (questPlayer.activeQuest.Asigned && questPlayer.activeQuest.Completed)
             {
                 // le damos la recompensa
+                questGiver.GiveReward(questPlayer.activeQuest.Index);
                 questPlayer.GiveReward();
 
                 // si la Quest es infinita la reseteamos para poder asignarla de nuevo
@@ -63,7 +64,7 @@ public class Npc : MonoBehaviour, Interactable
                 // si tiene la Quest Asignada se la recordamos
                 if (questPlayer.activeQuest.Asigned)
                 {
-                    questGiver.RememberQuest();
+                    questGiver.RememberQuest(questPlayer.activeQuest.Index);
                 }
             }
         }

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemID: item1
   Description: Recoge madera
-  RequiredAmount: 3
+  RequiredAmount: 2
   infiniteGoal: 0

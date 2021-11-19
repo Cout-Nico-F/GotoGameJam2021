@@ -38,5 +38,16 @@ namespace InventoryJam
                 this.isFree = true;
             }
         }
+
+        public void Remove()
+        {
+            if (this.item != null)
+            {
+                this.item = null;
+                this.itemImageHolder.sprite = null;
+                this.isFree = true;
+            }
+        }
+        
     }
 }
