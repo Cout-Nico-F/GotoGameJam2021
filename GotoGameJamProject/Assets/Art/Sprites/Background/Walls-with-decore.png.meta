@@ -105,8 +105,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 60
-        height: 34
+        width: 73
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,10 +124,10 @@ TextureImporter:
       name: Walls-with-decore_1
       rect:
         serializedVersion: 2
-        x: 60
+        x: 73
         y: 0
-        width: 60
-        height: 34
+        width: 73
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +145,10 @@ TextureImporter:
       name: Walls-with-decore_2
       rect:
         serializedVersion: 2
-        x: 120
+        x: 146
         y: 0
-        width: 60
-        height: 34
+        width: 73
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
