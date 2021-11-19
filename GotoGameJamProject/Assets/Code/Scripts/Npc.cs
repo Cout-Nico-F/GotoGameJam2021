@@ -37,13 +37,12 @@ public class Npc : MonoBehaviour, Interactable
             return;
         }
 
-        // si el Npc tiene la quest completada y no es una quest infinita mostramos el dialogue Idle
-        if (questGiver.Quest.Completed && !questGiver.Quest.InfiniteQuest)
+        // si el Npc ya ha entregado el Reward y no es una quest infinita mostramos el dialogue Idle
+        if (questGiver.Quest.RewardGived && !questGiver.Quest.InfiniteQuest)
         {
             questGiver.ShowDialogueIdle();
             return;
         }
-
 
         // comprobamos si la quest que tiene el Npc la tiene asignada el Player
         var quest = CheckQuestInPlayerAssignedQuests();
@@ -57,6 +56,9 @@ public class Npc : MonoBehaviour, Interactable
                 questGiver.GiveReward();
 
                 // le damos la recompensa
+                if (!quest.InfiniteQuest)
+                    quest.RewardGived = true;
+
                 questPlayer.GiveReward(quest);
 
                 // eliminamos la quest completada de la UI y del PLayer

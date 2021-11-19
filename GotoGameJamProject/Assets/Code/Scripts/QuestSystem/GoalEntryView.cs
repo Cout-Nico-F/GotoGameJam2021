@@ -16,5 +16,5 @@ public class GoalEntryView : MonoBehaviour
         this.amount.SetText(amount);
         completedIcon.sprite = (completed) ? icons[1] : icons[0];
     }
-    
+
 }

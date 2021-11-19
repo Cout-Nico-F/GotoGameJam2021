@@ -35,10 +35,9 @@ public class QuestUI : MonoBehaviour
     }
 
     
-
-    
-    public void UpdateQuest(Quest quest)
+    public void UpdateGoal(Quest quest)
     {
-        AddGoal(quest);
+        var entry = _goalEntryViews[quest.Goal.GoalID];
+        entry.Configure(quest.Goal.Completed, quest.Description, quest.Goal.CurrentAmount, quest.Goal.RequiredAmount);
     }
 }

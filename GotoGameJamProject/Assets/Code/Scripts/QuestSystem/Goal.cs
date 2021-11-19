@@ -21,7 +21,6 @@ public class Goal
     }
 
     
-    // comprobamos si se cumple el Goal
     public void Evaluate(string item)
     {
         if (item.Equals(ItemID))
@@ -34,4 +33,8 @@ public class Goal
         }        
     }
 
+    public bool CheckItem(string item)
+    {
+        return item.Equals(ItemID);
+    }
 }
