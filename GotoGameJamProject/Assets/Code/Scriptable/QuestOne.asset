@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: QuestOne
   m_EditorClassIdentifier: 
   QuestID: QuestOne
-  Description: Completa todos los goals
+  Description: Consigue Monedas
   Goal: {fileID: 11400000, guid: 830566597a0549048b72e3e7e5f679ed, type: 2}
   ExperienceReward: 1000
   MainDialogue: {fileID: 5427668910820792433, guid: aae7ab3685709a94d8e61fe3b12ad7f1, type: 3}
