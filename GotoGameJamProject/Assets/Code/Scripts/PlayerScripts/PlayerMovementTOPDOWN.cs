@@ -15,10 +15,11 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
     private bool isTalking;
+    [SerializeField] private GameObject bubbleChat;
 
     public Vector2 Movement { get => movement; }
     public bool IsTalking { get => isTalking; set => isTalking = value; }
-
+    public float MovementSpeed { get => movementSpeed; set => movementSpeed = value; }
 
     void Awake()
     {
@@ -44,15 +45,22 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
                 movement.x = Input.GetAxisRaw("Horizontal");
                 movement.y = Input.GetAxisRaw("Vertical");
                 cam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+                photonView.RPC("SetActiveBubbleChat", RpcTarget.All, false);
             }
             else
             {
                 movement = Vector2.zero;
                 cam.transform.position = new Vector3(transform.position.x, transform.position.y, -5);
+                photonView.RPC("SetActiveBubbleChat",RpcTarget.All,true);
             }
             
             ControlAnimaciones();
         }
+    }
+    [PunRPC]
+    public void SetActiveBubbleChat(bool state)
+    {
+        bubbleChat.SetActive(state);
     }
 
     private void FixedUpdate()
