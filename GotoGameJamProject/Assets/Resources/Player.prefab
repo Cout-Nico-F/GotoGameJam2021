@@ -761,17 +761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9d0f95012c19a14a9d9bd2c4f5c0c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeQuest:
-    questName: 
-    description: 
-    experienceReward: 0
-    mainDialogue: {fileID: 0}
-    rememberDialogue: {fileID: 0}
-    rewardDialogue: {fileID: 0}
-    infiniteQuest: 0
-    asigned: 0
-    completed: 0
-  HasActiveQuest: 0
   inventory: {fileID: 7560563988939449168}
   levelUI: {fileID: 6091175416615626770}
 --- !u!114 &4136273787413220289

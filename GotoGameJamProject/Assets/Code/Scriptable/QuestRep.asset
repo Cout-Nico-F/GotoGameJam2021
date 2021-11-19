@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c6bd9e54168b1459d0d2d1c2716f7f, type: 3}
   m_Name: QuestRep
   m_EditorClassIdentifier: 
-  QuestName: Quest repetitiva
+  QuestID: RecogerMadera
   Description: Recoge troncos de madera
+  Goal: {fileID: 11400000, guid: c37c77c7a44ada746844843aa6079bc0, type: 2}
   ExperienceReward: 150
   MainDialogue: {fileID: 6069791991963191834, guid: cb0d728df349eb24d9365c291ebe3b91, type: 3}
   RememberDialogue: {fileID: 3958387071328200107, guid: 0088792a8598d564ba021bb54d67ef29, type: 3}
   RewardDialogue: {fileID: 1614386832175316648, guid: 9d422ffc97b22ca4b85dfeacb1a293c8, type: 3}
-  Goals:
-  - {fileID: 11400000, guid: c37c77c7a44ada746844843aa6079bc0, type: 2}
   InfiniteQuest: 1

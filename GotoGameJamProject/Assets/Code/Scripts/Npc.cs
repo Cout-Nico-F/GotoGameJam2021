@@ -37,63 +37,49 @@ public class Npc : MonoBehaviour, Interactable
             return;
         }
 
-        var HasPlayerActiveQuest = CheckPlayerActiveQuest();
-
-        if (HasPlayerActiveQuest)
+        // si el Npc tiene la quest completada y no es una quest infinita mostramos el dialogue Idle
+        if (questGiver.Quest.Completed && !questGiver.Quest.InfiniteQuest)
         {
-            // si tiene una Quest activa comprobamos si la ha completado
-            // y si es asi le damos la recompensa
-            if (questPlayer.activeQuest.Asigned && questPlayer.activeQuest.Completed)
+            questGiver.ShowDialogueIdle();
+            return;
+        }
+
+
+        // comprobamos si la quest que tiene el Npc la tiene asignada el Player
+        var quest = CheckQuestInPlayerAssignedQuests();
+
+        if (quest != null)
+        {
+            // si el Player tiene ya asignada la Quest comprobamos si la ha completado
+            if (quest.Completed)
             {
+                // mostramos el dialogo questReward
+                questGiver.GiveReward();
+
                 // le damos la recompensa
-                questGiver.GiveReward(questPlayer.activeQuest.Index);
-                questPlayer.GiveReward();
+                questPlayer.GiveReward(quest);
 
-                // si la Quest es infinita la reseteamos para poder asignarla de nuevo
-                if (questPlayer.activeQuest.InfiniteQuest)
-                {
-                    questPlayer.activeQuest.Asigned = false;
-                    questPlayer.activeQuest.Completed = false;
-                }
-
-                // limpiamos la Quest de la UI y del PLayer
-                questPlayer.RemoveCompletedQuest();
+                // eliminamos la quest completada de la UI y del PLayer
+                questPlayer.RemoveCompletedQuest(quest);
             }
             else
             {
-                // si tiene la Quest Asignada se la recordamos
-                if (questPlayer.activeQuest.Asigned)
-                {
-                    questGiver.RememberQuest(questPlayer.activeQuest.Index);
-                }
+                // si no la ha completado se la recordamos
+                questGiver.RememberQuest();
             }
         }
         else
         {
-            AssignNextQuest();
+            // si el Player no tiene asignada todavia la quest del Npc se la asignamos
+            questGiver.GiveQuest(questPlayer);
         }
     }
 
 
-    private bool CheckPlayerActiveQuest()
+    private Quest CheckQuestInPlayerAssignedQuests()
     {
-        return questPlayer.HasActiveQuest;
+        return questPlayer.CheckQuestInList(questGiver.Quest.QuestID);
     }
 
 
-    private void AssignNextQuest()
-    {
-        var quest = questGiver.GetNextQuestAvailable();
-
-        if (quest != null) // si el Npc ha devuelto una Quest se la asignamos al Player
-        {
-            questGiver.GiveQuest(quest.Index, questPlayer);
-        }
-        else
-        {
-            // si no hay ninguna Quest lanzamos el dialogo Idle
-            questGiver.ShowDialogueIdle();
-        }
-    }
-    
 }

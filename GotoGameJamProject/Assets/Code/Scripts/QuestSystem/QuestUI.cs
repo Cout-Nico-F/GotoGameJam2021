@@ -18,49 +18,27 @@ public class QuestUI : MonoBehaviour
         questPlayer = GetComponent<QuestPlayer>();
     }
 
-    public void Show(Quest quest)
+    public int AddGoal(Quest quest)
     {
-        gameObject.SetActive(true);
-        
-        foreach (var goal in quest.Goals)
-        {
-            var goalEntry = Instantiate(goalEntryViewPrefab, container);
-            _goalEntryViews.Add(goalEntry);
-            goalEntry.Configure(goal.Completed, goal.Description, goal.CurrentAmount, goal.RequiredAmount);
-        }
+        var goalEntry = Instantiate(goalEntryViewPrefab, container);
+        goalEntry.Configure(quest.Goal.Completed, quest.Description, quest.Goal.CurrentAmount, quest.Goal.RequiredAmount);
+        _goalEntryViews.Add(goalEntry);
+        return _goalEntryViews.Count-1;
     }
 
 
-    public void Hide(Quest quest)
+    public void RemoveGoal(int position)
     {
-        gameObject.SetActive(false);
-        ResetGoals(quest);
-        CleanGoals();
+        var entry = _goalEntryViews[position];
+        Destroy(entry.gameObject);
+        _goalEntryViews.RemoveAt(position);        
     }
 
-    private void ResetGoals(Quest quest)
-    {
-        foreach (var goal in quest.Goals)
-        {
-            goal.Completed = false;
-            goal.CurrentAmount = 0;
-        }
-    }
+    
 
-    public void CleanGoals()
-    {
-        foreach (var entry in _goalEntryViews)
-        {
-            Destroy(entry.gameObject);
-        }
-
-        _goalEntryViews.Clear();
-    }
-
-
+    
     public void UpdateQuest(Quest quest)
     {
-        CleanGoals();
-        Show(quest);
+        AddGoal(quest);
     }
 }

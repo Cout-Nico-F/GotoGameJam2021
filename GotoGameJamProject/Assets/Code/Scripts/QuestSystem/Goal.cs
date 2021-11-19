@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class Goal
 {
-    public int Index { get; set; }
+    public int GoalID { get; set; }
     public string ItemID { get; set; }
-    public string Description { get; set; }
     public bool Completed { get; set; }
     public int CurrentAmount { get; set; }
     public int RequiredAmount { get; set; }
-    public bool InfiniteGoal { get; set; }
 
 
-    public Goal(int index, string itemID, string description, int requiredAmount, bool infiniteGoal)
+    public Goal(GoalSO goal)
     {
-        Index = index;
-        ItemID = itemID;
-        Description = description;
+        GoalID = -1;
+        ItemID = goal.ItemID;
         Completed = false;
         CurrentAmount = 0;
-        RequiredAmount = requiredAmount;
-        InfiniteGoal = infiniteGoal;
+        RequiredAmount = goal.RequiredAmount;
     }
 
     

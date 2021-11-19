@@ -6,60 +6,90 @@ using System;
 
 public class QuestPlayer : MonoBehaviour
 {
-    public Quest activeQuest;
-    public bool HasActiveQuest;
+    public bool HasAnyQuestAsigned { get => hasAnyQuestAsigned; set => hasAnyQuestAsigned = value; }
 
     [SerializeField] private Inventory inventory;
     [SerializeField] private LevelUI levelUI;
 
     private QuestUI questUI;
-    
+    private List<Quest> quests;
+    private bool hasAnyQuestAsigned;
+
 
     private void Start()
     {
+        quests = new List<Quest>();
         questUI = FindObjectOfType<QuestUI>(true);
-        HasActiveQuest = false;
+        hasAnyQuestAsigned = false;
         inventory.OnPickedItem += HandlePickedItem;
     }
     
 
     public void AssignQuest(Quest quest)
     {
-        activeQuest = quest;
-        HasActiveQuest = true;
-        questUI.Show(quest);
+        quests.Add(quest);
+        hasAnyQuestAsigned = true;
+
+        // cargamos la quest en la UI como una GoalEntry
+        // nos devuelve la posicion en la lista de quest
+        // para despues poder eliminarla directamente
+        quest.Goal.GoalID = questUI.AddGoal(quest);
     }
 
 
-    public void RemoveCompletedQuest()
+    public void RemoveCompletedQuest(Quest quest)
     {
-        questUI.Hide(activeQuest);
-        activeQuest = null;
-        HasActiveQuest = false;
+        var position = quest.Goal.GoalID;
+        questUI.RemoveGoal(position);
+        quests.Remove(quest);
+
+        // ademas de eliminar la quest de la lista hay que reordenar el GoalID del resto
+        for (int i = position; i < quests.Count; i++)
+        {
+            quests[i].Goal.GoalID -= 1;
+        }
+
+        if (quests.Count == 0)
+            hasAnyQuestAsigned = false;
     }
 
 
     private void HandlePickedItem(string itemID)
     {
-        if (HasActiveQuest)
+        if (hasAnyQuestAsigned)
         {
-            foreach (var goal in activeQuest.Goals)
+            foreach (var quest in quests)
             {
-                goal.Evaluate(itemID);
+                quest.Goal.Evaluate(itemID);
+                if (quest.Goal.Completed)
+                    quest.Completed = true;
             }
 
-            activeQuest.CheckGoals();
-            questUI.UpdateQuest(activeQuest);
+            //questUI.UpdateQuest(activeQuest);
         }
     }
 
-    public void GiveReward()
+    public void GiveReward(Quest quest)
     {
-        foreach (var goal in activeQuest.Goals)
+        // quitamos los items del inventario
+        inventory.RemoveItems(quest.Goal.ItemID, quest.Goal.RequiredAmount);
+
+        // sumamos la recompensa a la UI
+        levelUI.AddReward(quest.ExperienceReward);
+    }
+
+
+    public Quest CheckQuestInList(string id)
+    {
+        foreach (var quest in quests)
         {
-            inventory.RemoveItems(goal.ItemID, goal.RequiredAmount);
+            if (quest.QuestID.Equals(id))
+            {
+                return quest;
+            }
         }
 
-        levelUI.AddReward(activeQuest.ExperienceReward);
+        return null;
     }
+
 }

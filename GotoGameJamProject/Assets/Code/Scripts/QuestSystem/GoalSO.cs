@@ -6,7 +6,5 @@ using UnityEngine;
 public class GoalSO : ScriptableObject
 {
     public string ItemID;
-    public string Description;
     public int RequiredAmount;
-    public bool infiniteGoal;
 }
