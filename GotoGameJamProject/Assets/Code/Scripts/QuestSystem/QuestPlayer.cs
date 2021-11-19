@@ -22,6 +22,7 @@ public class QuestPlayer : MonoBehaviour
         questUI = FindObjectOfType<QuestUI>(true);
         hasAnyQuestAsigned = false;
         inventory.OnPickedItem += HandlePickedItem;
+        inventory.OnDropItem += HandleDropItem;
     }
     
 
@@ -71,6 +72,26 @@ public class QuestPlayer : MonoBehaviour
             }
         }
     }
+
+
+    private void HandleDropItem(string itemID)
+    {
+        if (hasAnyQuestAsigned)
+        {
+            foreach (var quest in quests)
+            {
+                if (quest.Goal.CheckItem(itemID))
+                {
+                    quest.Goal.SubtractItem();
+                    quest.Completed = quest.Goal.Completed;
+
+                    // actualizamos la UI
+                    questUI.UpdateGoal(quest);
+                }
+            }
+        }
+    }
+
 
     public void GiveReward(Quest quest)
     {

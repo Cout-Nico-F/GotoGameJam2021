@@ -37,4 +37,17 @@ public class Goal
     {
         return item.Equals(ItemID);
     }
+
+
+    public void SubtractItem()
+    {
+        CurrentAmount--;
+        if (CurrentAmount < 0)
+            CurrentAmount = 0;
+
+        if (CurrentAmount < RequiredAmount)
+        {
+            Completed = false;
+        }
+    }
 }

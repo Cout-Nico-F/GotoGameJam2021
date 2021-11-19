@@ -44,15 +44,4 @@ public class Quest
         RewardGived = false;
     }
     
-
-    public void CheckGoal()
-    {
-        if (goal.Completed)
-        {
-            completed = true;
-        }
-
-        Debug.Log("Goal completado");
-    }
-    
 }

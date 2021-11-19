@@ -10,6 +10,7 @@ namespace InventoryJam
         [SerializeField] Slot[] slots = default;
 
         public event Action<string> OnPickedItem;
+        public event Action<string> OnDropItem;
 
 
         public void AddItem(Item item)
@@ -20,12 +21,15 @@ namespace InventoryJam
 
         public void DropItem(int ID)
         {
+            // tenemos que actualizar la quest UI
+            OnDropItem?.Invoke(slots[ID].Item.Id);
+
             slots[ID].Drop();
+            MoveItemsToLeft(ID);
         }
 
         public void RemoveItems(string id, int amount)
         {
-            Debug.Log("Entra a quitar " + amount + " " + id);
             while (amount > 0)
             {
                 var firstSlot = -1;
@@ -36,7 +40,6 @@ namespace InventoryJam
                     if (slots[i].Item.Id.Equals(id))
                     {
                         firstSlot = i;
-                        Debug.Log("Primer slot con el item: " + firstSlot);
                         break;
                     }
                 }
@@ -59,9 +62,7 @@ namespace InventoryJam
 
         private void MoveItemsToLeft(int emptySlot)
         {
-            Debug.Log("Move Items To Left: " + emptySlot);
             var remainingItems = slots.Length - emptySlot - 1;
-            Debug.Log("Remaining items: " + remainingItems);
             var currentSlot = emptySlot + 1;
 
             while (remainingItems > 0)
