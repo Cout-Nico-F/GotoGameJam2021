@@ -2,18 +2,18 @@ using UnityEngine;
 using Photon.Pun;
 public class Score : MonoBehaviour,IPunObservable
 {
-    [HideInInspector] public int playerScore;
+    [SerializeField] private int playerScore;
     public int PlayerScore { get => playerScore; set => playerScore = value; }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if(stream.IsWriting)
         {
-            stream.SendNext(playerScore);
+            stream.SendNext(PlayerScore);
         }
         else
         {
-            playerScore = (int)stream.ReceiveNext();
+            PlayerScore = (int)stream.ReceiveNext();
         }
     }
 }
