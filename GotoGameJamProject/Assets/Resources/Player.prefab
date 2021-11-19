@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   e_Letter: {fileID: 2764571345782003049}
-  rayRadius: 2
+  rayRadius: 1
 --- !u!50 &315964610491423179
 Rigidbody2D:
   serializedVersion: 4
