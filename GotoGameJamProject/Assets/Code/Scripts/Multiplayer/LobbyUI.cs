@@ -34,8 +34,9 @@ public class LobbyUI : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LoadLevel(loadLevelString);
     }
+
     public void JoinComunitarySV()
     {
-        PhotonNetwork.JoinRoom("ServerPrivadoRePiolaATR");
+        PhotonNetwork.JoinRoom("Open24");
     }
 }
