@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  cam: {fileID: 9149795511801503450}
+  cam: {fileID: 5562655097765740377}
   photonView: {fileID: -3382059923018268562}
 --- !u!114 &6898406460092305058
 MonoBehaviour:
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   grappleRope: {fileID: 315964611299068062}
   grappleToAll: 1
   grappableLayerNumber: 9
-  m_camera: {fileID: 1233219229155412013}
+  m_camera: {fileID: 1702200931398563431}
   gunHolder: {fileID: 315964610491423190}
   gunPivot: {fileID: 315964610275051314}
   firePoint: {fileID: 315964610252067807}
@@ -1461,7 +1461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 315964610491423185}
-  cam: {fileID: 1233219229155412013}
+  cam: {fileID: 1702200931398563431}
   offset: {x: 0, y: 0, z: 0}
   photonView: {fileID: 3585327034087138877}
 --- !u!61 &3901341592667197534
@@ -2962,7 +2962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 315964610491423185}
-  mainCarmera: {fileID: 1233219229155412013}
+  mainCarmera: {fileID: 1702200931398563431}
   tpPLayer: {fileID: 1449257780}
   teleportParticles: {fileID: 315964610268384638}
   teleportRange: 4
