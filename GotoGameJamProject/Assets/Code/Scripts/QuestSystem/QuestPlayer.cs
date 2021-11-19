@@ -57,7 +57,7 @@ public class QuestPlayer : MonoBehaviour
     {
         foreach (var goal in activeQuest.Goals)
         {
-            inventory.RemoveItems(goal.ItemID, 1);
+            inventory.RemoveItems(goal.ItemID, goal.RequiredAmount);
         }
 
         levelUI.AddReward(activeQuest.ExperienceReward);

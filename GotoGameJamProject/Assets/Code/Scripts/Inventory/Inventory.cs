@@ -26,30 +26,34 @@ namespace InventoryJam
         public void RemoveItems(string id, int amount)
         {
             Debug.Log("Entra a quitar " + amount + " " + id);
-            var firstSlot = -1;
-
-            // encontramos el primer slot que tiene ese item
-            for (int i = 0; i < slots.Length; i++)
+            while (amount > 0)
             {
-                if (slots[i].Item.Id.Equals(id))
+                var firstSlot = -1;
+
+                // encontramos el primer slot que tiene ese item
+                for (int i = 0; i < slots.Length; i++)
                 {
-                    firstSlot = i;
-                    Debug.Log("Primer slot con el item: " + firstSlot);
-                    break;
+                    if (slots[i].Item.Id.Equals(id))
+                    {
+                        firstSlot = i;
+                        Debug.Log("Primer slot con el item: " + firstSlot);
+                        break;
+                    }
                 }
-            }
 
-            // si no hemos encontrado el item damos error
-            if (firstSlot == -1)
-            {
-                Debug.LogError("Item " + id + " no encontrado en el inventario");
-                return;
-            }
+                // si no hemos encontrado el item damos error
+                if (firstSlot == -1)
+                {
+                    Debug.LogError("Item " + id + " no encontrado en el inventario, y faltaban por quitar " + amount);
+                    return;
+                }
 
-            // si lo hemos encontrado lo eliminamos y movemos hacia la izquierda los items
-            // para no dejar huecos
-            slots[firstSlot].Remove();
-            MoveItemsToLeft(firstSlot);
+                // si lo hemos encontrado lo eliminamos y movemos hacia la izquierda los items
+                // para no dejar huecos
+                slots[firstSlot].Remove();
+                MoveItemsToLeft(firstSlot);
+                amount--;
+            }
         }
 
 
