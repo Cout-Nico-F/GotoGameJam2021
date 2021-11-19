@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: a00dc159045d1054a9f1bc4216610576
+guid: 3f348f444fcf8be4094617679ff4ca3c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1443346890515795629
-    second: wall-sprite_0
+      213: 481221570210632221
+    second: PAREDCORTADA_0
   - first:
-      213: 6395923034896379219
-    second: wall-sprite_1
-  - first:
-      213: -6360229282877273096
-    second: wall-sprite_2
-  - first:
-      213: -8240836904127370193
-    second: wall-sprite_3
-  - first:
-      213: 251288602572647676
-    second: wall-sprite_4
+      213: 5806063985167353028
+    second: PAREDCORTADA_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wall-sprite_0
+      name: PAREDCORTADA_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 90
-        width: 60
-        height: 28
+        y: 36
+        width: 70
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,41 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daecbd8895cc70410800000000000000
-      internalID: 1443346890515795629
+      spriteID: d1219aee774ada600800000000000000
+      internalID: 481221570210632221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall-sprite_1
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 104
-        width: 60
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35dacb9fc12e2c850800000000000000
-      internalID: 6395923034896379219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wall-sprite_2
+      name: PAREDCORTADA_1
       rect:
         serializedVersion: 2
         x: 1
-        y: 57
-        width: 60
-        height: 28
+        y: 13
+        width: 70
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,50 +168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fb00184a2debb7a0800000000000000
-      internalID: -6360229282877273096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wall-sprite_3
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 56
-        width: 60
-        height: 29
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2cee8d5f7aa2ad80800000000000000
-      internalID: -8240836904127370193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wall-sprite_4
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 23
-        width: 60
-        height: 29
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfc627417a1cc7300800000000000000
-      internalID: 251288602572647676
+      spriteID: 4c4c613ce68439050800000000000000
+      internalID: 5806063985167353028
       vertices: []
       indices: 
       edges: []
