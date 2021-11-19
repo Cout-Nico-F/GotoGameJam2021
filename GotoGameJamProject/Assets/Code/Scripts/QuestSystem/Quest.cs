@@ -14,6 +14,7 @@ public class Quest
     public GameObject RewardDialogue { get => rewardDialogue; set => rewardDialogue = value; }
     public bool InfiniteQuest { get => infiniteQuest; set => infiniteQuest = value; }
     public bool Completed { get => completed; set => completed = value; }
+    public bool RewardGived { get => rewardGived; set => rewardGived = value; }
 
     [SerializeField] private string questID;
     [SerializeField] private string description;
@@ -24,6 +25,7 @@ public class Quest
     [SerializeField] private GameObject rewardDialogue;
     [SerializeField] private bool infiniteQuest;
     [SerializeField] private bool completed;
+    [SerializeField] private bool rewardGived;
 
 
 
@@ -39,6 +41,7 @@ public class Quest
         RewardDialogue = rewardDialogue;
         InfiniteQuest = infiniteQuest;
         Completed = false;
+        RewardGived = false;
     }
     
 

@@ -61,11 +61,14 @@ public class QuestPlayer : MonoBehaviour
             foreach (var quest in quests)
             {
                 quest.Goal.Evaluate(itemID);
+
+                // actualizamos la UI
+                if (quest.Goal.CheckItem(itemID))
+                    questUI.UpdateGoal(quest);
+
                 if (quest.Goal.Completed)
                     quest.Completed = true;
             }
-
-            //questUI.UpdateQuest(activeQuest);
         }
     }
 
@@ -76,6 +79,14 @@ public class QuestPlayer : MonoBehaviour
 
         // sumamos la recompensa a la UI
         levelUI.AddReward(quest.ExperienceReward);
+
+        // reseteamos la quest si se trata de una infinite quest
+        if (quest.InfiniteQuest)
+        {
+            quest.Completed = false;
+            quest.Goal.Completed = false;
+            quest.Goal.CurrentAmount = 0;
+        }
     }
 
 
