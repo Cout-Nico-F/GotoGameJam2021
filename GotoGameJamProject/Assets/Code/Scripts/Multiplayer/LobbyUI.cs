@@ -37,6 +37,6 @@ public class LobbyUI : MonoBehaviourPunCallbacks
 
     public void JoinComunitarySV()
     {
-        PhotonNetwork.JoinRoom("Open24");
+        PhotonNetwork.JoinRoom("+1+");
     }
 }
