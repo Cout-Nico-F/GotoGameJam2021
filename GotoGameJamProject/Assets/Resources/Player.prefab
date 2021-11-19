@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  cam: {fileID: 9149795511801503450}
+  cam: {fileID: 5562655097765740377}
   photonView: {fileID: -3382059923018268562}
 --- !u!114 &6898406460092305058
 MonoBehaviour:
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   grappleRope: {fileID: 315964611299068062}
   grappleToAll: 1
   grappableLayerNumber: 9
-  m_camera: {fileID: 1233219229155412013}
+  m_camera: {fileID: 1702200931398563431}
   gunHolder: {fileID: 315964610491423190}
   gunPivot: {fileID: 315964610275051314}
   firePoint: {fileID: 315964610252067807}
@@ -1441,7 +1441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270455226195876671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1351592001624114986}
@@ -1461,8 +1461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 315964610491423185}
-  cam: {fileID: 1233219229155412013}
-  offset: {x: 0, y: -0.5, z: 0}
+  cam: {fileID: 1702200931398563431}
+  offset: {x: 0, y: 0, z: 0}
   photonView: {fileID: 3585327034087138877}
 --- !u!61 &3901341592667197534
 BoxCollider2D:
@@ -2962,7 +2962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 315964610491423185}
-  mainCarmera: {fileID: 1233219229155412013}
+  mainCarmera: {fileID: 1702200931398563431}
   tpPLayer: {fileID: 1449257780}
   teleportParticles: {fileID: 315964610268384638}
   teleportRange: 4
@@ -2992,7 +2992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8928974483788055320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.99, y: 0, z: 0}
+  m_LocalPosition: {x: 0.26, y: -0.42, z: 0}
   m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_Children: []
   m_Father: {fileID: 7108805153740601114}
@@ -3037,18 +3037,18 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f5dde53921cbbec4f966bb8e041a1216, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 712035800519618848, guid: f5dde53921cbbec4f966bb8e041a1216, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 2.78, y: 1.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &9149795511801503450
 GameObject:
   m_ObjectHideFlags: 0
