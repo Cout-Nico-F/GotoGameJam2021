@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class Npc : MonoBehaviour, Interactable
 {
+    [SerializeField] private GameObject questItemPrefab;
+    [SerializeField] private Vector2 positionQuestItem;
+    [SerializeField] private Transform parentQuestItem;
+
     private QuestGiver questGiver;
     private QuestPlayer questPlayer;
     private Quest currentQuest;
@@ -78,6 +82,9 @@ public class Npc : MonoBehaviour, Interactable
         {
             // si el Player no tiene asignada todavia la quest del Npc se la asignamos
             questGiver.GiveQuest(questPlayer);
+
+            // instanciamos el item requerido en la Quest
+            Instantiate(questItemPrefab, positionQuestItem, Quaternion.identity, parentQuestItem);
         }
     }
 
