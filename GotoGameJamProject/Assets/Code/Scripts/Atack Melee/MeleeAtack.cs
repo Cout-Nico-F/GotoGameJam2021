@@ -10,6 +10,7 @@ public class MeleeAtack : MonoBehaviourPun
     [SerializeField] private Camera cam;
     [SerializeField] private Vector3 offset;
     [SerializeField] private PhotonView photonView;
+    [SerializeField] private GameObject minePlayer;
     private bool isAtack = false;
     private Vector3 dir;
     private float angle;
@@ -30,13 +31,10 @@ public class MeleeAtack : MonoBehaviourPun
     }
     private void RotationAndPosition()
     {
-        if (!isAtack)
-        {
             transform.position = player.transform.position + offset;
-            dir = Input.mousePosition - cam.WorldToScreenPoint(transform.position);
+            dir = Input.mousePosition - cam.WorldToScreenPoint(player.transform.localPosition);
             angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        }
+            transform.localRotation = Quaternion.Euler(0,0,angle);
     }
     IEnumerator CorutineAtack()
     {
@@ -49,10 +47,11 @@ public class MeleeAtack : MonoBehaviourPun
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if ((collision.CompareTag("Pushable") || collision.CompareTag("Player")) && isAtack)
+        if ((collision.CompareTag("Pushable") || collision.CompareTag("Player")) && isAtack && collision.gameObject!=minePlayer)
         {
             collision.GetComponent<PhotonView>().TransferOwnership(photonView.Owner);
-            collision.transform.position = Vector3.MoveTowards(collision.transform.position, new Vector3(dir.x, dir.y, 0), 0.5f);
+            //collision.transform.position = Vector3.MoveTowards(collision.transform.position, new Vector3(dir.x, dir.y, 0), 0.5f);
+            collision.GetComponent<Rigidbody2D>().AddForce(dir*2);
         }
         if (collision.CompareTag("Hittable") && isAtack)
         {
