@@ -19,11 +19,11 @@ public class Transition : MonoBehaviour
     }
     private void Update()
     {
-        transform.Rotate(0,0,3);
+        transform.Rotate(0,0,10);
         if (pv)
         {
             var tempColor = image.color;
-            tempColor.a += alphaSpeed;
+            tempColor.a += alphaSpeed*2;
             image.color = tempColor;
             if(image.color.a>=0.5f)
             {
@@ -33,7 +33,7 @@ public class Transition : MonoBehaviour
         else
         {
             var tempColor = image.color;
-            tempColor.a -= alphaSpeed;
+            tempColor.a -= alphaSpeed/3;
             image.color = tempColor;
             if (image.color.a <= 0)
             {
