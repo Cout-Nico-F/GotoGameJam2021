@@ -5,6 +5,9 @@ public class Npc : MonoBehaviour, Interactable
 {
     private QuestGiver questGiver;
     private QuestPlayer questPlayer;
+    private Quest currentQuest;
+    private bool giveReward;
+
 
 
     private void Awake()
@@ -14,6 +17,13 @@ public class Npc : MonoBehaviour, Interactable
             questGiver = GetComponent<QuestGiver>();
         }
     }
+
+    private void Start()
+    {
+        giveReward = false;
+        questGiver.OnDialogueEnds += HandleDialogueEnds;
+    }
+
 
     public void Interact(GameObject interactor)
     {
@@ -45,24 +55,18 @@ public class Npc : MonoBehaviour, Interactable
         }
 
         // comprobamos si la quest que tiene el Npc la tiene asignada el Player
-        var quest = CheckQuestInPlayerAssignedQuests();
+        currentQuest = CheckQuestInPlayerAssignedQuests();
 
-        if (quest != null)
+        if (currentQuest != null)
         {
             // si el Player tiene ya asignada la Quest comprobamos si la ha completado
-            if (quest.Completed)
+            if (currentQuest.Completed)
             {
                 // mostramos el dialogo questReward
                 questGiver.GiveReward();
 
-                // le damos la recompensa
-                if (!quest.InfiniteQuest)
-                    quest.RewardGived = true;
-
-                questPlayer.GiveReward(quest);
-
-                // eliminamos la quest completada de la UI y del PLayer
-                questPlayer.RemoveCompletedQuest(quest);
+                // activamos el bool para que cuando acabe el dialogo le de la recompensa
+                giveReward = true;
             }
             else
             {
@@ -84,4 +88,20 @@ public class Npc : MonoBehaviour, Interactable
     }
 
 
+    private void HandleDialogueEnds(bool dialogueEnds)
+    {
+        if (giveReward)
+        {
+            // le damos la recompensa
+            if (!currentQuest.InfiniteQuest)
+                currentQuest.RewardGived = true;
+
+            questPlayer.GiveReward(currentQuest);
+
+            // eliminamos la quest completada de la UI y del PLayer
+            questPlayer.RemoveCompletedQuest(currentQuest);
+
+            giveReward = false;
+        }
+    }
 }

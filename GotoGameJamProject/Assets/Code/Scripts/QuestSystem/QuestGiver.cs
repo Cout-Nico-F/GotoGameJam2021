@@ -1,11 +1,12 @@
-using System.Collections.Generic;
 using UnityEngine;
 using DialogueJam;
+using System;
 
 public class QuestGiver : MonoBehaviour
 {
     public bool IsTalking { get => isTalking; set => isTalking = value; }
     public Quest Quest { get => quest; set => quest = value; }
+    public event Action<bool> OnDialogueEnds;
 
     [SerializeField] private GameObject idleDialogue;
     [SerializeField] private QuestSO questSO;
@@ -73,12 +74,13 @@ public class QuestGiver : MonoBehaviour
         }        
     }
 
-    public void HandleDialogueEnds(bool dialogoEnd)
+    public void HandleDialogueEnds(bool dialogueEnds)
     {
-        if (dialogoEnd)
+        if (dialogueEnds)
         {
             playerMovement.IsTalking = false;
             isTalking = false;
+            OnDialogueEnds?.Invoke(true);
             dialogueSystem.OnDialogueEnds -= HandleDialogueEnds;
         }
     }
