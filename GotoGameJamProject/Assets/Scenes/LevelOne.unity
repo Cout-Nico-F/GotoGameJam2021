@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5404518018704550133, guid: 21b975f83ab039b488b701ec6954dceb, type: 3}
       propertyPath: m_Offset.y
-      value: -0.48
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 5404518018704550133, guid: 21b975f83ab039b488b701ec6954dceb, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -2659,7 +2659,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.63, y: 3.52}
+  m_Offset: {x: 7.63, y: 3.57}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2670,7 +2670,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.96, y: 6.13}
+  m_Size: {x: 1.99, y: 6.13}
   m_EdgeRadius: 0
 --- !u!4 &953519729 stripped
 Transform:
@@ -7064,7 +7064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1256416322076401537, guid: 4397e95e5f059e14ebc6f89c36896e26, type: 3}
       propertyPath: m_Offset.y
-      value: -0.48
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1256416322076401537, guid: 4397e95e5f059e14ebc6f89c36896e26, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -7310,6 +7310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall-1B
       objectReference: {fileID: 0}
+    - target: {fileID: 5404518018704550132, guid: 21b975f83ab039b488b701ec6954dceb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5404518018704550133, guid: 21b975f83ab039b488b701ec6954dceb, type: 3}
       propertyPath: m_Size.x
       value: 4.3760643
@@ -7324,7 +7328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5404518018704550133, guid: 21b975f83ab039b488b701ec6954dceb, type: 3}
       propertyPath: m_Offset.y
-      value: -0.48
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 5404518018704550133, guid: 21b975f83ab039b488b701ec6954dceb, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -7360,7 +7364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5404518018704550135, guid: 21b975f83ab039b488b701ec6954dceb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.31
+      value: -2.343
       objectReference: {fileID: 0}
     - target: {fileID: 5404518018704550135, guid: 21b975f83ab039b488b701ec6954dceb, type: 3}
       propertyPath: m_LocalPosition.z
