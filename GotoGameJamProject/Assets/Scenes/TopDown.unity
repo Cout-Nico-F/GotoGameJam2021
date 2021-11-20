@@ -600,6 +600,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3382059923018268562, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 21791420195981266, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 315964610491423185, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
       propertyPath: m_Name
       value: Player
@@ -647,6 +655,34 @@ PrefabInstance:
     - target: {fileID: 315964610491423190, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 589071298782788099, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 903673379552268516, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585327034087138877, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007876221799072006, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5732493785885230316, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293346377960225943, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608430545770295764, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
+      propertyPath: sceneViewId
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
