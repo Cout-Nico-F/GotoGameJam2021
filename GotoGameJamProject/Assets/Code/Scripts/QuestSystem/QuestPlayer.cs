@@ -35,6 +35,20 @@ public class QuestPlayer : MonoBehaviour
         // nos devuelve la posicion en la lista de quest
         // para despues poder eliminarla directamente
         quest.Goal.GoalID = questUI.AddGoal(quest);
+
+        // comprobamos además si ya tenemos items en el inventario
+        // de los que nos piden en la misión y lo reflejamos en la UI
+        var amount = inventory.GetItemAmount(quest.Goal.ItemID);
+        if (amount > 0)
+        {
+            quest.Goal.CurrentAmount = amount;
+            if (quest.Goal.CurrentAmount >= quest.Goal.RequiredAmount)
+            {
+                quest.Goal.Completed = true;
+                quest.Completed = true;
+                questUI.UpdateGoal(quest);
+            }
+        }
     }
 
 

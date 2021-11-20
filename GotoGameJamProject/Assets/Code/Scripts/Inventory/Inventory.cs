@@ -60,6 +60,22 @@ namespace InventoryJam
         }
 
 
+        public int GetItemAmount(string item)
+        {
+            var amount = 0;
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if (!slots[i].IsFree)
+                {
+                    if (slots[i].Item.Id.Equals(item))
+                        amount++;
+                }
+            }
+
+            return amount;
+        }
+
+
         private void MoveItemsToLeft(int emptySlot)
         {
             var remainingItems = slots.Length - emptySlot - 1;
