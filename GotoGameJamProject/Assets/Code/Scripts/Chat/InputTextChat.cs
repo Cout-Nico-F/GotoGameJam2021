@@ -26,7 +26,7 @@ public class InputTextChat : MonoBehaviour
                         var playerPrefabObject = view.gameObject;
                         if(playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>()!=null)
                         {
-                            playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>().IsTalking = true ;
+                            playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>().IsChating = true ;
                         }
                     }
                 }
@@ -43,7 +43,7 @@ public class InputTextChat : MonoBehaviour
                         var playerPrefabObject = view.gameObject;
                         if (playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>() != null)
                         {
-                            playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>().IsTalking = false;
+                            playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>().IsChating = false;
                         }
                     }
                 }

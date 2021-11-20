@@ -15,11 +15,13 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
     private bool isTalking;
+    private bool isChating = false;
     [SerializeField] private GameObject bubbleChat;
 
     public Vector2 Movement { get => movement; }
     public bool IsTalking { get => isTalking; set => isTalking = value; }
     public float MovementSpeed { get => movementSpeed; set => movementSpeed = value; }
+    public bool IsChating { get => isChating; set => isChating = value; }
 
     void Awake()
     {
@@ -40,20 +42,32 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
         { Destroy(cam); }
         if (photonView.IsMine)
         {
-            if (!isTalking)
+            if (!isTalking || !isChating)
             {
                 movement.x = Input.GetAxisRaw("Horizontal");
                 movement.y = Input.GetAxisRaw("Vertical");
-                cam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+                
+                if (!isTalking)
+                {
+                    cam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+                }
+            }
+            if(isTalking || IsChating)
+            {
+                movement = Vector2.zero;
+                if (isTalking)
+                {
+                    cam.transform.position = new Vector3(transform.position.x, transform.position.y, -5);
+                }
+            }
+            if(!IsChating)
+            {
                 photonView.RPC("SetActiveBubbleChat", RpcTarget.All, false);
             }
             else
             {
-                movement = Vector2.zero;
-                cam.transform.position = new Vector3(transform.position.x, transform.position.y, -5);
-                photonView.RPC("SetActiveBubbleChat",RpcTarget.All,true);
+                photonView.RPC("SetActiveBubbleChat", RpcTarget.All, true);
             }
-            
             ControlAnimaciones();
         }
     }
@@ -88,7 +102,7 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.GetComponent<PhotonView>()!=null)
+        if (collision.gameObject.GetComponent<PhotonView>() != null)
         {
             collision.gameObject.GetComponent<PhotonView>().TransferOwnership(photonView.Owner);
         }
