@@ -51,6 +51,13 @@ public class Npc : MonoBehaviour, Interactable
             return;
         }
 
+        // si el Npc solo da pistas mostramos directamente el dialogo Idle
+        if (!questGiver.HasQuest)
+        {
+            questGiver.ShowDialogueIdle();
+            return;
+        }
+
         // si el Npc ya ha entregado el Reward y no es una quest infinita mostramos el dialogue Idle
         if (questGiver.Quest.RewardGived && !questGiver.Quest.InfiniteQuest)
         {

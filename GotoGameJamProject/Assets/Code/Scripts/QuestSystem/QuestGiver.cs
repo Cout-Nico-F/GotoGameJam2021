@@ -6,12 +6,15 @@ public class QuestGiver : MonoBehaviour
 {
     public bool IsTalking { get => isTalking; set => isTalking = value; }
     public Quest Quest { get => quest; set => quest = value; }
+    public bool HasQuest { get => hasQuest; set => hasQuest = value; }
+
     public event Action<bool> OnDialogueEnds;
 
     [SerializeField] private GameObject idleDialogue;
     [SerializeField] private QuestSO questSO;
     [SerializeField] private RectTransform dialogueCanvas;
 
+    private bool hasQuest;
     private GameObject mainDialogue;
     private GameObject rememberDialogue;
     private GameObject rewardDialogue;
@@ -22,6 +25,8 @@ public class QuestGiver : MonoBehaviour
 
     private void Awake()
     {
+        if (!hasQuest) return;
+
         var goal = new Goal(questSO.Goal);
         quest = new Quest(questSO.QuestID, questSO.Description, goal, questSO.ExperienceReward, questSO.MainDialogue,
                           questSO.RememberDialogue, questSO.RewardDialogue, questSO.InfiniteQuest);
