@@ -23,7 +23,8 @@ public class GetLoot : MonoBehaviour, Interactable
             //animator.SetTrigger("Interact");
 
             // cuando haya animacion quitar esto de aqui
-            inventory.AddItem(loot);
+            if (inventory.HasSpace())
+                inventory.AddItem(loot);
         }
     }
 
@@ -31,6 +32,7 @@ public class GetLoot : MonoBehaviour, Interactable
     public void OnAnimationFinish()
     {
         // le damos el loot
-        inventory.AddItem(loot);
+        if (inventory.HasSpace())
+            inventory.AddItem(loot);
     }
 }
