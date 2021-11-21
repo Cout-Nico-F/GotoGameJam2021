@@ -5,6 +5,9 @@ using UnityEngine;
 public class AnimationInitialCinematic : MonoBehaviour
 {
     [SerializeField] private GameObject effect;
+    [SerializeField] private CineManager cineManager;
+
+
     public void TravelEffect()
     {
         effect.SetActive(true);
@@ -24,5 +27,6 @@ public class AnimationInitialCinematic : MonoBehaviour
     {
         AudioJam.SoundManager.instance.Stop("CineMusic");
         AudioJam.SoundManager.instance.Play("Aura");
+        cineManager.GoddesAppears();
     }
 }
