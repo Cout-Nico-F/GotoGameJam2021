@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class CineMachineLose : MonoBehaviour
 {
+    public void Whoosh()
+    {
+        SoundManager.instance.Play("Woosh1");
+    }
     public void Explosion()
     {
         SoundManager.instance.Play("Explode");
@@ -14,4 +18,5 @@ public class CineMachineLose : MonoBehaviour
     {
         SceneManager.LoadScene("Loading");
     }
+
 }

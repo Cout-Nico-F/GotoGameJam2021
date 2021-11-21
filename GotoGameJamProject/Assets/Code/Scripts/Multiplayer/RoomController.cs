@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RoomController : MonoBehaviour,IPunObservable
 {
@@ -88,7 +89,7 @@ public class RoomController : MonoBehaviour,IPunObservable
                 }
                 else
                 {///aca perdieron
-                    Debug.Log("Equipo perdedor!!");
+                    SceneManager.LoadScene("Lobby");
                 }
             }
         }
