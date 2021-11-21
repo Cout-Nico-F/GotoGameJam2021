@@ -57,7 +57,7 @@ MonoBehaviour:
     delay: 0.04
     fontSize: 40
     nameFXsound: FriskFX
-    input: "Humano, el mundo tal como lo conoc\xEDas explot\xF3,"
+    input: "Humano, el mundo tal como lo conoc\xEDas ya no existe,"
   - characterSprite: {fileID: 21300000, guid: 5787ccb3f751fe94e87a406efd121dec, type: 3}
     textColor: {r: 0.5137255, g: 0.8352942, b: 0.909804, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
