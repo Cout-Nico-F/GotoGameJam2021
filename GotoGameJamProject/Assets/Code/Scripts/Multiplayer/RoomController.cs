@@ -85,11 +85,11 @@ public class RoomController : MonoBehaviour,IPunObservable
                 textMeshPro.enabled = false;
                 if(goalActual>=goal)
                 {///aca ganaron
-                    Debug.Log("Equipo ganador!!");
+                    SceneManager.LoadScene("WinGame");
                 }
                 else
                 {///aca perdieron
-                    SceneManager.LoadScene("Lobby");
+                    SceneManager.LoadScene("LoseGame");
                 }
             }
         }

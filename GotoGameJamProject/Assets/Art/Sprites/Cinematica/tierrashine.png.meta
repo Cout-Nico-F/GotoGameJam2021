@@ -1,7 +1,187 @@
 fileFormatVersion: 2
 guid: 42a8009815fb8ee458e496ddd206120f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5177955435486254917
+    second: tierrashine_0
+  - first:
+      213: 3953458176855770996
+    second: tierrashine_1
+  - first:
+      213: 1651176926828298528
+    second: tierrashine_2
+  - first:
+      213: -6424127562049936023
+    second: tierrashine_3
+  - first:
+      213: 8850756758859533346
+    second: tierrashine_4
+  - first:
+      213: 4278141811891865053
+    second: tierrashine_5
+  - first:
+      213: -1197263535475578644
+    second: tierrashine_6
+  - first:
+      213: -3009652807728566736
+    second: tierrashine_7
+  - first:
+      213: 4006217312398602122
+    second: tierrashine_8
+  - first:
+      213: -3987058331253694629
+    second: tierrashine_9
+  - first:
+      213: -7290938618266142360
+    second: tierrashine_10
+  - first:
+      213: -2670473843732004263
+    second: tierrashine_11
+  - first:
+      213: 8022059280764718028
+    second: tierrashine_12
+  - first:
+      213: -5669718694835209601
+    second: tierrashine_13
+  - first:
+      213: 7744744272495623213
+    second: tierrashine_14
+  - first:
+      213: 8805239062205937540
+    second: tierrashine_15
+  - first:
+      213: 784547109487962032
+    second: tierrashine_16
+  - first:
+      213: -693001765902172638
+    second: tierrashine_17
+  - first:
+      213: 8746063315997692445
+    second: tierrashine_18
+  - first:
+      213: -6808290085496589318
+    second: tierrashine_19
+  - first:
+      213: 8525710005751663887
+    second: tierrashine_20
+  - first:
+      213: -7819145130674433479
+    second: tierrashine_21
+  - first:
+      213: -7687865245404083408
+    second: tierrashine_22
+  - first:
+      213: -408021077962353278
+    second: tierrashine_23
+  - first:
+      213: 7998479510039279429
+    second: tierrashine_24
+  - first:
+      213: -6066055416155505583
+    second: tierrashine_25
+  - first:
+      213: -1560365068863280986
+    second: tierrashine_26
+  - first:
+      213: 4225926716957027318
+    second: tierrashine_27
+  - first:
+      213: 8079931574661264897
+    second: tierrashine_28
+  - first:
+      213: -8677918639487449527
+    second: tierrashine_29
+  - first:
+      213: -7242172957707604897
+    second: tierrashine_30
+  - first:
+      213: -8587827847210154752
+    second: tierrashine_31
+  - first:
+      213: 4912282306614963580
+    second: tierrashine_32
+  - first:
+      213: -8744353651247914103
+    second: tierrashine_33
+  - first:
+      213: -8019653064803205949
+    second: tierrashine_34
+  - first:
+      213: -4057794302690972092
+    second: tierrashine_35
+  - first:
+      213: 4402556124456929196
+    second: tierrashine_36
+  - first:
+      213: -3909921828543613234
+    second: tierrashine_37
+  - first:
+      213: 9068096548448163293
+    second: tierrashine_38
+  - first:
+      213: 5984953937974580589
+    second: tierrashine_39
+  - first:
+      213: 734902250507979646
+    second: tierrashine_40
+  - first:
+      213: 4357931417560154273
+    second: tierrashine_41
+  - first:
+      213: 819447249659355043
+    second: tierrashine_42
+  - first:
+      213: 6457855568388517336
+    second: tierrashine_43
+  - first:
+      213: -7403115853212094417
+    second: tierrashine_44
+  - first:
+      213: -4532636590755981574
+    second: tierrashine_45
+  - first:
+      213: -7337459491848528980
+    second: tierrashine_46
+  - first:
+      213: -7406811563716820769
+    second: tierrashine_47
+  - first:
+      213: -7207469810342381372
+    second: tierrashine_48
+  - first:
+      213: -8926976406116092057
+    second: tierrashine_49
+  - first:
+      213: 4189183698897758756
+    second: tierrashine_50
+  - first:
+      213: 7048124424272016085
+    second: tierrashine_51
+  - first:
+      213: -2241195593422581846
+    second: tierrashine_52
+  - first:
+      213: -608228883047439833
+    second: tierrashine_53
+  - first:
+      213: 7755573829162720716
+    second: tierrashine_54
+  - first:
+      213: -5877823504349923622
+    second: tierrashine_55
+  - first:
+      213: 8475810466966586796
+    second: tierrashine_56
+  - first:
+      213: 8160686154983386383
+    second: tierrashine_57
+  - first:
+      213: -5576227351966149542
+    second: tierrashine_58
+  - first:
+      213: 3261605136714655606
+    second: tierrashine_59
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +212,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +221,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +248,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +269,1267 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tierrashine_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 935
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54716fad80bcbd740800000000000000
+      internalID: 5177955435486254917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 935
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4770ad9f3418dd630800000000000000
+      internalID: 3953458176855770996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 935
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0210ce8aaa82ae610800000000000000
+      internalID: 1651176926828298528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_3
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 935
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965a730d40ae8d6a0800000000000000
+      internalID: -6424127562049936023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 935
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cc53df06434da70800000000000000
+      internalID: 8850756758859533346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_5
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 935
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd58f84bf430f5b30800000000000000
+      internalID: 4278141811891865053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_6
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 935
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce823796827726fe0800000000000000
+      internalID: -1197263535475578644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_7
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 935
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ee41a97b09b36d0800000000000000
+      internalID: -3009652807728566736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_8
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 807
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fe9867b61f89730800000000000000
+      internalID: 4006217312398602122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_9
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 807
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f9cd2729f1ba8c0800000000000000
+      internalID: -3987058331253694629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_10
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 807
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869b11ba4f161da90800000000000000
+      internalID: -7290938618266142360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_11
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 807
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952c16a103290fad0800000000000000
+      internalID: -2670473843732004263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_12
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 807
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb4b15c964145f60800000000000000
+      internalID: 8022059280764718028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_13
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 807
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ab4f1f2ec1151b0800000000000000
+      internalID: -5669718694835209601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_14
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 807
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cb756e1ebda7b60800000000000000
+      internalID: 7744744272495623213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_15
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 807
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487bd21664e723a70800000000000000
+      internalID: 8805239062205937540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_16
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 679
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7e69a707543ea00800000000000000
+      internalID: 784547109487962032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_17
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 679
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ebeaac096f166f0800000000000000
+      internalID: -693001765902172638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_18
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 679
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d121e1d4f32406970800000000000000
+      internalID: 8746063315997692445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_19
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 679
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af379263d381481a0800000000000000
+      internalID: -6808290085496589318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_20
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 679
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d42de3418615670800000000000000
+      internalID: 8525710005751663887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_21
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 679
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932dce66ee0dc7390800000000000000
+      internalID: -7819145130674433479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_22
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 679
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b4e969a473f4590800000000000000
+      internalID: -7687865245404083408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_23
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 679
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2859e2bcdfa665af0800000000000000
+      internalID: -408021077962353278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_24
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 551
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547b1239cbe400f60800000000000000
+      internalID: 7998479510039279429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_25
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 551
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c77340dba01dba0800000000000000
+      internalID: -6066055416155505583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_26
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 551
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8e97eac38785ae0800000000000000
+      internalID: -1560365068863280986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_27
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 551
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb6e0b85f185aa30800000000000000
+      internalID: 4225926716957027318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_28
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 551
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106b52535fea12070800000000000000
+      internalID: 8079931574661264897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_29
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 551
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9460c9799f6d19780800000000000000
+      internalID: -8677918639487449527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_30
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 551
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ce5edc012ae7b90800000000000000
+      internalID: -7242172957707604897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_31
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 551
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005c4deb218e1d880800000000000000
+      internalID: -8587827847210154752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_32
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7da8324bbeeb2440800000000000000
+      internalID: 4912282306614963580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_33
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9836afa0fa0d5a680800000000000000
+      internalID: -8744353651247914103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_34
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc388a070874b090800000000000000
+      internalID: -8019653064803205949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_35
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e2080b491dfa7c0800000000000000
+      internalID: -4057794302690972092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_36
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7c9fd2875091d30800000000000000
+      internalID: 4402556124456929196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_37
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6bc1600da2db9c0800000000000000
+      internalID: -3909921828543613234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_38
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5d23714c958dd70800000000000000
+      internalID: 9068096548448163293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_39
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65dc0e95e3de0350800000000000000
+      internalID: 5984953937974580589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_40
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 295
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bc92204b5e23a00800000000000000
+      internalID: 734902250507979646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_41
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 295
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a00033f88b7a7c30800000000000000
+      internalID: 4357931417560154273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_42
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 295
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afdd149ee24f5b00800000000000000
+      internalID: 819447249659355043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_43
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 295
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd639c9c69ee9950800000000000000
+      internalID: 6457855568388517336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_44
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 295
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20fa3ada59d24990800000000000000
+      internalID: -7403115853212094417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_45
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 295
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af65d002907d811c0800000000000000
+      internalID: -4532636590755981574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_46
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 295
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabdc8ab77b1c2a90800000000000000
+      internalID: -7337459491848528980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_47
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 295
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd047623028b53990800000000000000
+      internalID: -7406811563716820769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_48
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 167
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8b031f46ce9fb90800000000000000
+      internalID: -7207469810342381372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_49
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 167
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767382b71420d1480800000000000000
+      internalID: -8926976406116092057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_50
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 167
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a68aff068f22a30800000000000000
+      internalID: 4189183698897758756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_51
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 167
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2fc7142d7ffc160800000000000000
+      internalID: 7048124424272016085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_52
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 167
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf40ed6b7ca5e0e0800000000000000
+      internalID: -2241195593422581846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_53
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 167
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72223dbad032f87f0800000000000000
+      internalID: -608228883047439833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_54
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 167
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd5f8c8e4551ab60800000000000000
+      internalID: 7755573829162720716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_55
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 167
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6f7c23aa6cd6ea0800000000000000
+      internalID: -5877823504349923622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_56
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 39
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5c41386b020a570800000000000000
+      internalID: 8475810466966586796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_57
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 39
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dab3f12d4904170800000000000000
+      internalID: 8160686154983386383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_58
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 39
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a549d3b74c24d92b0800000000000000
+      internalID: -5576227351966149542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tierrashine_59
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 39
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6776773579c834d20800000000000000
+      internalID: 3261605136714655606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

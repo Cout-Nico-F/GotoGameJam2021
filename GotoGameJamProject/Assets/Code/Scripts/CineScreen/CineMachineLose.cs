@@ -18,5 +18,9 @@ public class CineMachineLose : MonoBehaviour
     {
         SceneManager.LoadScene("Loading");
     }
+    public void Win()
+    {
+        SoundManager.instance.Play("Win2");
+    }
 
 }
