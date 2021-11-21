@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestID: QuestComida
   Description: Consigue comida
-  LargeDescription: "Nuestros mundos estan en problemas, pero podemos  ayudarnos
-    mutuamente. Necesito comida, en serio  \xA1vuelve a tu mundo, rapido!\n"
+  LargeDescription: 'Ve a tu dimension y consigue comida
+
+'
   Goal: {fileID: 11400000, guid: 995531a63d1fbc94db0162437de7fb85, type: 2}
   ExperienceReward: 1
   MainDialogue: {fileID: 6801207043974908514, guid: 152331acac868d343a2e8cb4edd8b5f3, type: 3}
