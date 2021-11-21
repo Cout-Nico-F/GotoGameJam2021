@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 3a2afa26bc524224085a016c0d48b3b9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4461617774521872753
+    second: cocinero-Sheet_0
+  - first:
+      213: -8643970955354255906
+    second: cocinero-Sheet_1
+  - first:
+      213: -3385515343290833822
+    second: cocinero-Sheet_2
+  - first:
+      213: -6794794128774526752
+    second: cocinero-Sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,7 +137,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cocinero-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 47
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171f1fd2ab9daed30800000000000000
+      internalID: 4461617774521872753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cocinero-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3
+        width: 17
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddc05db6327a0880800000000000000
+      internalID: -8643970955354255906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cocinero-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3
+        width: 17
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264e3858bbb3401d0800000000000000
+      internalID: -3385515343290833822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cocinero-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 3
+        width: 17
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e80c708dba04b1a0800000000000000
+      internalID: -6794794128774526752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
