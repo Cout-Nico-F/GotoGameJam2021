@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Npc : MonoBehaviour, Interactable
 {
+    public bool GiveReward { get => giveReward; set => giveReward = value; }
+
     [SerializeField] private GameObject questItemPrefab;
     [SerializeField] private Vector2 positionQuestItem;
     [SerializeField] private Transform parentQuestItem;
@@ -12,7 +14,7 @@ public class Npc : MonoBehaviour, Interactable
     private Quest currentQuest;
     private bool giveReward;
 
-
+    
 
     private void Awake()
     {

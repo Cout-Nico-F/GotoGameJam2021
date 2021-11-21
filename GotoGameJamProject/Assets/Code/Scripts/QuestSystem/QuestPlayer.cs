@@ -138,4 +138,11 @@ public class QuestPlayer : MonoBehaviour
         return null;
     }
 
+    public void RemoveLeavedQuest()
+    {
+        // como ahora solo podemos tener una mision a la vez solo existe un Goal
+        questUI.RemoveGoal(0);
+        quests.Clear();
+        hasAnyQuestAsigned = false;
+    }
 }

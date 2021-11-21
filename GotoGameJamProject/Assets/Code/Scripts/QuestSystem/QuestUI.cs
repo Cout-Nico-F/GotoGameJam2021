@@ -16,8 +16,8 @@ public class QuestUI : MonoBehaviour
 
     private void Awake()
     {
+        leaveQuestButton.onClick.AddListener(LeaveQuest);
         _goalEntryViews = new List<GoalEntryView>();
-        questPlayer = GetComponent<QuestPlayer>();
     }
 
     public int AddGoal(Quest quest)
@@ -48,5 +48,22 @@ public class QuestUI : MonoBehaviour
     public void AddLargeDescription(string description)
     {
         largeDescriptionText.text = description;
+    }
+
+
+    private void LeaveQuest()
+    {
+        if (questPlayer == null)
+            questPlayer = FindObjectOfType<QuestPlayer>();
+
+        if (questPlayer == null)
+        {
+            Debug.LogError("No encuentro al Player");
+        }
+        else
+        {
+            if (questPlayer.HasAnyQuestAsigned)
+                questPlayer.RemoveLeavedQuest();
+        }
     }
 }
