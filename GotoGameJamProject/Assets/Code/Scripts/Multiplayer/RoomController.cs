@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.UI;
 
 public class RoomController : MonoBehaviour,IPunObservable
 {
@@ -15,6 +16,7 @@ public class RoomController : MonoBehaviour,IPunObservable
     [SerializeField] private int goalActual; 
     [SerializeField] private int goal;
     [SerializeField] private TextMeshProUGUI textMeshPro;
+    [SerializeField] private Image image;
     bool pv=true;
     private LevelUI levelUI;
 
@@ -44,6 +46,7 @@ public class RoomController : MonoBehaviour,IPunObservable
     }
     private void Update()
     {
+        image.fillAmount = (float)goalActual / (float)goal;
         if (minutesGracia >= 0 && secondsGracia > 0)
         {
             secondsGracia -= Time.deltaTime;
