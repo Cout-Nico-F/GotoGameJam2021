@@ -1544,6 +1544,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3529399871062801681, guid: b14d5161cbb10c94fb139a16f9ad0705, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     - target: {fileID: 6437607442789684442, guid: b14d5161cbb10c94fb139a16f9ad0705, type: 3}
       propertyPath: questUI
       value: 
@@ -1715,7 +1719,6 @@ Transform:
   - {fileID: 443549267}
   - {fileID: 1217299861}
   - {fileID: 2023948824}
-  - {fileID: 1704171659}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2414,6 +2417,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1596559979}
     m_Modifications:
+    - target: {fileID: 1994428690001774805, guid: 89215147909c0bc489604b39510fe0d4, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     - target: {fileID: 2457988642489827277, guid: 89215147909c0bc489604b39510fe0d4, type: 3}
       propertyPath: m_Name
       value: NPC NoQuest Chad
@@ -6216,6 +6223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC NoQuest Rulfio
       objectReference: {fileID: 0}
+    - target: {fileID: 7012619291555943938, guid: bbe97ed14784c6a48a8edd1b7e51ad64, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbe97ed14784c6a48a8edd1b7e51ad64, type: 3}
 --- !u!4 &699439723 stripped
@@ -10846,6 +10857,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 472826734}
     m_Modifications:
+    - target: {fileID: 2184083739564815938, guid: b91e6da14d1a2a94fa38d6e89403e533, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
+    - target: {fileID: 2184083739564815938, guid: b91e6da14d1a2a94fa38d6e89403e533, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 1876763099}
     - target: {fileID: 5643646705707395217, guid: b91e6da14d1a2a94fa38d6e89403e533, type: 3}
       propertyPath: m_Name
       value: NPC_4
@@ -10894,6 +10913,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8638861971176136585, guid: b91e6da14d1a2a94fa38d6e89403e533, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b91e6da14d1a2a94fa38d6e89403e533, type: 3}
 --- !u!4 &1109432141 stripped
@@ -11813,6 +11836,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 1876763099}
+    - target: {fileID: 5706550211926853856, guid: c16b35326b5bee847b20acdff13793dd, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     - target: {fileID: 8538992950300852216, guid: c16b35326b5bee847b20acdff13793dd, type: 3}
       propertyPath: m_Name
       value: NPC NoQuest Mimi
@@ -12444,6 +12471,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 472826734}
     m_Modifications:
+    - target: {fileID: 2715000797090167211, guid: 8c86926fa1887a345b526cad67150707, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
+    - target: {fileID: 2715000797090167211, guid: 8c86926fa1887a345b526cad67150707, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 1876763099}
+    - target: {fileID: 5476822933694582880, guid: 8c86926fa1887a345b526cad67150707, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     - target: {fileID: 7711113638626972427, guid: 8c86926fa1887a345b526cad67150707, type: 3}
       propertyPath: m_Size.x
       value: 0.9268799
@@ -13396,6 +13435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 472826734}
     m_Modifications:
+    - target: {fileID: 1638602307057811573, guid: 620a391aa8b1d8b4ba47ab68b5f25592, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     - target: {fileID: 3390183489595422573, guid: 620a391aa8b1d8b4ba47ab68b5f25592, type: 3}
       propertyPath: m_Name
       value: NPC_5
@@ -13444,6 +13487,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9156231158566169022, guid: 620a391aa8b1d8b4ba47ab68b5f25592, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
+    - target: {fileID: 9156231158566169022, guid: 620a391aa8b1d8b4ba47ab68b5f25592, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 1876763099}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 620a391aa8b1d8b4ba47ab68b5f25592, type: 3}
 --- !u!4 &1345089229 stripped
@@ -17441,6 +17492,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 472826734}
     m_Modifications:
+    - target: {fileID: 1511138411779748716, guid: 336f8d29ea7f04745817949036a94f1f, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     - target: {fileID: 3263281891427468404, guid: 336f8d29ea7f04745817949036a94f1f, type: 3}
       propertyPath: m_Name
       value: NPC_2
@@ -17505,6 +17560,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.22684704
       objectReference: {fileID: 0}
+    - target: {fileID: 9031036421472148135, guid: 336f8d29ea7f04745817949036a94f1f, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
+    - target: {fileID: 9031036421472148135, guid: 336f8d29ea7f04745817949036a94f1f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 1876763099}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 336f8d29ea7f04745817949036a94f1f, type: 3}
 --- !u!4 &1682701339 stripped
@@ -17742,36 +17805,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.019999996, y: 0.9101538}
   m_EdgeRadius: 0
---- !u!1 &1704171658
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1704171659}
-  m_Layer: 0
-  m_Name: QuestItems
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1704171659
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704171658}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 173745059}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1722378776
 Animator:
   serializedVersion: 3
@@ -18432,6 +18465,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 472826734}
     m_Modifications:
+    - target: {fileID: 4135590712066066763, guid: b875573b23c0cb641ab410cf5bf20a6d, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
+    - target: {fileID: 4135590712066066763, guid: b875573b23c0cb641ab410cf5bf20a6d, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 1876763099}
+    - target: {fileID: 5821072327138893952, guid: b875573b23c0cb641ab410cf5bf20a6d, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     - target: {fileID: 7600316430727501720, guid: b875573b23c0cb641ab410cf5bf20a6d, type: 3}
       propertyPath: m_Name
       value: NPC Gatoalien
@@ -23503,7 +23548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questItemPrefab: {fileID: 1300033415334682806, guid: 6939a39e0cb3d37488a684f03c50d93d, type: 3}
   positionQuestItem: {x: -9.29, y: -21.7}
-  parentQuestItem: {fileID: 0}
+  parentQuestItem: {fileID: 1309735930}
 --- !u!1001 &2173762525745313017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23770,7 +23815,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &2485380556016424750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24169,6 +24214,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3333944336446551040, guid: fae8c782f3bb1dc428f782759441d43b, type: 3}
+      propertyPath: parentQuestItem
+      value: 
+      objectReference: {fileID: 1309735930}
     - target: {fileID: 5181539882890190283, guid: fae8c782f3bb1dc428f782759441d43b, type: 3}
       propertyPath: questUI
       value: 
@@ -25067,10 +25116,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a304cdd3e72a694f9d8b0e803fb28b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleDialogue: {fileID: 6045098700538100136, guid: f940e9b78a1cf42419bb9b8445d2683f, type: 3}
+  idleDialogue: {fileID: 0}
   questSO: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
-  dialogueCanvas: {fileID: 0}
-  questUI: {fileID: 0}
+  dialogueCanvas: {fileID: 1876763099}
+  questUI: {fileID: 2040106109}
   hasQuest: 0
 --- !u!1001 &8567760468879532589
 PrefabInstance:
