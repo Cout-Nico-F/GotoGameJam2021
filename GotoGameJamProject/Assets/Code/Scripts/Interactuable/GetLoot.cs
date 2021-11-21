@@ -9,21 +9,21 @@ public class GetLoot : MonoBehaviour, Interactable
     private Animator animator;
 
 
-    private void Awake()
-    {
-        animator = GetComponent<Animator>();    
-    }
-
-
     public void Interact(GameObject interactor)
     {
         if (interactor.CompareTag("Player"))
         {
-            // obtenemos el inventario del Player
-            inventory = FindObjectOfType<Inventory>(true);
+            animator = interactor.GetComponent<Animator>();
+            inventory = interactor.GetComponentInChildren<Inventory>();
 
-            // lanzar el trigger de la animacion
-            animator.SetTrigger("Interact");
+            Debug.Log("Animator: " + animator.name);
+            Debug.Log("Inventario: " + inventory.name);
+
+            // cuando haya animación de pescar lanzar el trigger de la animacion
+            //animator.SetTrigger("Interact");
+
+            // cuando haya animacion quitar esto de aqui
+            inventory.AddItem(loot);
         }
     }
 
