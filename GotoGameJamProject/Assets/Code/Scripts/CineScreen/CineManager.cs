@@ -1,6 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using DialogueJam;
+using UnityEngine.SceneManagement;
+
 
 public class CineManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class CineManager : MonoBehaviour
     [SerializeField] private RectTransform dialogueCanvas;
     [SerializeField] private Animator animator;
 
+    private DialogueSystem dialogueSystem;
 
 
     public void GoddesDialogue()
@@ -19,7 +21,19 @@ public class CineManager : MonoBehaviour
     {
         var ui = Instantiate(go, dialogueCanvas.transform);
         ui.SetActive(true);
+        dialogueSystem = ui.GetComponentInChildren<DialogueSystem>();
+        if (dialogueSystem != null)
+        {
+            dialogueSystem.OnDialogueEnds += HandleDialogueEnds;
+        }
     }
+
+    private void HandleDialogueEnds(bool obj)
+    {
+        AudioJam.SoundManager.instance.Stop("CineMusic");
+        SceneManager.LoadScene("Loading");
+    }
+
 
     public void GoddesAppears()
     {
