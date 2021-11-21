@@ -90,3 +90,30 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
+  - name: Gotouu
+    clip: {fileID: 8300000, guid: 95575455e591ba64dabb8f245c209bb6, type: 3}
+    volume: 0.4
+    volumeVariance: 0.033
+    pitch: 1.07
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
+  - name: Pimm
+    clip: {fileID: 8300000, guid: 051eabeaec6042c45bd874058d13c9b8, type: 3}
+    volume: 1
+    volumeVariance: 0.033
+    pitch: 2
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
+  - name: CineMusic
+    clip: {fileID: 8300000, guid: fce835ecf80621e40b8552e70384abe7, type: 3}
+    volume: 1
+    volumeVariance: 0.033
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
