@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -609894370213536070, guid: 81aae8047f53ff24b84e80ad6316406f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!95 &6134787645564920209
@@ -135,6 +135,7 @@ MonoBehaviour:
   idleDialogue: {fileID: 2654096695783543973, guid: 535f6df2dc8636043ab2d2d908950b58, type: 3}
   questSO: {fileID: 11400000, guid: f509c5105f2ebf540890e5964485b816, type: 2}
   dialogueCanvas: {fileID: 0}
+  questUI: {fileID: 0}
   hasQuest: 1
 --- !u!61 &8225870805312636909
 BoxCollider2D:
