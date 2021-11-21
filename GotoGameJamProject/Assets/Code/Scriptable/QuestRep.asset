@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: QuestRep
   m_EditorClassIdentifier: 
   QuestID: RecogerMadera
-  Description: Recoge troncos de madera
+  Description: Recoger madera
+  LargeDescription: Bicho nos dice que la madera en su mundo es no renovable y ya
+    casi no hay, llevale madera
   Goal: {fileID: 11400000, guid: c37c77c7a44ada746844843aa6079bc0, type: 2}
   ExperienceReward: 1
   MainDialogue: {fileID: 6069791991963191834, guid: cb0d728df349eb24d9365c291ebe3b91, type: 3}
   RememberDialogue: {fileID: 3958387071328200107, guid: 0088792a8598d564ba021bb54d67ef29, type: 3}
   RewardDialogue: {fileID: 1614386832175316648, guid: 9d422ffc97b22ca4b85dfeacb1a293c8, type: 3}
+  BusyDialogue: {fileID: 3319273762837040550, guid: db3b13b85309f9b42ab8d289523367ed, type: 3}
   InfiniteQuest: 1

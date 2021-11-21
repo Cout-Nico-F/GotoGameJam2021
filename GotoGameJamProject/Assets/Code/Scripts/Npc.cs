@@ -61,9 +61,9 @@ public class Npc : MonoBehaviour, Interactable
         // comprobamos si la quest que tiene el Npc la tiene asignada el Player
         currentQuest = CheckQuestInPlayerAssignedQuests();
 
-        // si el Npc tiene una mision repetible pero el Player ya tiene asignada otra misión
+        // si el Npc tiene una mision que dar pero el Player ya tiene asignada otra misión
         // mostramos el dialogo Busy
-        if (questGiver.Quest.InfiniteQuest && currentQuest == null)
+        if (questPlayer.HasAnyQuestAsigned && currentQuest == null)
         {
             questGiver.ShowBusyDialogue();
             return;

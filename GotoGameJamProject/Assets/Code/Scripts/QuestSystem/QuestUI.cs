@@ -29,6 +29,7 @@ public class QuestUI : MonoBehaviour
 
     public void RemoveGoal(int position)
     {
+        largeDescriptionText.text = string.Empty;
         var entry = _goalEntryViews[position];
         Destroy(entry.gameObject);
         _goalEntryViews.RemoveAt(position);        

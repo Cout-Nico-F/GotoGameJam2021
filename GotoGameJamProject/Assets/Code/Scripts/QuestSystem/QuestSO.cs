@@ -5,7 +5,10 @@ public class QuestSO : ScriptableObject
 {
     public string QuestID;
     public string Description;
+
+    [TextArea(3, 5)]
     public string LargeDescription;
+
     public GoalSO Goal;
     public int ExperienceReward;
     public GameObject MainDialogue;
