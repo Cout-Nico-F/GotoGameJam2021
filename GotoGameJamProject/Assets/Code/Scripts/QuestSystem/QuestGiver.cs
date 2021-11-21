@@ -18,6 +18,7 @@ public class QuestGiver : MonoBehaviour
     private GameObject mainDialogue;
     private GameObject rememberDialogue;
     private GameObject rewardDialogue;
+    private GameObject busyDialogue;
     private PlayerMovementTOPDOWN playerMovement;
     private DialogueSystem dialogueSystem;
     private Quest quest;
@@ -28,11 +29,12 @@ public class QuestGiver : MonoBehaviour
         if (!hasQuest) return;
 
         var goal = new Goal(questSO.Goal);
-        quest = new Quest(questSO.QuestID, questSO.Description, goal, questSO.ExperienceReward, questSO.MainDialogue,
-                          questSO.RememberDialogue, questSO.RewardDialogue, questSO.InfiniteQuest);
+        quest = new Quest(questSO.QuestID, questSO.Description, questSO.LargeDescription, goal, questSO.ExperienceReward, questSO.MainDialogue,
+                          questSO.RememberDialogue, questSO.RewardDialogue, questSO.BusyDialogue, questSO.InfiniteQuest);
         mainDialogue = quest.MainDialogue;
         rememberDialogue = quest.RememberDialogue;
         rewardDialogue = quest.RewardDialogue;
+        busyDialogue = quest.BusyDialogue;
     }
 
     public void GiveQuest(QuestPlayer questPlayer)
@@ -57,6 +59,12 @@ public class QuestGiver : MonoBehaviour
     public void GiveReward()
     {
         DialogueInteract(rewardDialogue);
+    }
+
+
+    public void ShowBusyDialogue()
+    {
+        DialogueInteract(busyDialogue);
     }
 
 
