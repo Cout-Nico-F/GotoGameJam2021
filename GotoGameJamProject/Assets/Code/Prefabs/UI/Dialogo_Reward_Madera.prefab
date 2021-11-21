@@ -449,33 +449,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayBetweenDialogues: 2
   textValues:
-  - characterSprite: {fileID: 21300000, guid: d3225209c764bea48ab083b748cdf99d, type: 3}
-    textColor: {r: 1, g: 1, b: 1, a: 1}
+  - characterSprite: {fileID: 21300000, guid: b9eaab5549e27da40bae8861a4d992d5, type: 3}
+    textColor: {r: 0.9056604, g: 0.5596298, b: 0.5596298, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: FriskFX
-    input: Aqui traigo la madera
-  - characterSprite: {fileID: 21300000, guid: 4b445d90a512228438e1ad2de13dbd76, type: 3}
-    textColor: {r: 1, g: 0, b: 0, a: 1}
+    nameFXsound: Rulfio
+    input: Mis ojos no lo creen..
+  - characterSprite: {fileID: 21300000, guid: b9eaab5549e27da40bae8861a4d992d5, type: 3}
+    textColor: {r: 0.9056604, g: 0.5596298, b: 0.5596298, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: SansFX
-    input: Genial !!!, toma tu recompensa...
-  - characterSprite: {fileID: 21300000, guid: 4b445d90a512228438e1ad2de13dbd76, type: 3}
-    textColor: {r: 1, g: 0, b: 0, a: 1}
+    nameFXsound: Rulfio
+    input: ESO ES... MADERA DEL ARBOL CEREZO TURQUESIO
+  - characterSprite: {fileID: 21300000, guid: b9eaab5549e27da40bae8861a4d992d5, type: 3}
+    textColor: {r: 0.9056604, g: 0.5596298, b: 0.5596298, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: SansFX
-    input: y vuelve cuando quieras mas
-  - characterSprite: {fileID: 21300000, guid: d3225209c764bea48ab083b748cdf99d, type: 3}
-    textColor: {r: 1, g: 1, b: 1, a: 1}
-    textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.04
-    fontSize: 50
-    nameFXsound: FriskFX
-    input: "Gracias, lo har\xE9"
+    nameFXsound: Rulfio
+    input: GRACIAS!!! consigueme mas y seras recompensado
   textHolder: {fileID: 675241984208662793}
   imgageHolder: {fileID: 395391484371673115}
