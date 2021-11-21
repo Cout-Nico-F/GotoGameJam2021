@@ -19,4 +19,10 @@ public class AnimationInitialCinematic : MonoBehaviour
     {
         AudioJam.SoundManager.instance.Play("Explode");
     }
+    
+    public void PlayAura()
+    {
+        AudioJam.SoundManager.instance.Stop("CineMusic");
+        AudioJam.SoundManager.instance.Play("Aura");
+    }
 }
