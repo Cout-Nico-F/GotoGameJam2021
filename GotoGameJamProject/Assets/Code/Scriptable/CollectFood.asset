@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28dbc55120b0b7a4c9821ff3f3687e32, type: 3}
   m_Name: CollectFood
   m_EditorClassIdentifier: 
-  ItemID: item1
+  ItemID: hamburguesa
   RequiredAmount: 1

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestID: QuestComida
   Description: Consigue comida
-  Goal: {fileID: 11400000, guid: 830566597a0549048b72e3e7e5f679ed, type: 2}
+  Goal: {fileID: 11400000, guid: 995531a63d1fbc94db0162437de7fb85, type: 2}
   ExperienceReward: 1
-  MainDialogue: {fileID: 5427668910820792433, guid: aae7ab3685709a94d8e61fe3b12ad7f1, type: 3}
-  RememberDialogue: {fileID: 5687995215004293292, guid: c1cbef17bcec56b4aaf48c31232baf53, type: 3}
-  RewardDialogue: {fileID: 3521338620480929338, guid: 78beb0885d9dfeb4c8003ab0800eac3b, type: 3}
+  MainDialogue: {fileID: 6801207043974908514, guid: 152331acac868d343a2e8cb4edd8b5f3, type: 3}
+  RememberDialogue: {fileID: 292408445068552877, guid: 5f04b998a95f5a148b80cddeced7e87b, type: 3}
+  RewardDialogue: {fileID: 7635607990487432677, guid: 8e3fe8787864ac040bc7bbcd28d22eae, type: 3}
   InfiniteQuest: 0
