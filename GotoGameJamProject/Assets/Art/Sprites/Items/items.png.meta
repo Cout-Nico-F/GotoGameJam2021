@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: 6761164967045977113
     second: fish
+  - first:
+      213: 5508725064705088119
+    second: items_1
+  - first:
+      213: -68751727340038015
+    second: cubo
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,6 +116,27 @@ TextureImporter:
       bones: []
       spriteID: 914579027bb74dd50800000000000000
       internalID: 6761164967045977113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubo
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188d3321baebb0ff0800000000000000
+      internalID: -68751727340038015
       vertices: []
       indices: 
       edges: []
