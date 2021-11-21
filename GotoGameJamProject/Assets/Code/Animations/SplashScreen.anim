@@ -2762,6 +2762,13 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0
+    functionName: PlayGotouu
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.4
     functionName: PlayWoosh1
     data: 
@@ -2771,6 +2778,13 @@ AnimationClip:
     messageOptions: 0
   - time: 3.2
     functionName: PlayWoosh2
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 4.55
+    functionName: PlayPimm
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
