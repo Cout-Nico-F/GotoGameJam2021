@@ -56,15 +56,8 @@ MonoBehaviour:
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: Rulfio
-    input: Traeme devuelta mi reloj
-  - characterSprite: {fileID: 21300000, guid: c5647a18e1c095d499ca8beb98d5ad56, type: 3}
-    textColor: {r: 1, g: 0.5424528, b: 0.8743298, a: 1}
-    textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.04
-    fontSize: 50
-    nameFXsound: Rulfio
-    input: "Lo tiene una ni\xF1a llamada Lisa"
+    nameFXsound: Lisa
+    input: Ya encontraste la comida? Que no se enfrie!
   textHolder: {fileID: 3427193747218406082}
   imgageHolder: {fileID: 5965285602349061444}
 --- !u!1 &292408445068552877

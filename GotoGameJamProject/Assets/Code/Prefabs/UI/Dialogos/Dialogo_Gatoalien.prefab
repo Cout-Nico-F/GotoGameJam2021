@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 1965243480035610161}
   - component: {fileID: 9199452318955620134}
   m_Layer: 5
-  m_Name: CharacterFace (1)
+  m_Name: PressE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
