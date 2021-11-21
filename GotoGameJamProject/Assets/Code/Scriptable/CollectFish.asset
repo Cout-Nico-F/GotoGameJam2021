@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CollectFish
   m_EditorClassIdentifier: 
   ItemID: fish
-  RequiredAmount: 3
+  RequiredAmount: 6

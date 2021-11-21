@@ -20,5 +20,5 @@ MonoBehaviour:
   MainDialogue: {fileID: 6801207043974908514, guid: 9c2125b67e39f7744a905ec0d7a7d7e7, type: 3}
   RememberDialogue: {fileID: 292408445068552877, guid: 0511f6c9554f5604bbed917c568ce17b, type: 3}
   RewardDialogue: {fileID: 7635607990487432677, guid: d0b930007eb4bf746a0720a0391362a0, type: 3}
-  BusyDialogue: {fileID: 0}
+  BusyDialogue: {fileID: 2654096695783543973, guid: 4f88cb2c68fd16f4da59077c00c1f957, type: 3}
   InfiniteQuest: 0

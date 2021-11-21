@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CollectMadera
   m_EditorClassIdentifier: 
   ItemID: madera
-  RequiredAmount: 2
+  RequiredAmount: 6

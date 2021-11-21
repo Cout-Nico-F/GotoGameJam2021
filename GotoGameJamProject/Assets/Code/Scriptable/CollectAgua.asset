@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CollectAgua
   m_EditorClassIdentifier: 
   ItemID: agua
-  RequiredAmount: 1
+  RequiredAmount: 6
