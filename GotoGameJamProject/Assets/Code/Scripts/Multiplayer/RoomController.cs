@@ -57,9 +57,8 @@ public class RoomController : MonoBehaviour,IPunObservable
         {
             if(pv)
             {
-                goal = 2+ PhotonNetwork.CountOfPlayers*3;
+                goal = 2 + PhotonNetwork.CurrentRoom.PlayerCount * 3;
                 pv = false;
-                Debug.Log(goal);
             }
             textMeshPro.enabled = true;
             textMeshPro.text = minutes + ":" + Mathf.Round(seconds);
