@@ -7,7 +7,7 @@ public class LobbyUI : MonoBehaviourPunCallbacks
 {
     [SerializeField] private Button btn_Create;
     [SerializeField] private Button btn_Join;
-    [SerializeField] private Button btn_ComunitarySV;
+    [SerializeField] private Button btn_Exit;
     [SerializeField] private string loadLevelString;
 
     [SerializeField] private InputField createInput;
@@ -17,7 +17,7 @@ public class LobbyUI : MonoBehaviourPunCallbacks
     {
         btn_Create.onClick.AddListener(CreateRoom);
         btn_Join.onClick.AddListener(JoinRoom);
-        btn_ComunitarySV.onClick.AddListener(JoinComunitarySV);
+        btn_Exit.onClick.AddListener(ExitGame);
     }
 
     public void CreateRoom()
@@ -34,9 +34,8 @@ public class LobbyUI : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LoadLevel(loadLevelString);
     }
-
-    public void JoinComunitarySV()
+    public void ExitGame()
     {
-        PhotonNetwork.JoinRoom("+1+");
+        Application.Quit();
     }
 }
