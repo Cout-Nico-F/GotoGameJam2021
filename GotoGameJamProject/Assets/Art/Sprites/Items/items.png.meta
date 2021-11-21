@@ -7,7 +7,7 @@ TextureImporter:
     second: fish
   - first:
       213: 5508725064705088119
-    second: items_1
+    second: reloj
   - first:
       213: -68751727340038015
     second: cubo
@@ -137,6 +137,27 @@ TextureImporter:
       bones: []
       spriteID: 188d3321baebb0ff0800000000000000
       internalID: -68751727340038015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reloj
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 37
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a9907824ce27c40800000000000000
+      internalID: 5508725064705088119
       vertices: []
       indices: 
       edges: []
