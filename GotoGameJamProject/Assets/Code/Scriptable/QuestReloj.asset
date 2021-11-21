@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c6bd9e54168b1459d0d2d1c2716f7f, type: 3}
+  m_Name: QuestReloj
+  m_EditorClassIdentifier: 
+  QuestID: QuestReloj
+  Description: Consigue reloj
+  Goal: {fileID: 11400000, guid: 7dcc26eec6306c4478ce558c836b6f97, type: 2}
+  ExperienceReward: 1
+  MainDialogue: {fileID: 6801207043974908514, guid: ec397e5ef0c156f4d8398d5e95b9f844, type: 3}
+  RememberDialogue: {fileID: 292408445068552877, guid: 5bf52b995b2dbe249aa3811865087257, type: 3}
+  RewardDialogue: {fileID: 7635607990487432677, guid: 8e3fe8787864ac040bc7bbcd28d22eae, type: 3}
+  InfiniteQuest: 0

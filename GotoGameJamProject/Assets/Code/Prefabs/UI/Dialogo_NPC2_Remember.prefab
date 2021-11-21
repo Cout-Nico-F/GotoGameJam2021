@@ -56,15 +56,8 @@ MonoBehaviour:
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: Rulfio
-    input: Traeme devuelta mi reloj
-  - characterSprite: {fileID: 21300000, guid: c5647a18e1c095d499ca8beb98d5ad56, type: 3}
-    textColor: {r: 1, g: 0.5424528, b: 0.8743298, a: 1}
-    textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.04
-    fontSize: 50
-    nameFXsound: Rulfio
-    input: "Lo tiene una ni\xF1a llamada Lisa"
+    nameFXsound: Lisa
+    input: Tienes que conseguirme comida primero humano, RAPIDO!! MIAU!!
   textHolder: {fileID: 3427193747218406082}
   imgageHolder: {fileID: 5965285602349061444}
 --- !u!1 &292408445068552877
@@ -77,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5684041280444515936}
   m_Layer: 5
-  m_Name: Dialogo_Gatalien_Remember
+  m_Name: Dialogo_NPC2_Remember
   m_TagString: Dialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
