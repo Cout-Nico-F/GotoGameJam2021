@@ -72,20 +72,20 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
-  - name: Woosh1
-    clip: {fileID: 8300000, guid: 6dfafe8ef6cc3854cabd06c0ca88cb5b, type: 3}
+  - name: Lisa
+    clip: {fileID: 8300000, guid: 6dd5487d67ed1e947aacd6d56b9daeaf, type: 3}
     volume: 0.707
     volumeVariance: 0.033
-    pitch: 1.63
+    pitch: 1.8
     pitchVariance: 0.013
     loop: 0
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
-  - name: Woosh2
-    clip: {fileID: 8300000, guid: 7c8bfa2e9a81ff44ea4db6bd8710f39d, type: 3}
+  - name: Rulfio
+    clip: {fileID: 8300000, guid: 6dd5487d67ed1e947aacd6d56b9daeaf, type: 3}
     volume: 0.707
     volumeVariance: 0.033
-    pitch: 1.63
+    pitch: 0.5
     pitchVariance: 0.013
     loop: 0
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}

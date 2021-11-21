@@ -5503,38 +5503,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2631532}
     m_Modifications:
-    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
-      propertyPath: sounds.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
-      propertyPath: sounds.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6dd5487d67ed1e947aacd6d56b9daeaf, type: 3}
-    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
-      propertyPath: sounds.Array.data[3].name
-      value: Lisa
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
-      propertyPath: sounds.Array.data[3].pitch
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
-      propertyPath: sounds.Array.data[3].volume
-      value: 0.707
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
-      propertyPath: sounds.Array.data[3].mixerGroup
-      value: 
-      objectReference: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
-    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
-      propertyPath: sounds.Array.data[3].pitchVariance
-      value: 0.013
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
-      propertyPath: sounds.Array.data[3].volumeVariance
-      value: 0.033
-      objectReference: {fileID: 0}
     - target: {fileID: 4799309537232920769, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
       propertyPath: m_RootOrder
       value: 1
