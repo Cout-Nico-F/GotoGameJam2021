@@ -11,6 +11,7 @@ public class MeleeAtack : MonoBehaviourPun
     [SerializeField] private Vector3 offset;
     [SerializeField] private PhotonView photonView;
     [SerializeField] private GameObject minePlayer;
+    [SerializeField] private Animator animator;
     private bool isAtack = false;
     private Vector3 dir;
     private float angle;
@@ -38,11 +39,13 @@ public class MeleeAtack : MonoBehaviourPun
     }
     IEnumerator CorutineAtack()
     {
+        animator.SetBool("punch", true);
         isAtack = true;
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(dir.x, dir.y, 0), 0.5f);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 0.5f);
         isAtack = false;
+        animator.SetBool("punch", false);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
