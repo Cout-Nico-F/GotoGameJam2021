@@ -46,7 +46,10 @@ public class RoomController : MonoBehaviour,IPunObservable
     }
     private void Update()
     {
-        image.fillAmount = (float)goalActual / (float)goal;
+        if(goal!=0)
+        {
+            image.fillAmount = (float)goalActual / (float)goal;
+        }
         if (minutesGracia >= 0 && secondsGracia > 0)
         {
             secondsGracia -= Time.deltaTime;
