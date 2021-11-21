@@ -116,6 +116,7 @@ MonoBehaviour:
   idleDialogue: {fileID: 3069311857837556591, guid: d1445583b2102d54fa16688cafd5523b, type: 3}
   questSO: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
   dialogueCanvas: {fileID: 0}
+  questUI: {fileID: 0}
   hasQuest: 0
 --- !u!61 &7508424864165219211
 BoxCollider2D:
@@ -130,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03429234, y: 0.47334385}
+  m_Offset: {x: -0.03181839, y: 0.2287035}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -141,7 +142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88030267, y: 0.05100727}
+  m_Size: {x: 0.6282425, y: 0.45133018}
   m_EdgeRadius: 0
 --- !u!95 &8538992950300852221
 Animator:

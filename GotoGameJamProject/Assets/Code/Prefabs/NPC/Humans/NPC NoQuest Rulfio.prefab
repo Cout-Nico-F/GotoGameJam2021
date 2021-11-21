@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 4657447681511547431, guid: 6d9fab39a97cf12488b2445ca985ea44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.48, y: 0.48}
@@ -116,6 +116,7 @@ MonoBehaviour:
   idleDialogue: {fileID: 2915243939048053866, guid: f81102d62ae713f4ea39e8b1028daa90, type: 3}
   questSO: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
   dialogueCanvas: {fileID: 0}
+  questUI: {fileID: 0}
   hasQuest: 0
 --- !u!61 &5067430943710352745
 BoxCollider2D:
@@ -130,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03429234, y: 0.47334385}
+  m_Offset: {x: 0.001203537, y: 0.20161009}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -141,7 +142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88030267, y: 0.05100727}
+  m_Size: {x: 0.73833084, y: 0.3981104}
   m_EdgeRadius: 0
 --- !u!95 &6404384620918726941
 Animator:
