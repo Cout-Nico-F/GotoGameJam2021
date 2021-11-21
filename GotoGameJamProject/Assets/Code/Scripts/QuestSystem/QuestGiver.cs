@@ -14,7 +14,7 @@ public class QuestGiver : MonoBehaviour
     [SerializeField] private QuestSO questSO;
     [SerializeField] private RectTransform dialogueCanvas;
 
-    private bool hasQuest;
+    [SerializeField] private bool hasQuest;
     private GameObject mainDialogue;
     private GameObject rememberDialogue;
     private GameObject rewardDialogue;

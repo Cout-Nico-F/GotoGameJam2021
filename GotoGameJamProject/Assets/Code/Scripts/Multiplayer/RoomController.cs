@@ -6,14 +6,37 @@ using Photon.Pun;
 
 public class RoomController : MonoBehaviour,IPunObservable
 {
+    private static RoomController instance;
+    public static RoomController Instance => instance; 
     [SerializeField] private float minutes;
     [SerializeField] private float seconds;
     [SerializeField] private float minutesGracia;
     [SerializeField] private float secondsGracia;
-    [SerializeField] public int goalActual;
-    [SerializeField] public int goal;
+    [SerializeField] private int goalActual; 
+    [SerializeField] private int goal;
     [SerializeField] private TextMeshProUGUI textMeshPro;
     bool pv=true;
+    private LevelUI levelUI;
+
+    public float Minutes { get => minutes; set => minutes = value; }
+    public float Seconds { get => seconds; set => seconds = value; }
+    public float MinutesGracia { get => minutesGracia; set => minutesGracia = value; }
+    public float SecondsGracia { get => secondsGracia; set => secondsGracia = value; }
+    public int GoalActual { get => goalActual; set => goalActual = value; }
+    public int Goal { get => goal; set => goal = value; }
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogError("Se esta creando una segunda instancia de RoomController");
+            //Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
     void Start()
     {
         textMeshPro.enabled = false;

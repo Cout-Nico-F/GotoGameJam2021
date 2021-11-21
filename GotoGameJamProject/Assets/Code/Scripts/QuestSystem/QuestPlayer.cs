@@ -113,7 +113,8 @@ public class QuestPlayer : MonoBehaviour
         inventory.RemoveItems(quest.Goal.ItemID, quest.Goal.RequiredAmount);
 
         // sumamos la recompensa a la UI
-        levelUI.AddReward(quest.ExperienceReward);
+        RoomController.Instance.GoalActual += quest.ExperienceReward;
+        levelUI.AddScore(quest.ExperienceReward);
 
         // reseteamos la quest si se trata de una infinite quest
         if (quest.InfiniteQuest)

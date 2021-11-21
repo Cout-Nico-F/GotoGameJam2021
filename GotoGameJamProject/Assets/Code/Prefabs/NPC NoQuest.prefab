@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1215777898061191066
+--- !u!1 &5911985217799141131
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7219959346981097976}
-  - component: {fileID: 277059866880695837}
-  - component: {fileID: 6134787645564920209}
-  - component: {fileID: 8340934968287222906}
-  - component: {fileID: 868395750314976162}
-  - component: {fileID: 8225870805312636909}
+  - component: {fileID: 5911985217799141128}
+  - component: {fileID: 5911985217799141129}
+  - component: {fileID: 7762713504161497107}
+  - component: {fileID: 150511504147261912}
+  - component: {fileID: 5528246894565737336}
   m_Layer: 0
-  m_Name: NPC Rep
+  m_Name: NPC NoQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7219959346981097976
+--- !u!4 &5911985217799141128
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215777898061191066}
+  m_GameObject: {fileID: 5911985217799141131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.67, y: 4.25, z: 0}
+  m_LocalPosition: {x: -4.56, y: -0.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &277059866880695837
+--- !u!212 &5911985217799141129
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215777898061191066}
+  m_GameObject: {fileID: 5911985217799141131}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -609894370213536070, guid: 81aae8047f53ff24b84e80ad6316406f, type: 3}
+  m_Sprite: {fileID: 1986936860791778875, guid: 04ef914c72a0b924d8aa45cf826a7d01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,79 +85,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!95 &6134787645564920209
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215777898061191066}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7bfabcc6d98679f47ae6c508b7db2479, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8340934968287222906
+--- !u!114 &7762713504161497107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215777898061191066}
+  m_GameObject: {fileID: 5911985217799141131}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd3d841f960e904eb36f98accfdba34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questItemPrefab: {fileID: 0}
-  positionQuestItem: {x: 0, y: 0}
+  questItemPrefab: {fileID: 1300033415334682806, guid: 6939a39e0cb3d37488a684f03c50d93d, type: 3}
+  positionQuestItem: {x: -9.29, y: -21.7}
   parentQuestItem: {fileID: 0}
---- !u!114 &868395750314976162
+--- !u!114 &150511504147261912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215777898061191066}
+  m_GameObject: {fileID: 5911985217799141131}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a304cdd3e72a694f9d8b0e803fb28b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idleDialogue: {fileID: 2654096695783543973, guid: 535f6df2dc8636043ab2d2d908950b58, type: 3}
-  questSO: {fileID: 11400000, guid: f509c5105f2ebf540890e5964485b816, type: 2}
+  questSO: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
   dialogueCanvas: {fileID: 0}
-  hasQuest: 1
---- !u!61 &8225870805312636909
+  hasQuest: 0
+--- !u!61 &5528246894565737336
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215777898061191066}
+  m_GameObject: {fileID: 5911985217799141131}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.032159805, y: 0.3882866}
+  m_Offset: {x: -0.03429234, y: 0.47334385}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.0625, y: 1.8125}
+    oldSize: {x: 1.8125, y: 1.8125}
     newSize: {x: 0.48, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86954117, y: 0.033034325}
+  m_Size: {x: 0.88030267, y: 0.05100727}
   m_EdgeRadius: 0

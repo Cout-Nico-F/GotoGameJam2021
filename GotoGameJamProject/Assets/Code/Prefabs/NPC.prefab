@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2080035805551161883}
   - component: {fileID: 2080035805551161882}
-  - component: {fileID: 2080035805551161881}
   - component: {fileID: 2696777105589650688}
   - component: {fileID: 5530679666210368715}
   - component: {fileID: 175101566125082219}
@@ -86,25 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!95 &2080035805551161881
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080035805551161880}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7bfabcc6d98679f47ae6c508b7db2479, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &2696777105589650688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd3d841f960e904eb36f98accfdba34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questItemPrefab: {fileID: 1300033415334682806, guid: 6939a39e0cb3d37488a684f03c50d93d, type: 3}
+  positionQuestItem: {x: -9.29, y: -21.7}
+  parentQuestItem: {fileID: 0}
 --- !u!114 &5530679666210368715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,9 +112,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a304cdd3e72a694f9d8b0e803fb28b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleDialogue: {fileID: 0}
-  questSO: {fileID: 0}
+  idleDialogue: {fileID: 2654096695783543973, guid: 535f6df2dc8636043ab2d2d908950b58, type: 3}
+  questSO: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
   dialogueCanvas: {fileID: 0}
+  hasQuest: 1
 --- !u!61 &175101566125082219
 BoxCollider2D:
   m_ObjectHideFlags: 0
