@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28dbc55120b0b7a4c9821ff3f3687e32, type: 3}
-  m_Name: CollectReloj
+  m_Name: CollectAgua
   m_EditorClassIdentifier: 
-  ItemID: cubo
+  ItemID: agua
   RequiredAmount: 1

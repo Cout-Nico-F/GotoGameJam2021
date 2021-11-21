@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5c6bd9e54168b1459d0d2d1c2716f7f, type: 3}
-  m_Name: QuestReloj
+  m_Name: QuestAgua
   m_EditorClassIdentifier: 
-  QuestID: QuestReloj
-  Description: Consigue reloj
-  LargeDescription: 
-  Goal: {fileID: 11400000, guid: 7dcc26eec6306c4478ce558c836b6f97, type: 2}
+  QuestID: QuestAgua
+  Description: Consigue agua
+  LargeDescription: En tu dimension se encuentra un pozo, consigue agua
+  Goal: {fileID: 11400000, guid: 6f12c44595d5e8d49921931b2d206c2f, type: 2}
   ExperienceReward: 1
-  MainDialogue: {fileID: 6801207043974908514, guid: ec397e5ef0c156f4d8398d5e95b9f844, type: 3}
-  RememberDialogue: {fileID: 292408445068552877, guid: 5bf52b995b2dbe249aa3811865087257, type: 3}
+  MainDialogue: {fileID: 6801207043974908514, guid: 9c2125b67e39f7744a905ec0d7a7d7e7, type: 3}
+  RememberDialogue: {fileID: 292408445068552877, guid: 0511f6c9554f5604bbed917c568ce17b, type: 3}
   RewardDialogue: {fileID: 7635607990487432677, guid: 86a1d09796e124642959bf9947c8f101, type: 3}
   BusyDialogue: {fileID: 0}
   InfiniteQuest: 0
