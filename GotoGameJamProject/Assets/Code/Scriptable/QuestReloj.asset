@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestID: QuestReloj
   Description: Consigue reloj
-  LargeDescription: 
+  LargeDescription: Habla con Lisa la chica de vestido rojo
   Goal: {fileID: 11400000, guid: 7dcc26eec6306c4478ce558c836b6f97, type: 2}
   ExperienceReward: 1
   MainDialogue: {fileID: 6801207043974908514, guid: ec397e5ef0c156f4d8398d5e95b9f844, type: 3}
   RememberDialogue: {fileID: 292408445068552877, guid: 5bf52b995b2dbe249aa3811865087257, type: 3}
   RewardDialogue: {fileID: 7635607990487432677, guid: 86a1d09796e124642959bf9947c8f101, type: 3}
-  BusyDialogue: {fileID: 0}
+  BusyDialogue: {fileID: 2654096695783543973, guid: 0df4e5c54b708e44ab12f7603477e05a, type: 3}
   InfiniteQuest: 0
