@@ -111,7 +111,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 8.85
+        time: 10
         value: 1
         inSlope: 0
         outSlope: 0
@@ -120,7 +120,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 9.733334
+        time: 10.883333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -129,7 +129,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 10.966666
+        time: 11.85
         value: 0
         inSlope: 0
         outSlope: 0
@@ -327,11 +327,11 @@ AnimationClip:
       value: {fileID: 21300000, guid: b91d659462e422f4caf448a44b9bbd89, type: 3}
     - time: 6.7833333
       value: {fileID: 21300000, guid: b91d659462e422f4caf448a44b9bbd89, type: 3}
-    - time: 8.85
+    - time: 10
       value: {fileID: 21300000, guid: b91d659462e422f4caf448a44b9bbd89, type: 3}
-    - time: 9.733334
+    - time: 10.883333
       value: {fileID: 21300000, guid: b91d659462e422f4caf448a44b9bbd89, type: 3}
-    - time: 10.966666
+    - time: 11.85
       value: {fileID: 21300000, guid: b91d659462e422f4caf448a44b9bbd89, type: 3}
     attribute: m_Sprite
     path: 
@@ -396,7 +396,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 10.983333
+    m_StopTime: 11.866667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -506,7 +506,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 8.85
+        time: 10
         value: 1
         inSlope: 0
         outSlope: 0
@@ -515,7 +515,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 9.733334
+        time: 10.883333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -524,7 +524,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 10.966666
+        time: 11.85
         value: 0
         inSlope: 0
         outSlope: 0
@@ -715,7 +715,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 7.8166666
+  - time: 8.7
     functionName: TravelEffect
     data: 
     objectReferenceParameter: {fileID: 0}
