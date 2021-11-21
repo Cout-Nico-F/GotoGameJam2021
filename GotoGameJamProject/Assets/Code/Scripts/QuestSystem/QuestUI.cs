@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class QuestUI : MonoBehaviour
 {    
     [SerializeField] private RectTransform container;
     [SerializeField] private TextMeshProUGUI largeDescriptionText;
+    [SerializeField] private Button leaveQuestButton;
     [SerializeField] private GoalEntryView goalEntryViewPrefab;
 
     private QuestPlayer questPlayer;
