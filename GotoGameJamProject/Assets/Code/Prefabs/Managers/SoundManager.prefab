@@ -135,3 +135,12 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
+  - name: Explode
+    clip: {fileID: 8300000, guid: 0e5d437b5a442cc46aea42685a910841, type: 3}
+    volume: 0.5
+    volumeVariance: 0.033
+    pitch: 1.1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
