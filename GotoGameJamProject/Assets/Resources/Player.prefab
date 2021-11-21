@@ -1530,8 +1530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a076b1dfb6b91649948fb8d2786e41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  score: {fileID: 5864892857968279099}
   playerPhotonView: {fileID: -3382059923018268562}
   desactivateCanvas: {fileID: 1370545653573340583}
 --- !u!1 &5562655097765740377
