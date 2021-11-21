@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c6bd9e54168b1459d0d2d1c2716f7f, type: 3}
+  m_Name: QuestFish
+  m_EditorClassIdentifier: 
+  QuestID: QuestFish
+  Description: Recoge pescado
+  LargeDescription: Un Kawalopus nos pide que le llevemos pescado ya que esa especie
+    esta extinta en su dimension, ve al mar para conseguirlo
+  Goal: {fileID: 11400000, guid: 3ba28ba540ffaa147845d2fcc89841d3, type: 2}
+  ExperienceReward: 1
+  MainDialogue: {fileID: 6069791991963191834, guid: 1cecdcd8b7191b74da608265792f53a8, type: 3}
+  RememberDialogue: {fileID: 3958387071328200107, guid: 1117531f52cf02c478dbf959c719c085, type: 3}
+  RewardDialogue: {fileID: 1614386832175316648, guid: d73c31d4b33a3a34182c85d62986ff2c, type: 3}
+  BusyDialogue: {fileID: 3319273762837040550, guid: db3b13b85309f9b42ab8d289523367ed, type: 3}
+  InfiniteQuest: 1
