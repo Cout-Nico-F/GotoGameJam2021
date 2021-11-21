@@ -31,10 +31,10 @@ public class QuestPlayer : MonoBehaviour
         quests.Add(quest);
         hasAnyQuestAsigned = true;
 
-        // cargamos la quest en la UI como una GoalEntry
-        // nos devuelve la posicion en la lista de quest
+        // cargamos la quest en la UI como una GoalEntry, nos devuelve la posicion en la lista de quest
         // para despues poder eliminarla directamente
         quest.Goal.GoalID = questUI.AddGoal(quest);
+        questUI.AddLargeDescription(quest.LargeDescription);
 
         // comprobamos además si ya tenemos items en el inventario
         // de los que nos piden en la misión y lo reflejamos en la UI

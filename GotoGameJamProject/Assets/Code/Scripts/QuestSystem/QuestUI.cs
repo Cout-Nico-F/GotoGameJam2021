@@ -1,11 +1,11 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class QuestUI : MonoBehaviour
 {    
     [SerializeField] private RectTransform container;
+    [SerializeField] private TextMeshProUGUI largeDescriptionText;
     [SerializeField] private GoalEntryView goalEntryViewPrefab;
 
     private QuestPlayer questPlayer;
@@ -39,5 +39,11 @@ public class QuestUI : MonoBehaviour
     {
         var entry = _goalEntryViews[quest.Goal.GoalID];
         entry.Configure(quest.Goal.Completed, quest.Description, quest.Goal.CurrentAmount, quest.Goal.RequiredAmount);
+    }
+
+
+    public void AddLargeDescription(string description)
+    {
+        largeDescriptionText.text = description;
     }
 }
