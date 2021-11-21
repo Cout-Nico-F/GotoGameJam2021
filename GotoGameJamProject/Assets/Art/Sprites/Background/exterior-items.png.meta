@@ -10,7 +10,7 @@ TextureImporter:
     second: exterior-items_1
   - first:
       213: -1867213943241792996
-    second: exterior-items_2
+    second: pozo
   - first:
       213: -7295902279815837324
     second: exterior-items_3
@@ -49,7 +49,7 @@ TextureImporter:
     second: exterior-items_14
   - first:
       213: -1094089488843486091
-    second: exterior-items_15
+    second: cubo
   - first:
       213: -6121517884152700318
     second: exterior-items_16
@@ -250,7 +250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterior-items_2
+      name: pozo
       rect:
         serializedVersion: 2
         x: 102
@@ -523,7 +523,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterior-items_15
+      name: cubo
       rect:
         serializedVersion: 2
         x: 123

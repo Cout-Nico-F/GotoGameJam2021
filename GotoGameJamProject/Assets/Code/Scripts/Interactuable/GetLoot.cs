@@ -4,33 +4,53 @@ using InventoryJam;
 public class GetLoot : MonoBehaviour, Interactable
 {
     [SerializeField] private Item loot;
+    [SerializeField] private bool hasAnimation;
+    [SerializeField] private string animationTrigger;
 
     private Inventory inventory;
     private Animator animator;
-
-
-    private void Awake()
-    {
-        animator = GetComponent<Animator>();    
-    }
 
 
     public void Interact(GameObject interactor)
     {
         if (interactor.CompareTag("Player"))
         {
-            // obtenemos el inventario del Player
-            inventory = FindObjectOfType<Inventory>(true);
+            if (hasAnimation)
+            {
+                animator = interactor.GetComponent<Animator>();
+                if (animator == null)
+                {
+                    Debug.LogError("El Player no tiene Animator");
+                    return;
+                }
+            }
 
-            // lanzar el trigger de la animacion
-            animator.SetTrigger("Interact");
+            inventory = interactor.GetComponentInChildren<Inventory>();
+            if (inventory == null)
+            {
+                Debug.LogError("El Player no tiene Inventario");
+                return;
+            }
+
+            // cuando haya animación activamos el trigger de la animacion sino
+            // le damos el loot directamente
+            if (hasAnimation)
+            {
+                animator.SetTrigger(animationTrigger);
+            }
+            else
+            {
+                if (inventory.HasSpace())
+                    inventory.AddItem(loot);
+            }
         }
     }
 
 
     public void OnAnimationFinish()
     {
-        // le damos el loot
-        inventory.AddItem(loot);
+        // al finalizar la animacion le damos el loot
+        if (inventory.HasSpace())
+            inventory.AddItem(loot);
     }
 }
