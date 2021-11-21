@@ -1318,7 +1318,7 @@ Transform:
   m_GameObject: {fileID: 609593811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73043, y: 0.73043, z: 0.73043}
   m_Children:
   - {fileID: 1512877991}
   - {fileID: 1610975785}
@@ -1580,6 +1580,7 @@ GameObject:
   - component: {fileID: 702057967}
   - component: {fileID: 702057966}
   - component: {fileID: 702057965}
+  - component: {fileID: 702057970}
   m_Layer: 0
   m_Name: Radio
   m_TagString: Untagged
@@ -1748,9 +1749,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 0.18, y: 0.23}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1799,7 +1800,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 497385921271775524, guid: 7c9a59f44d8d80443b7ef3c0039b8d7d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1810,6 +1811,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &702057970
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702057963}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8b26bb0fc09ac41488adfdf93878c313, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &735115850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2905,10 +2925,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 315964610491423185, guid: 07f18d4bef1f4fa46aca6edbd3612c67, type: 3}
-  minX: -25
-  maxX: -20
-  minY: -2
-  maxY: 3
+  minX: -32
+  maxX: -25
+  minY: -4
+  maxY: 1
 --- !u!4 &977690360
 Transform:
   m_ObjectHideFlags: 0
@@ -2917,7 +2937,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977690358}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.13, y: 0.33, z: -7.0664067}
+  m_LocalPosition: {x: -29.6, y: 2.57, z: -7.0664067}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2631532}
@@ -6066,8 +6086,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855893082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.15, y: 0.73, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalPosition: {x: -29.18, y: 3.9, z: 0}
+  m_LocalScale: {x: 194.6593, y: 194.6593, z: 1.946593}
   m_Children:
   - {fileID: 609593812}
   m_Father: {fileID: 1644987740}
