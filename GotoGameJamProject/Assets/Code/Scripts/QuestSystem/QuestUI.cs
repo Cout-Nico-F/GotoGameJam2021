@@ -66,4 +66,10 @@ public class QuestUI : MonoBehaviour
                 questPlayer.RemoveLeavedQuest();
         }
     }
+
+
+    public void SetLeaveQuestButtonState(bool state)
+    {
+        leaveQuestButton.enabled = state;
+    }
 }

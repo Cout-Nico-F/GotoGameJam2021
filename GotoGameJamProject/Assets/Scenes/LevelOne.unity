@@ -952,6 +952,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1596559979}
     m_Modifications:
     - target: {fileID: 868395750314976162, guid: 908d91f949945fa42aa76033d02add01, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
+    - target: {fileID: 868395750314976162, guid: 908d91f949945fa42aa76033d02add01, type: 3}
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 1876763099}
@@ -10150,6 +10154,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1704171659}
     - target: {fileID: 5530679666210368715, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
+    - target: {fileID: 5530679666210368715, guid: 8cbd0067dae56e34f9be36c8af6e730f, type: 3}
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 1876763099}
@@ -11560,6 +11568,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5181539882890190283, guid: fae8c782f3bb1dc428f782759441d43b, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
+    - target: {fileID: 5181539882890190283, guid: fae8c782f3bb1dc428f782759441d43b, type: 3}
       propertyPath: idleDialogue
       value: 
       objectReference: {fileID: 1422654601687060989, guid: ebdc510d96066274e8a9c341ba3e04f5, type: 3}
@@ -11697,6 +11709,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1596559979}
     m_Modifications:
+    - target: {fileID: 150511504147261912, guid: 84b007571f677414ca5aa2dc3b60ada5, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 2040106109}
     - target: {fileID: 150511504147261912, guid: 84b007571f677414ca5aa2dc3b60ada5, type: 3}
       propertyPath: dialogueCanvas
       value: 

@@ -13,6 +13,7 @@ public class QuestGiver : MonoBehaviour
     [SerializeField] private GameObject idleDialogue;
     [SerializeField] private QuestSO questSO;
     [SerializeField] private RectTransform dialogueCanvas;
+    [SerializeField] private QuestUI questUI;
 
     [SerializeField] private bool hasQuest;
     private GameObject mainDialogue;
@@ -93,6 +94,7 @@ public class QuestGiver : MonoBehaviour
         {
             playerMovement.IsTalking = false;
             isTalking = false;
+            questUI.SetLeaveQuestButtonState(true);
             OnDialogueEnds?.Invoke(true);
             dialogueSystem.OnDialogueEnds -= HandleDialogueEnds;
         }

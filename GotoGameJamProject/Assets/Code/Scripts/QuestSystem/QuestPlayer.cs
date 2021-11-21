@@ -19,7 +19,7 @@ public class QuestPlayer : MonoBehaviour
     private void Start()
     {
         quests = new List<Quest>();
-        questUI = FindObjectOfType<QuestUI>(true);
+        questUI = FindObjectOfType<QuestUI>();
         hasAnyQuestAsigned = false;
         inventory.OnPickedItem += HandlePickedItem;
         inventory.OnDropItem += HandleDropItem;
@@ -35,6 +35,7 @@ public class QuestPlayer : MonoBehaviour
         // para despues poder eliminarla directamente
         quest.Goal.GoalID = questUI.AddGoal(quest);
         questUI.AddLargeDescription(quest.LargeDescription);
+        questUI.SetLeaveQuestButtonState(false);
 
         // comprobamos además si ya tenemos items en el inventario
         // de los que nos piden en la misión y lo reflejamos en la UI
@@ -145,4 +146,5 @@ public class QuestPlayer : MonoBehaviour
         quests.Clear();
         hasAnyQuestAsigned = false;
     }
+
 }
