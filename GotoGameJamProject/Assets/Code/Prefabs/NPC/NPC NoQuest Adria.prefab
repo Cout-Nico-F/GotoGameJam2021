@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8643970955354255906, guid: 3a2afa26bc524224085a016c0d48b3b9, type: 3}
+  m_Sprite: {fileID: 4461617774521872753, guid: 3a2afa26bc524224085a016c0d48b3b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   idleDialogue: {fileID: 5233024636308020516, guid: 5d161e4dd5cb6274dbfce10e979289e0, type: 3}
   questSO: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
   dialogueCanvas: {fileID: 0}
+  questUI: {fileID: 0}
   hasQuest: 0
 --- !u!61 &1727139204343938682
 BoxCollider2D:
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_Offset: {x: -0.03429234, y: 0.47334385}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.0625, y: 2.4375}
     newSize: {x: 0.48, y: 0.48}
     adaptiveTilingThreshold: 0.5

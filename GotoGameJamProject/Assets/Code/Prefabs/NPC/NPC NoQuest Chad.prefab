@@ -116,6 +116,7 @@ MonoBehaviour:
   idleDialogue: {fileID: 6045098700538100136, guid: f940e9b78a1cf42419bb9b8445d2683f, type: 3}
   questSO: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
   dialogueCanvas: {fileID: 0}
+  questUI: {fileID: 0}
   hasQuest: 0
 --- !u!61 &4372810367969299390
 BoxCollider2D:
