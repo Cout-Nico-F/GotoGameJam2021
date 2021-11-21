@@ -114,7 +114,7 @@ public class QuestPlayer : MonoBehaviour
 
         // sumamos la recompensa a la UI
         RoomController.Instance.GoalActual += quest.ExperienceReward;
-        levelUI.AddScore(RoomController.Instance.GoalActual);
+        //levelUI.AddScore(RoomController.Instance.GoalActual);
 
         // reseteamos la quest si se trata de una infinite quest
         if (quest.InfiniteQuest)

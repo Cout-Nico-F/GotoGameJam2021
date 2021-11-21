@@ -36,6 +36,7 @@ public class RoomController : MonoBehaviour,IPunObservable
         {
             instance = this;
         }
+        goalActual = 0;
     }
     void Start()
     {
@@ -93,21 +94,21 @@ public class RoomController : MonoBehaviour,IPunObservable
     {
         if(stream.IsWriting)
         {
-            stream.SendNext(Minutes);
-            stream.SendNext(Seconds);
-            stream.SendNext(MinutesGracia);
-            stream.SendNext(SecondsGracia);
-            stream.SendNext(Goal);
-            stream.SendNext(GoalActual);
+            stream.SendNext(minutes);
+            stream.SendNext(seconds);
+            stream.SendNext(minutesGracia);
+            stream.SendNext(secondsGracia);
+            stream.SendNext(goal);
+            stream.SendNext(goalActual);
         }
         else
         {
-            Minutes = (float)stream.ReceiveNext();
-            Seconds = (float)stream.ReceiveNext();
-            MinutesGracia = (float)stream.ReceiveNext();
-            SecondsGracia = (float)stream.ReceiveNext();
-            Goal = (int)stream.ReceiveNext();
-            GoalActual = (int)stream.ReceiveNext();
+            minutes = (float)stream.ReceiveNext();
+            seconds = (float)stream.ReceiveNext();
+            minutesGracia = (float)stream.ReceiveNext();
+            secondsGracia = (float)stream.ReceiveNext();
+            goal = (int)stream.ReceiveNext();
+            goalActual = (int)stream.ReceiveNext();
         }
     }
 }

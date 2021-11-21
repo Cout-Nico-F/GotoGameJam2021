@@ -17,17 +17,16 @@ public class LevelUI : MonoBehaviour
         {
             desactivateCanvas.SetActive(false);
         }
+        
     }
 
     private void Start()
     {
         scoreText.text = score.PlayerScore + "/";
     }
-
-    public void AddScore(int amount)
+    private void Update()
     {
-        score.PlayerScore += amount;
-        scoreText.text = score.PlayerScore.ToString();
+        scoreText.text = RoomController.Instance.GoalActual.ToString();
     }
 
     public void ResetScore()
