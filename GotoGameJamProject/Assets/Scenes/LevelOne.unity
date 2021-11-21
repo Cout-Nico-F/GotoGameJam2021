@@ -5924,8 +5924,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6840d2fc386b4db4caaa973eb1adc280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ubication: {x: 7.8, y: -19, z: 0}
-  transition: 1
+  ubication: {x: 7.2, y: -19, z: 0}
+  transition: 0
 --- !u!61 &1774756007
 BoxCollider2D:
   m_ObjectHideFlags: 0
