@@ -724,6 +724,7 @@ MonoBehaviour:
   player: {fileID: 315964610491423185}
   cam: {fileID: 1702200931398563431}
   offset: {x: 0.1, y: 0.5, z: 0}
+  offset2: 2
   photonView: {fileID: 3585327034087138877}
   minePlayer: {fileID: 315964610491423185}
   animator: {fileID: 315964610491423184}

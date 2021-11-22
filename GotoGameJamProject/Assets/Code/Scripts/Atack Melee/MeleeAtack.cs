@@ -9,6 +9,7 @@ public class MeleeAtack : MonoBehaviourPun
     [SerializeField] private GameObject player;
     [SerializeField] private Camera cam;
     [SerializeField] private Vector3 offset;
+    [SerializeField] private float offset2;
     [SerializeField] private PhotonView photonView;
     [SerializeField] private GameObject minePlayer;
     [SerializeField] private Animator animator;
@@ -35,7 +36,7 @@ public class MeleeAtack : MonoBehaviourPun
             transform.position = player.transform.position + offset;
             dir = Input.mousePosition - cam.WorldToScreenPoint(player.transform.localPosition);
             angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.localRotation = Quaternion.Euler(0,0,angle);
+            transform.localRotation = Quaternion.Euler(0,0,angle+offset2);
     }
     IEnumerator CorutineAtack()
     {
