@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleDialogue: {fileID: 1422654601687060989, guid: ebdc510d96066274e8a9c341ba3e04f5, type: 3}
-  questSO: {fileID: 11400000, guid: 2fe2c97e8a306c44d8d0c04ba5ea0492, type: 2}
+  questSO: {fileID: 0}
   dialogueCanvas: {fileID: 0}
   questUI: {fileID: 0}
   hasQuest: 0

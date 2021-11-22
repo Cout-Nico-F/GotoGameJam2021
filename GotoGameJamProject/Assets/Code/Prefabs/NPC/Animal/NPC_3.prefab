@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questItemPrefab: {fileID: 1300033415334682806, guid: d26a1fabbbe3a9043893ddf4abdd8a2b, type: 3}
-  positionQuestItem: {x: 9, y: -16}
+  positionQuestItem: {x: -60, y: -60}
   parentQuestItem: {fileID: 0}
 --- !u!114 &2715000797090167211
 MonoBehaviour:

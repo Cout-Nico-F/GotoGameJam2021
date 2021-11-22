@@ -11703,14 +11703,6 @@ PrefabInstance:
       propertyPath: parentQuestItem
       value: 
       objectReference: {fileID: 1309735930}
-    - target: {fileID: 8638861971176136585, guid: b91e6da14d1a2a94fa38d6e89403e533, type: 3}
-      propertyPath: positionQuestItem.x
-      value: -60
-      objectReference: {fileID: 0}
-    - target: {fileID: 8638861971176136585, guid: b91e6da14d1a2a94fa38d6e89403e533, type: 3}
-      propertyPath: positionQuestItem.y
-      value: -60
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b91e6da14d1a2a94fa38d6e89403e533, type: 3}
 --- !u!4 &1109432141 stripped
@@ -13604,14 +13596,6 @@ PrefabInstance:
       propertyPath: parentQuestItem
       value: 
       objectReference: {fileID: 1309735930}
-    - target: {fileID: 5476822933694582880, guid: 8c86926fa1887a345b526cad67150707, type: 3}
-      propertyPath: positionQuestItem.x
-      value: -60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5476822933694582880, guid: 8c86926fa1887a345b526cad67150707, type: 3}
-      propertyPath: positionQuestItem.y
-      value: -60
-      objectReference: {fileID: 0}
     - target: {fileID: 8480472191945647992, guid: 8c86926fa1887a345b526cad67150707, type: 3}
       propertyPath: m_Name
       value: NPC_3
@@ -14585,14 +14569,6 @@ PrefabInstance:
       propertyPath: parentQuestItem
       value: 
       objectReference: {fileID: 1309735930}
-    - target: {fileID: 1638602307057811573, guid: 620a391aa8b1d8b4ba47ab68b5f25592, type: 3}
-      propertyPath: positionQuestItem.x
-      value: -60
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638602307057811573, guid: 620a391aa8b1d8b4ba47ab68b5f25592, type: 3}
-      propertyPath: positionQuestItem.y
-      value: -60
-      objectReference: {fileID: 0}
     - target: {fileID: 3390183489595422573, guid: 620a391aa8b1d8b4ba47ab68b5f25592, type: 3}
       propertyPath: m_Name
       value: NPC_5
