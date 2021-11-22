@@ -12,6 +12,7 @@ public class Transition : MonoBehaviour
     bool pv;
     private void OnEnable()
     {
+        Debug.Log("OnEnable Transition");
         pv = true;
         audioSource.pitch = 0.8f;
         audioSource.PlayOneShot(audioClip);
@@ -36,7 +37,7 @@ public class Transition : MonoBehaviour
             image.color = tempColor;
             if (image.color.a <= 0)
             {
-                gameObject.SetActive(false);
+                transform.parent.gameObject.SetActive(false);
             }
         }
     }
