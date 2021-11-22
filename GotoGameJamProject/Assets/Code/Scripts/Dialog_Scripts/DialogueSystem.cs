@@ -11,7 +11,7 @@ namespace DialogueJam
     public class DialogueSystem : MonoBehaviour
     {
         [Header("Configuration")]
-        [SerializeField] private float delayBetweenDialogues;
+        private float delayBetweenDialogues = 1;
         [SerializeField] private TextoValues[] textValues;
         [SerializeField] private TextMeshProUGUI textHolder;
         [SerializeField] private Image imgageHolder;
@@ -30,7 +30,7 @@ namespace DialogueJam
             [SerializeField] public Color textColor;
             [SerializeField] public TMP_FontAsset textFont;
             [SerializeField] public float delay;
-            [SerializeField] public int fontSize;
+            public int fontSize = 42;
             [SerializeField] public string nameFXsound;
             [Header("Dialogue")]
             [SerializeField] public string input;
