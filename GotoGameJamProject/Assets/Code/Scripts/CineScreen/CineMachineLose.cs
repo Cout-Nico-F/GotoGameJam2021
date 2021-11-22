@@ -16,7 +16,7 @@ public class CineMachineLose : MonoBehaviour
     }
     public void NextScene()
     {
-        SceneManager.LoadScene("Loading");
+        SceneManager.LoadScene("SplashScreen 1");
     }
     public void Win()
     {

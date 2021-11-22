@@ -72,7 +72,7 @@ public class RoomController : MonoBehaviour,IPunObservable
             }
 
             textMeshPro.text = minutes + ":" + Mathf.Round(seconds);
-            if (minutes >= 0 || seconds > 0)
+            if (minutes >= 0 && seconds > 0)
             {
                 seconds -= Time.deltaTime;
                 if (seconds <= 0)
@@ -85,14 +85,26 @@ public class RoomController : MonoBehaviour,IPunObservable
             {
                 if(goalActual >= goal)
                 {///aca ganaron
-                    SceneManager.LoadScene("WinGame");
+                    StartCoroutine(Disconnect("WinGame"));
+                    
                 }
                 else
-                {///aca perdieron
-                    SceneManager.LoadScene("LoseGame");
-                }
+                {///aca perdieron{
+                    StartCoroutine(Disconnect("LoseGame"));
+                } 
             }
         }
+    }
+    IEnumerator Disconnect(string input)
+    {
+        PhotonNetwork.Disconnect();
+        while (PhotonNetwork.IsConnected)
+        {
+            yield return null;
+            Debug.Log("Disconnecting. . .");
+        }
+        Debug.Log("DISCONNECTED!");
+        SceneManager.LoadScene(input);
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
