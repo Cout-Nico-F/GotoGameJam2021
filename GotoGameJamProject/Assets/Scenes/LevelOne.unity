@@ -9630,7 +9630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877fd8dfa63406a4a9874138d642acf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutesGracia: 15
+  minutesGracia: 20
   secondsGracia: 1
   goalActual: 0
   goal: 20
