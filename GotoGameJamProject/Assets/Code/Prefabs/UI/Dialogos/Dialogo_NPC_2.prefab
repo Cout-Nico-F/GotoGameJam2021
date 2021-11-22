@@ -65,7 +65,7 @@ MonoBehaviour:
     fontSize: 50
     nameFXsound: Rulfio
     input: Nosotros somos de la raza Kawalopus
-  - characterSprite: {fileID: 21300000, guid: c5647a18e1c095d499ca8beb98d5ad56, type: 3}
+  - characterSprite: {fileID: 21300000, guid: 7b837fa84d3d01443beb5b241bc25612, type: 3}
     textColor: {r: 0.73333335, g: 0.48627454, b: 0.91372555, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
