@@ -18,15 +18,20 @@ public class LobbyUI : MonoBehaviourPunCallbacks
         btn_Create.onClick.AddListener(CreateRoom);
         btn_Join.onClick.AddListener(JoinRoom);
         btn_Exit.onClick.AddListener(ExitGame);
+        AudioJam.SoundManager.instance.Play("Tema1");
     }
 
     public void CreateRoom()
     {
+        AudioJam.SoundManager.instance.Stop("Tema1");
+
         PhotonNetwork.CreateRoom(createInput.text);
     }
 
     public void JoinRoom()
     {
+        AudioJam.SoundManager.instance.Stop("Tema1");
+
         PhotonNetwork.JoinRoom(joinInput.text);
     }
 
@@ -36,6 +41,7 @@ public class LobbyUI : MonoBehaviourPunCallbacks
     }
     public void ExitGame()
     {
+        AudioJam.SoundManager.instance.Stop("Tema1");
         Application.Quit();
     }
 }

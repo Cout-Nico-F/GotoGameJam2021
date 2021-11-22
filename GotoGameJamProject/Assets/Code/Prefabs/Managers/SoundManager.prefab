@@ -114,7 +114,7 @@ MonoBehaviour:
     volumeVariance: 0.033
     pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
   - name: Woosh1
@@ -150,15 +150,15 @@ MonoBehaviour:
     volumeVariance: 0.033
     pitch: 1.1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
-  - name: Aura
-    clip: {fileID: 8300000, guid: 7727d86780b095540b22a29a6f11a385, type: 3}
-    volume: 0.5
-    volumeVariance: 0.033
-    pitch: 1.1
+  - name: Tema1
+    clip: {fileID: 8300000, guid: 0a354d9ffab3cc343b7dd29c25540e8a, type: 3}
+    volume: 0.4
+    volumeVariance: 0
+    pitch: 1
     pitchVariance: 0
-    loop: 0
+    loop: 1
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
