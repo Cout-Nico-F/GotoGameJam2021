@@ -650,6 +650,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[13].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c27fe6da39b3474ea244d3bc51350d9, type: 3}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[13].name
+      value: Chat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[13].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[13].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[13].mixerGroup
+      value: 
+      objectReference: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[13].volumeVariance
+      value: 0.033
+      objectReference: {fileID: 0}
     - target: {fileID: 4799309537232920769, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
       propertyPath: m_RootOrder
       value: 5

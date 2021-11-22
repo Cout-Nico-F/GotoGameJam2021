@@ -7,6 +7,6 @@ public class ExitRoom : MonoBehaviour
     {
         PhotonNetwork.DestroyPlayerObjects(PhotonNetwork.LocalPlayer);
         PhotonNetwork.LeaveRoom();
-        PhotonNetwork.LoadLevel(0);
+        PhotonNetwork.LoadLevel("Loading");
     }
 }
