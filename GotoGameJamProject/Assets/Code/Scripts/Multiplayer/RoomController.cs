@@ -90,7 +90,7 @@ public class RoomController : MonoBehaviour,IPunObservable
                 }
                 else
                 {///aca perdieron{
-                    StartCoroutine(Disconnect("LoseGame"));
+                    StartCoroutine(Disconnect("LooseGame"));
                 } 
             }
         }

@@ -71,7 +71,7 @@ MonoBehaviour:
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
-    input: "Muchas gracias humano.. por favor ayuden a mis compa\xF1eros.."
+    input: Muchas gracias humano..
   - characterSprite: {fileID: 21300000, guid: c5647a18e1c095d499ca8beb98d5ad56, type: 3}
     textColor: {r: 0.72156864, g: 0.48235297, b: 0.8862746, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}

@@ -8,7 +8,7 @@ public class CineMachineLose : MonoBehaviour
 {
     public void Whoosh()
     {
-        SoundManager.instance.Play("Woosh1");
+        SoundManager.instance.Play("Woosh2");
     }
     public void Explosion()
     {
@@ -16,11 +16,15 @@ public class CineMachineLose : MonoBehaviour
     }
     public void NextScene()
     {
-        SceneManager.LoadScene("SplashScreen 1");
+        SceneManager.LoadScene("Lobby");
     }
     public void Win()
     {
         SoundManager.instance.Play("Win2");
+    }
+    public void StopAudio()
+    {
+        SoundManager.instance.Stop("Woosh2");
     }
 
 }

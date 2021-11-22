@@ -100,7 +100,7 @@ MonoBehaviour:
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
-    input: "Ayuda a mis compa\xF1eros que necesitan de tu ayuda.."
+    input: "Ayuda a mis compa\xF1eros."
   textHolder: {fileID: 2544961387373774818}
   imgageHolder: {fileID: 6779784193810352228}
 --- !u!1 &3215247345004138015
