@@ -12555,6 +12555,10 @@ PrefabInstance:
       propertyPath: parentQuestItem
       value: 
       objectReference: {fileID: 1309735930}
+    - target: {fileID: 5476822933694582880, guid: 8c86926fa1887a345b526cad67150707, type: 3}
+      propertyPath: questItemPrefab
+      value: 
+      objectReference: {fileID: 6859541480765548099, guid: ec539032e9ecbd44caea2359f1654965, type: 3}
     - target: {fileID: 7711113638626972427, guid: 8c86926fa1887a345b526cad67150707, type: 3}
       propertyPath: m_Size.x
       value: 0.9268799
