@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 67126078118461378}
   - component: {fileID: 1225396843}
   - component: {fileID: 1225396845}
+  - component: {fileID: 833065455}
   m_Layer: 0
   m_Name: exterior-items_10
   m_TagString: Hittable
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.23798275}
+  m_Offset: {x: 0, y: 0.24271297}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -109,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2675476, y: 0.36507225}
+  m_Size: {x: 0.2675476, y: 0.3556118}
   m_EdgeRadius: 0
 --- !u!114 &1225396843
 MonoBehaviour:
@@ -152,3 +153,29 @@ MonoBehaviour:
   amountDroped: 5
   item: {fileID: 1300033415334682806, guid: e712c04959d20b84ab765cadfa0ba927, type: 3}
   life: 30
+--- !u!61 &833065455
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67126078118461379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0047302246, y: 0.51107836}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.125, y: 2.375}
+    newSize: {x: 2.125, y: 2.375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0748901, y: 1.2302866}
+  m_EdgeRadius: 0

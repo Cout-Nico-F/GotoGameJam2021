@@ -7154,10 +7154,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 535123390}
     m_Modifications:
-    - target: {fileID: 1225396843, guid: 4236cb818644e2e4db54f35b793a61ea, type: 3}
-      propertyPath: sceneViewId
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 67126078118461376, guid: 4236cb818644e2e4db54f35b793a61ea, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -7205,10 +7201,6 @@ PrefabInstance:
     - target: {fileID: 67126078118461379, guid: 4236cb818644e2e4db54f35b793a61ea, type: 3}
       propertyPath: m_Name
       value: exterior-items_10 (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5253045014215763562, guid: 4236cb818644e2e4db54f35b793a61ea, type: 3}
-      propertyPath: sceneViewId
-      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4236cb818644e2e4db54f35b793a61ea, type: 3}
