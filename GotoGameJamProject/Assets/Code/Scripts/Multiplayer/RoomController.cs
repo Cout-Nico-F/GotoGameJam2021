@@ -18,7 +18,7 @@ public class RoomController : MonoBehaviour,IPunObservable
     [SerializeField] private int goal;
     [SerializeField] private TextMeshProUGUI textMeshPro;
     [SerializeField] private Image image;
-    bool pv=true;
+    bool firstTime = true;
     private LevelUI levelUI;
 
     public float Minutes { get => minutes; set => minutes = value; }
@@ -40,6 +40,7 @@ public class RoomController : MonoBehaviour,IPunObservable
             instance = this;
         }
         goalActual = 0;
+        firstTime = true;
     }
     void Start()
     {
@@ -47,10 +48,11 @@ public class RoomController : MonoBehaviour,IPunObservable
     }
     private void Update()
     {
-        if(goal!=0)
+        if(goal != 0)
         {
             image.fillAmount = (float)goalActual / (float)goal;
         }
+
         if (minutesGracia >= 0 && secondsGracia > 0)
         {
             secondsGracia -= Time.deltaTime;
@@ -62,14 +64,15 @@ public class RoomController : MonoBehaviour,IPunObservable
         }
         else
         {
-            if(pv)
+            if(firstTime)
             {
                 goal = 2 + PhotonNetwork.CurrentRoom.PlayerCount * 3;
-                pv = false;
+                firstTime = false;
+                textMeshPro.enabled = true;
             }
-            textMeshPro.enabled = true;
+
             textMeshPro.text = minutes + ":" + Mathf.Round(seconds);
-            if (minutes >= 0 && seconds > 0)
+            if (minutes >= 0 || seconds > 0)
             {
                 seconds -= Time.deltaTime;
                 if (seconds <= 0)
@@ -80,10 +83,7 @@ public class RoomController : MonoBehaviour,IPunObservable
             }
             else
             {
-                minutes = 0;
-                seconds = 0;
-                textMeshPro.enabled = false;
-                if(goalActual>=goal)
+                if(goalActual >= goal)
                 {///aca ganaron
                     SceneManager.LoadScene("WinGame");
                 }
@@ -93,7 +93,6 @@ public class RoomController : MonoBehaviour,IPunObservable
                 }
             }
         }
-
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
