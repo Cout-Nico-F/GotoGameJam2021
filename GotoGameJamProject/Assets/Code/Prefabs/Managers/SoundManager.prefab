@@ -162,3 +162,21 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     source: {fileID: 0}
+  - name: Chat
+    clip: {fileID: 8300000, guid: 8c27fe6da39b3474ea244d3bc51350d9, type: 3}
+    volume: 0.5
+    volumeVariance: 0.033
+    pitch: 1.1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
+  - name: Tema3
+    clip: {fileID: 8300000, guid: 1677aa237c7b7054baf7146da4418dbb, type: 3}
+    volume: 0.6
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
+    source: {fileID: 0}
