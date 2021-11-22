@@ -85,13 +85,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: e864b76a5ae62494a9230a5528fcd6f1, type: 3}
     textColor: {r: 0.5310609, g: 0.9622642, b: 0.5748201, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 50
+    fontSize: 35
     nameFXsound: FriskFX
     input: Hola, tu eres el cocinero??
   - characterSprite: {fileID: 21300000, guid: c51d6347fbfd7c64585ef74d257b2d2b, type: 3}
@@ -105,21 +104,21 @@ MonoBehaviour:
     textColor: {r: 0.9725491, g: 0.6901961, b: 0.5647059, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 50
+    fontSize: 35
     nameFXsound: SansFX
     input: Nuestra comida es deliciosa.
   - characterSprite: {fileID: 21300000, guid: c51d6347fbfd7c64585ef74d257b2d2b, type: 3}
     textColor: {r: 0.9725491, g: 0.6901961, b: 0.5647059, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 100
+    fontSize: 35
     nameFXsound: SansFX
     input: ' ya que usamos agua natural del pozo.'
   - characterSprite: {fileID: 21300000, guid: c51d6347fbfd7c64585ef74d257b2d2b, type: 3}
     textColor: {r: 0.9725491, g: 0.6901961, b: 0.5647059, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 100
+    fontSize: 35
     nameFXsound: SansFX
     input: Aunque esta un poco lejos vale la pena.
   textHolder: {fileID: 7142270639863754059}
