@@ -35,6 +35,11 @@ public class RoomController : MonoBehaviour, IPunObservable
     }
     private void Update()
     {
+        if (goalActual >= goal)
+        {///aca ganaron
+            StartCoroutine(Disconnect("WinGame"));
+        }
+
         if (goal != 0)
         {
             image.fillAmount = (float)goalActual / (float)goal;
@@ -54,7 +59,6 @@ public class RoomController : MonoBehaviour, IPunObservable
             if (goalActual >= goal)
             {///aca ganaron
                 StartCoroutine(Disconnect("WinGame"));
-
             }
             else
             {///aca perdieron{
