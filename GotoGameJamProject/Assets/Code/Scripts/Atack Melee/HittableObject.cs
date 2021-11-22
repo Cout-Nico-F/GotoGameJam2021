@@ -31,6 +31,14 @@ public class HittableObject : MonoBehaviour, IPunObservable
         {
             if (life <= 0)
             {
+                var colliders = GetComponents<BoxCollider2D>();
+                if (colliders != null)
+                {
+                    foreach (var item in colliders)
+                    {
+                        item.enabled = false;
+                    }
+                }
                 photonView.RPC("DropAndDead", RpcTarget.All);
             }
         }
