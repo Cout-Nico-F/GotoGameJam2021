@@ -12,7 +12,6 @@ public class Transition : MonoBehaviour
     bool pv;
     private void OnEnable()
     {
-        Debug.Log("OnEnable Transition");
         pv = true;
         audioSource.pitch = 0.8f;
         audioSource.PlayOneShot(audioClip);
