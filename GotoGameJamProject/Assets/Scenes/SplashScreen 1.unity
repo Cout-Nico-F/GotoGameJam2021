@@ -650,6 +650,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[15].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f3f584c83a8a4ba41ab19a56fa8b407d, type: 3}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[15].loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[15].name
+      value: Win2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[15].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[15].volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799309537232920768, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
+      propertyPath: sounds.Array.data[15].mixerGroup
+      value: 
+      objectReference: {fileID: -7012011406835633425, guid: 25fcc414a5389c842a69188f2f74260e, type: 2}
     - target: {fileID: 4799309537232920769, guid: 474bc9273c9ef0141ba0847d8824d115, type: 3}
       propertyPath: m_RootOrder
       value: 5
