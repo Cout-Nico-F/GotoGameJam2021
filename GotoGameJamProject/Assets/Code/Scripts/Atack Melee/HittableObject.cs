@@ -7,7 +7,6 @@ public class HittableObject : MonoBehaviour, IPunObservable
 {
     [SerializeField] PhotonView photonView;
     [SerializeField] SpriteRenderer spriteRenderer;
-    [SerializeField] Animator animator;
     [SerializeField] Sprite spriteDead;
     [SerializeField] int amountDroped;
     [SerializeField] GameObject item;
@@ -40,7 +39,6 @@ public class HittableObject : MonoBehaviour, IPunObservable
     public void DropAndDead()
     {
         dropOnlyOnce = true;
-        animator.enabled = false;
         spriteRenderer.sprite = spriteDead;
         for (int i = 0; i < amountDroped; i++)
         {

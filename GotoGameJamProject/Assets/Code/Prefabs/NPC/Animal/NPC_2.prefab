@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questItemPrefab: {fileID: 1300033415334682806, guid: 6939a39e0cb3d37488a684f03c50d93d, type: 3}
-  positionQuestItem: {x: 9, y: -16}
+  positionQuestItem: {x: -8.33, y: 4.28}
   parentQuestItem: {fileID: 0}
 --- !u!114 &9031036421472148135
 MonoBehaviour:
@@ -116,6 +116,7 @@ MonoBehaviour:
   idleDialogue: {fileID: 635154356080605069, guid: 9944e671449041548ba12ad2eff6f35c, type: 3}
   questSO: {fileID: 11400000, guid: 0d23feaeedc5d7e4bbe940caeab02d96, type: 2}
   dialogueCanvas: {fileID: 0}
+  questUI: {fileID: 0}
   hasQuest: 1
 --- !u!61 &3745396122773336071
 BoxCollider2D:
@@ -130,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.12}
+  m_Offset: {x: -0.0033353865, y: 0.22684704}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -141,7 +142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.18, y: 0.25}
+  m_Size: {x: 0.7329585, y: 0.46369407}
   m_EdgeRadius: 0
 --- !u!95 &6232499091857143221
 Animator:
@@ -153,7 +154,7 @@ Animator:
   m_GameObject: {fileID: 3263281891427468404}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e46935a3d08f2ec4ebe18a37ce07dfbb, type: 2}
+  m_Controller: {fileID: 9100000, guid: eee032dc7b5b2f147b4c00de2f899792, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

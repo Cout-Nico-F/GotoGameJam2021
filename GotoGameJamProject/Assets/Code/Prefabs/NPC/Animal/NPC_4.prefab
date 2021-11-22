@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd3d841f960e904eb36f98accfdba34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questItemPrefab: {fileID: 2279065065481374602, guid: 79c1f85ea3008f046a58ccb900d4e3c9, type: 3}
+  questItemPrefab: {fileID: 1300033415334682806, guid: e712c04959d20b84ab765cadfa0ba927, type: 3}
   positionQuestItem: {x: 9, y: -16}
   parentQuestItem: {fileID: 0}
 --- !u!114 &2184083739564815938
@@ -116,6 +116,7 @@ MonoBehaviour:
   idleDialogue: {fileID: 635154356080605069, guid: c748e97a6fa2b2340bee0307b52bf220, type: 3}
   questSO: {fileID: 11400000, guid: 3ce30188d1cd84e4895b1d2c5501abd9, type: 2}
   dialogueCanvas: {fileID: 0}
+  questUI: {fileID: 0}
   hasQuest: 1
 --- !u!61 &5828100738576178402
 BoxCollider2D:

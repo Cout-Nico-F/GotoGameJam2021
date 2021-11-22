@@ -70,14 +70,14 @@ MonoBehaviour:
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: FriskFX
+    nameFXsound: Rulfio
     input: En esta dimension no podemos conseguir
   - characterSprite: {fileID: 21300000, guid: b9eaab5549e27da40bae8861a4d992d5, type: 3}
     textColor: {r: 0.9245283, g: 0.64106447, b: 0.64106447, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: FriskFX
+    nameFXsound: Rulfio
     input: Ve a la tuya y traeme un poco
   textHolder: {fileID: 9204577845085223541}
   imgageHolder: {fileID: 214518981117883891}
