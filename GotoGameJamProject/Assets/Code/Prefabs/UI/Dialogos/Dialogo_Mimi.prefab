@@ -447,7 +447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: e864b76a5ae62494a9230a5528fcd6f1, type: 3}
     textColor: {r: 0, g: 1, b: 0.02162838, a: 1}
@@ -469,11 +468,11 @@ MonoBehaviour:
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
-    input: Te gusta la playa?? aqui arriba esta playa las Pompas
+    input: Te gusta la playa?? aqui tenemos playa las Pompas
   - characterSprite: {fileID: 21300000, guid: 41fb0c58689212940aed68cf6cf6888b, type: 3}
     textColor: {r: 0.6745098, g: 0.3921569, b: 0.8588236, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.1
+    delay: 0.04
     fontSize: 50
     nameFXsound: SansFX
     input: Es increible!! hasta se puede pescar

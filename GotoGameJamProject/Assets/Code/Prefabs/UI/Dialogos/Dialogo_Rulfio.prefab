@@ -466,7 +466,7 @@ MonoBehaviour:
     textColor: {r: 0.9921569, g: 0.61960787, b: 0.882353, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 42
+    fontSize: 32
     nameFXsound: Rulfio
     input: Bienvenido a mi Hotel!!  tienes cara de hambriento, pasa por la cocina
       que te prepararan algo.
