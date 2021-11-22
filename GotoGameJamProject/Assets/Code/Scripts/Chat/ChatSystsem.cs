@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
+using AudioJam;
 public class ChatSystsem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMesh;
@@ -19,5 +20,6 @@ public class ChatSystsem : MonoBehaviour
     {
         scrollBar.value = -1f;
         textMesh.text = textMesh.text + "\n" + name + ": " + textPlayerInput;
+        SoundManager.instance.Play("Chat");
     }
 }
