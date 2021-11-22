@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Transition : MonoBehaviour
 {
-    [SerializeField] private GameObject transition;
     [SerializeField] private Image image;
     [SerializeField] private float alphaSpeed;
     [SerializeField] AudioSource audioSource;
@@ -17,7 +16,7 @@ public class Transition : MonoBehaviour
         audioSource.pitch = 0.8f;
         audioSource.PlayOneShot(audioClip);
     }
-    private void Update()
+    private void FixedUpdate()
     {
         transform.Rotate(0,0,10);
         if (pv)
@@ -37,7 +36,7 @@ public class Transition : MonoBehaviour
             image.color = tempColor;
             if (image.color.a <= 0)
             {
-                transition.gameObject.SetActive(false);
+                gameObject.SetActive(false);
             }
         }
     }

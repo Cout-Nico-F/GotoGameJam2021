@@ -1797,14 +1797,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7846036261358998960, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7246
-      objectReference: {fileID: 0}
-    - target: {fileID: 7846036261358998960, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7246
-      objectReference: {fileID: 0}
-    - target: {fileID: 7846036261358998960, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1855,14 +1847,6 @@ PrefabInstance:
     - target: {fileID: 7846036261358998961, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
       propertyPath: m_Name
       value: Transition
-      objectReference: {fileID: 0}
-    - target: {fileID: 7846036261358998961, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7846036261358998963, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
-      propertyPath: alphaSpeed
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7846036261358998963, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
       propertyPath: transition
