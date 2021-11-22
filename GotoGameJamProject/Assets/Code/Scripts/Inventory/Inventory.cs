@@ -22,6 +22,9 @@ namespace InventoryJam
         public void DropItem(int ID)
         {
             // tenemos que actualizar la quest UI
+            if (slots[ID].Item == null)
+                return;
+
             OnDropItem?.Invoke(slots[ID].Item.Id);
 
             slots[ID].Drop();
