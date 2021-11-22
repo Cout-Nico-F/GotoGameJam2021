@@ -13,8 +13,8 @@ public class Npc : MonoBehaviour, Interactable
     private QuestPlayer questPlayer;
     private Quest currentQuest;
     private bool giveReward;
+    private float timeBetweenDialogues;
 
-    
 
     private void Awake()
     {
@@ -27,7 +27,15 @@ public class Npc : MonoBehaviour, Interactable
     private void Start()
     {
         giveReward = false;
+        timeBetweenDialogues = 0f;
         questGiver.OnDialogueEnds += HandleDialogueEnds;
+    }
+
+
+    private void Update()
+    {
+        if (timeBetweenDialogues > 0)
+            timeBetweenDialogues -= Time.deltaTime;
     }
 
 
@@ -35,6 +43,10 @@ public class Npc : MonoBehaviour, Interactable
     {
         // si ya estamos hablando no hacemos nada
         if (questGiver.IsTalking)
+            return;
+
+        // si no ha pasado el tiempo para volver a hablar
+        if (timeBetweenDialogues > 0)
             return;
 
         // lo normal es que el Player sea el unico que interactua con un Npc
@@ -114,6 +126,7 @@ public class Npc : MonoBehaviour, Interactable
 
     private void HandleDialogueEnds(bool dialogueEnds)
     {
+        timeBetweenDialogues = 2f;
         if (giveReward)
         {
             // le damos la recompensa
