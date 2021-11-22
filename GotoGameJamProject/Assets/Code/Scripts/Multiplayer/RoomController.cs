@@ -10,19 +10,14 @@ public class RoomController : MonoBehaviour, IPunObservable
 {
     private static RoomController instance;
     public static RoomController Instance => instance;
-    [SerializeField] private float minutesGracia;
-    [SerializeField] private float secondsGracia;
-    [SerializeField] private int goalActual;
-    [SerializeField] private int goal;
+    [SerializeField] public float minutesGracia;
+    [SerializeField] public float secondsGracia;
+    [SerializeField] public int goalActual;
+    [SerializeField] public int goal;
     [SerializeField] private TextMeshProUGUI textMeshPro;
     [SerializeField] private Image image;
     bool firstTime = true;
     private LevelUI levelUI;
-
-    public float MinutesGracia { get => minutesGracia; set => minutesGracia = value; }
-    public float SecondsGracia { get => secondsGracia; set => secondsGracia = value; }
-    public int GoalActual { get => goalActual; set => goalActual = value; }
-    public int Goal { get => goal; set => goal = value; }
 
     private void Awake()
     {
