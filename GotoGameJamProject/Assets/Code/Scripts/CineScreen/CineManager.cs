@@ -30,7 +30,7 @@ public class CineManager : MonoBehaviour
 
     private void HandleDialogueEnds(bool obj)
     {
-        AudioJam.SoundManager.instance.Stop("CineMusic");
+        AudioJam.SoundManager.instance.Stop("Aura");
         SceneManager.LoadScene("Loading");
     }
 
