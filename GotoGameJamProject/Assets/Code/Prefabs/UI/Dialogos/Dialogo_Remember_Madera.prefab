@@ -235,15 +235,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: b9eaab5549e27da40bae8861a4d992d5, type: 3}
     textColor: {r: 0.9150943, g: 0.5913581, b: 0.5913581, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 50
+    fontSize: 32
     nameFXsound: Rulfio
-    input: Tienes que traerme madera de tu dimension, busca el Cerezo Turquesio
+    input: Tienes que traerme madera de tu dimension
+  - characterSprite: {fileID: 21300000, guid: b9eaab5549e27da40bae8861a4d992d5, type: 3}
+    textColor: {r: 0.9150943, g: 0.5913581, b: 0.5913581, a: 1}
+    textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
+    delay: 0.04
+    fontSize: 32
+    nameFXsound: Rulfio
+    input: ' busca el Cerezo Turquesio!!'
   textHolder: {fileID: 7919235469665071623}
   imgageHolder: {fileID: 2573690440368818956}
 --- !u!1 &4424243813310279966

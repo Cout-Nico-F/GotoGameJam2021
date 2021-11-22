@@ -235,7 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: a173689ff6b202649acf3828833abfaf, type: 3}
     textColor: {r: 0.9150943, g: 0.5913581, b: 0.5913581, a: 1}
@@ -243,14 +242,14 @@ MonoBehaviour:
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
-    input: Traeme madera o sufriras las consecuencias!!
+    input: Los necesito para repoblar aqui
   - characterSprite: {fileID: 21300000, guid: a173689ff6b202649acf3828833abfaf, type: 3}
     textColor: {r: 0.9150943, g: 0.5913581, b: 0.5913581, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 50
+    fontSize: 42
     nameFXsound: Lisa
-    input: MUAJAJAJA!!!
+    input: "Creiste que les ibamos a hacer da\xF1o?"
   textHolder: {fileID: 7919235469665071623}
   imgageHolder: {fileID: 2573690440368818956}
 --- !u!1 &4424243813310279966

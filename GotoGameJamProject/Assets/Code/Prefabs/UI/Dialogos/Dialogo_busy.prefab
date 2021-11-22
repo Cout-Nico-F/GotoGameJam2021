@@ -411,20 +411,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: c5647a18e1c095d499ca8beb98d5ad56, type: 3}
     textColor: {r: 0.9056604, g: 0.6963332, b: 0.89149547, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 50
+    fontSize: 36
     nameFXsound: Lisa
     input: Tienes tareas por completar
   - characterSprite: {fileID: 21300000, guid: c5647a18e1c095d499ca8beb98d5ad56, type: 3}
     textColor: {r: 0.9056604, g: 0.6963332, b: 0.89149547, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
-    fontSize: 50
+    fontSize: 36
     nameFXsound: Lisa
     input: Terminalas y ven a verme
   textHolder: {fileID: 401221167897853385}
