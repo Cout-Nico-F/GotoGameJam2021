@@ -413,27 +413,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayBetweenDialogues: 2
   textValues:
-  - characterSprite: {fileID: 21300000, guid: d3225209c764bea48ab083b748cdf99d, type: 3}
-    textColor: {r: 1, g: 1, b: 1, a: 1}
+  - characterSprite: {fileID: 21300000, guid: c5647a18e1c095d499ca8beb98d5ad56, type: 3}
+    textColor: {r: 0.9056604, g: 0.6963332, b: 0.89149547, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: FriskFX
-    input: Hola como estas??
-  - characterSprite: {fileID: 21300000, guid: 4b445d90a512228438e1ad2de13dbd76, type: 3}
-    textColor: {r: 1, g: 0, b: 0, a: 1}
+    nameFXsound: Lisa
+    input: Tienes tareas por completar
+  - characterSprite: {fileID: 21300000, guid: c5647a18e1c095d499ca8beb98d5ad56, type: 3}
+    textColor: {r: 0.9056604, g: 0.6963332, b: 0.89149547, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: SansFX
-    input: Veo que estas muy ocupado
-  - characterSprite: {fileID: 21300000, guid: 4b445d90a512228438e1ad2de13dbd76, type: 3}
-    textColor: {r: 1, g: 0, b: 0, a: 1}
-    textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.04
-    fontSize: 50
-    nameFXsound: SansFX
-    input: vuelve cuando estes libre
+    nameFXsound: Lisa
+    input: Terminalas y ven a verme
   textHolder: {fileID: 401221167897853385}
   imgageHolder: {fileID: 8707227943594308175}
 --- !u!1 &3319273762837040550
