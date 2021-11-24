@@ -44,7 +44,25 @@ public class RoomController : MonoBehaviour, IPunObservable
         {
             image.fillAmount = (float)goalActual / (float)goal;
         }
-        textMeshPro.text = minutesGracia + ":" + Mathf.Round(secondsGracia);
+        string minutesText;
+        string secondsText;
+        if (Mathf.Round(minutesGracia) <10)
+        {
+            minutesText ="0"+minutesGracia.ToString();
+        }
+        else
+        {
+            minutesText = minutesGracia.ToString();
+        }
+        if (Mathf.Round(secondsGracia) < 10)
+        {
+            secondsText = "0" + Mathf.Round(secondsGracia).ToString();
+        }
+        else
+        {
+            secondsText = Mathf.Round(secondsGracia).ToString();
+        }
+        textMeshPro.text = minutesText + ":" + secondsText;
         if (minutesGracia >= 0 && secondsGracia > 0)
         {
             secondsGracia -= Time.deltaTime;
