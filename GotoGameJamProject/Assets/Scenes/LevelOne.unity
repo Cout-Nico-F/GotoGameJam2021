@@ -14085,7 +14085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5ecfdb0818fe847ad995687908fe89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportPosition: {x: 97, y: -13.3, z: 0}
+  teleportPosition: {x: 100.9, y: -13.48, z: 0}
   areaIndex: 1
 --- !u!61 &1297940801
 BoxCollider2D:
