@@ -497,6 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9d0f95012c19a14a9d9bd2c4f5c0c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photonView: {fileID: -3382059923018268562}
   inventory: {fileID: 7560563988939449168}
   levelUI: {fileID: 6091175416615626770}
 --- !u!114 &4136273787413220289
@@ -1344,6 +1345,7 @@ GameObject:
   - component: {fileID: 1702200931398563431}
   - component: {fileID: 6203085344563726299}
   - component: {fileID: 441738259202714294}
+  - component: {fileID: 6762860794942478766}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1436,6 +1438,39 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!114 &6762860794942478766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562655097765740377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01eab48a7d257c740b4810ecd503e0ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 315964610491423190}
+  areas:
+  - areaName: White
+    horizontalLimits: {x: -59.19, y: -58.26}
+    verticalLimits: {x: 4.73, y: 8.33}
+  - areaName: Dimension
+    horizontalLimits: {x: 105.6, y: 116.45}
+    verticalLimits: {x: -9, y: -1.38}
+  - areaName: Outdoors
+    horizontalLimits: {x: 31.2, y: 74.7}
+    verticalLimits: {x: -24.6, y: -1.43}
+  - areaName: FirstFloor
+    horizontalLimits: {x: -2.02, y: 1.06}
+    verticalLimits: {x: -0.52, y: 0.58}
+  - areaName: GroundFloor
+    horizontalLimits: {x: -0.4, y: 1.16}
+    verticalLimits: {x: -19, y: -18.5}
+  currentArea:
+    areaName: 
+    horizontalLimits: {x: 0, y: 0}
+    verticalLimits: {x: 0, y: 0}
 --- !u!1 &6992926011909679783
 GameObject:
   m_ObjectHideFlags: 0

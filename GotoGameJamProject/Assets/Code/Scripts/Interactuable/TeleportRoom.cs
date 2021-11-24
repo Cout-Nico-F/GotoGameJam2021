@@ -5,7 +5,11 @@ using UnityEngine;
 public class TeleportRoom : MonoBehaviour
 {
     [SerializeField] private Vector3 ubication;
+    [SerializeField] private int areaIndex;
     [SerializeField] private bool transition;
+
+    private CameraController cameraController;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,6 +21,15 @@ public class TeleportRoom : MonoBehaviour
                    
             }
             collision.transform.position = ubication;
+
+            cameraController = collision.transform.Find("Camera").GetComponent<CameraController>();
+            if (cameraController == null)
+            {
+                Debug.LogError("Componente CameraController no encontrado en el Player");
+                return;
+            } 
+
+            cameraController.ChangeArea(areaIndex);
         }
     }
 }
