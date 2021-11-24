@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using InventoryJam;
 using System;
+using Photon.Pun;
 
 public class QuestPlayer : MonoBehaviour
 {
     public bool HasAnyQuestAsigned { get => hasAnyQuestAsigned; set => hasAnyQuestAsigned = value; }
+    public PhotonView photonView;
 
     [SerializeField] private Inventory inventory;
     [SerializeField] private LevelUI levelUI;
@@ -114,7 +116,8 @@ public class QuestPlayer : MonoBehaviour
         inventory.RemoveItems(quest.Goal.ItemID, quest.Goal.RequiredAmount);
 
         // sumamos la recompensa a la UI
-        RoomController.Instance.goalActual += quest.ExperienceReward;
+        photonView.RPC("AddGlobalScore",RpcTarget.All,quest.ExperienceReward);
+        //RoomController.Instance.goalActual += quest.ExperienceReward;
 
         // reseteamos la quest si se trata de una infinite quest
         if (quest.InfiniteQuest)
@@ -124,8 +127,11 @@ public class QuestPlayer : MonoBehaviour
             quest.Goal.CurrentAmount = 0;
         }
     }
-
-
+    [PunRPC]
+    public void AddGlobalScore(int experienceReward)
+    {
+        RoomController.Instance.goalActual += experienceReward; 
+    }
     public Quest CheckQuestInList(string id)
     {
         foreach (var quest in quests)

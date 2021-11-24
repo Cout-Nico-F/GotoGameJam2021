@@ -46,6 +46,7 @@ MonoBehaviour:
   - DropAndDead
   - SetActiveBubbleChat
   - PlayAndStopMusic
+  - AddGlobalScore
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
