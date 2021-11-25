@@ -112,8 +112,10 @@ public class Npc : MonoBehaviour, Interactable
             // si el Player no tiene asignada todavia la quest del Npc se la asignamos
             questGiver.GiveQuest(questPlayer);
 
-            // instanciamos el item requerido en la Quest
-            Instantiate(questItemPrefab, positionQuestItem, Quaternion.identity, parentQuestItem);
+            // instanciamos el item requerido en la Quest y se lo pasamos al Player por si
+            // despues abandona la quest y hay que eliminarlo
+            var item = Instantiate(questItemPrefab, positionQuestItem, Quaternion.identity, parentQuestItem);
+            questPlayer.AssignQuestItem(item);
         }
     }
 

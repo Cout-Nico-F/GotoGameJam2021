@@ -16,6 +16,7 @@ public class QuestPlayer : MonoBehaviour
     private QuestUI questUI;
     private List<Quest> quests;
     private bool hasAnyQuestAsigned;
+    private GameObject questItem;
 
 
     private void Start()
@@ -52,6 +53,12 @@ public class QuestPlayer : MonoBehaviour
                 questUI.UpdateGoal(quest);
             }
         }
+    }
+
+
+    public void AssignQuestItem(GameObject item)
+    {
+        questItem = item;
     }
 
 
@@ -151,6 +158,8 @@ public class QuestPlayer : MonoBehaviour
         questUI.RemoveGoal(0);
         quests.Clear();
         hasAnyQuestAsigned = false;
+        if (questItem != null)
+            Destroy(questItem.gameObject);
     }
 
 }
