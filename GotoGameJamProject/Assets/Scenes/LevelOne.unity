@@ -7074,7 +7074,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ubication: {x: 55.4, y: -15, z: 0}
-  areaIndex: 2
   transition: 0
 --- !u!61 &706254989
 BoxCollider2D:
@@ -8564,7 +8563,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ubication: {x: 2.5, y: -22.5, z: 0}
-  areaIndex: 4
   transition: 0
 --- !u!61 &784230910
 BoxCollider2D:
@@ -10457,7 +10455,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ubication: {x: 7.67, y: -1.5, z: 0}
-  areaIndex: 3
   transition: 0
 --- !u!61 &1023413216
 BoxCollider2D:
@@ -11330,8 +11327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5ecfdb0818fe847ad995687908fe89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportPosition: {x: 100.9, y: -13.48, z: 0}
-  areaIndex: 1
+  teleportPosition: {x: 113, y: -13, z: 0}
 --- !u!61 &1077490015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11371,7 +11367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ubication: {x: 103, y: -14, z: 0}
-  areaIndex: 1
   transition: 0
 --- !u!212 &1077490017
 SpriteRenderer:
@@ -11470,7 +11465,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportPosition: {x: 50, y: -13, z: 0}
-  areaIndex: 2
 --- !u!61 &1082417558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14086,7 +14080,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportPosition: {x: 97, y: -13.3, z: 0}
-  areaIndex: 1
 --- !u!61 &1297940801
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15097,8 +15090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5ecfdb0818fe847ad995687908fe89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportPosition: {x: 100.9, y: -13.48, z: 0}
-  areaIndex: 1
+  teleportPosition: {x: 97, y: -13.3, z: 0}
 --- !u!82 &1393848090
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16360,7 +16352,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportPosition: {x: 50, y: -13, z: 0}
-  areaIndex: 2
 --- !u!61 &1486886794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19859,7 +19850,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ubication: {x: 7, y: -20, z: 0}
-  areaIndex: 4
   transition: 0
 --- !u!61 &1774756007
 BoxCollider2D:
