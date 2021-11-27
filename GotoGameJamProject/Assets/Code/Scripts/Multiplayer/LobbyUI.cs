@@ -12,7 +12,8 @@ public class LobbyUI : MonoBehaviourPunCallbacks
 
     [SerializeField] private InputField createInput;
     [SerializeField] private InputField joinInput;
-
+    [SerializeField] private GameObject errorJoin;
+    [SerializeField] private GameObject errorCreate;
     private void Awake()
     {
         btn_Create.onClick.AddListener(CreateRoom);
@@ -24,13 +25,13 @@ public class LobbyUI : MonoBehaviourPunCallbacks
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         base.OnCreateRoomFailed(returnCode, message);
-        Debug.Log("Sala ya existe o error");
+        errorCreate.SetActive(true);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
         base.OnCreateRoomFailed(returnCode, message);
-        Debug.Log("Sala ya existe o error");
+        errorJoin.SetActive(true);
     }
 
     public void CreateRoom()
