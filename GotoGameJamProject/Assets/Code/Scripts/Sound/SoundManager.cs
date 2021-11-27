@@ -44,7 +44,7 @@ namespace AudioJam
                 return;
             }
 
-            s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
+            s.source.volume = s.volume * (1f);
             s.source.pitch = s.pitch * (1f);
             s.source.Play();
         }
