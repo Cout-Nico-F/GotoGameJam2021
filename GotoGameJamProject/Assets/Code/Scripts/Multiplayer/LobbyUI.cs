@@ -18,27 +18,39 @@ public class LobbyUI : MonoBehaviourPunCallbacks
         btn_Create.onClick.AddListener(CreateRoom);
         btn_Join.onClick.AddListener(JoinRoom);
         btn_Exit.onClick.AddListener(ExitGame);
-        AudioJam.SoundManager.instance.Play("Tema3");
+        AudioJam.SoundManager.instance.Play("Tema3");   
+    }
+
+    public override void OnCreateRoomFailed(short returnCode, string message)
+    {
+        base.OnCreateRoomFailed(returnCode, message);
+        Debug.Log("Sala ya existe o error");
+    }
+
+    public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        base.OnCreateRoomFailed(returnCode, message);
+        Debug.Log("Sala ya existe o error");
     }
 
     public void CreateRoom()
     {
-        AudioJam.SoundManager.instance.Stop("Tema3");
-
         PhotonNetwork.CreateRoom(createInput.text);
     }
 
     public void JoinRoom()
     {
-        AudioJam.SoundManager.instance.Stop("Tema3");
-
-        PhotonNetwork.JoinRoom(joinInput.text);
+        if (PhotonNetwork.JoinRoom(joinInput.text))
+        {
+            AudioJam.SoundManager.instance.Stop("Tema3");
+        }
     }
 
     public override void OnJoinedRoom()
     {
         PhotonNetwork.LoadLevel(loadLevelString);
     }
+
     public void ExitGame()
     {
         AudioJam.SoundManager.instance.Stop("Tema3");
