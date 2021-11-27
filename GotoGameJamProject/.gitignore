@@ -5,6 +5,7 @@
 [Bb]uilds/
 Logs/
 Assets/AssetStoreTools*
+GotoGameJamProject/UserSettings/EditorUserSettings.asset
 
 # Visual Studio cache directory
 .vs/
