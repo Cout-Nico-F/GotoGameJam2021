@@ -48,7 +48,7 @@ public class InputTextChat : MonoBehaviour
                     }
                 }
                 chat.PlayerTalk(tMP_InputField.text);
-                EventSystem.current.SetSelectedGameObject(null);
+                tMP_InputField.DeactivateInputField(); //Re-focus on the input field
                 tMP_InputField.text = "";
             }
         }
