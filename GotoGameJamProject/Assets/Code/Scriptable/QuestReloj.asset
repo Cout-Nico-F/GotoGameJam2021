@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestID: QuestReloj
   Description: Consigue reloj
-  LargeDescription: Habla con Lisa la chica de vestido rojo
+  LargeDescription: Traeme el reloj de Lisa, es muy importante!
   Goal: {fileID: 11400000, guid: 7dcc26eec6306c4478ce558c836b6f97, type: 2}
   ExperienceReward: 1
   MainDialogue: {fileID: 6801207043974908514, guid: ec397e5ef0c156f4d8398d5e95b9f844, type: 3}
