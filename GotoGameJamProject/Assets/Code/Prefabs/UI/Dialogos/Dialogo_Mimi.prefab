@@ -474,7 +474,7 @@ MonoBehaviour:
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
-    nameFXsound: SansFX
+    nameFXsound: Lisa
     input: Es increible!! hasta se puede pescar
   textHolder: {fileID: 79204140471513856}
   imgageHolder: {fileID: 8961677924095458438}
