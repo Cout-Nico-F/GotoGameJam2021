@@ -32,6 +32,7 @@ public class RoomController : MonoBehaviour, IPunObservable
         }
         goalActual = 0;
         firstTime = true;
+        AudioJam.SoundManager.instance.Stop("Tema3");
     }
     private void Update()
     {

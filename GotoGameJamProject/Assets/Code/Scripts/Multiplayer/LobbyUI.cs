@@ -40,10 +40,7 @@ public class LobbyUI : MonoBehaviourPunCallbacks
 
     public void JoinRoom()
     {
-        if (PhotonNetwork.JoinRoom(joinInput.text))
-        {
-            AudioJam.SoundManager.instance.Stop("Tema3");
-        }
+        PhotonNetwork.JoinRoom(joinInput.text);
     }
 
     public override void OnJoinedRoom()
