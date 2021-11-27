@@ -1562,9 +1562,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1215437356946276384}
   - component: {fileID: 2078617821413349579}
+  - component: {fileID: 6035506390985323641}
   - component: {fileID: 2725567351009999178}
   - component: {fileID: 8143906944130269980}
-  - component: {fileID: 6035506390985323641}
   m_Layer: 0
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1600,6 +1600,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6992926011909679783}
   m_CullTransparentMesh: 1
+--- !u!114 &6035506390985323641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6992926011909679783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1143ca4a0dac404485b5ac0ec7861f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitButton: {fileID: 0}
 --- !u!114 &2725567351009999178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1673,31 +1686,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2725567351009999178}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6035506390985323641}
-        m_TargetAssemblyTypeName: ExitRoom, Assembly-CSharp
-        m_MethodName: exitRoom
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &6035506390985323641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6992926011909679783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1143ca4a0dac404485b5ac0ec7861f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+      m_Calls: []
 --- !u!1 &7001010048281905980
 GameObject:
   m_ObjectHideFlags: 0
