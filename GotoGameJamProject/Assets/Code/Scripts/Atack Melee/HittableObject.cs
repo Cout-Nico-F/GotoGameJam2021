@@ -43,6 +43,7 @@ public class HittableObject : MonoBehaviour, IPunObservable
             }
         }
     }
+
     [PunRPC]
     public void DropAndDead()
     {
@@ -50,8 +51,10 @@ public class HittableObject : MonoBehaviour, IPunObservable
         spriteRenderer.sprite = spriteDead;
         for (int i = 0; i < amountDroped; i++)
         {
-            Instantiate(item, transform.position + new Vector3(Random.value, Random.value, 0), Quaternion.identity);
+            if (item != null )
+            {
+                Instantiate(item, transform.position + new Vector3(Random.value, Random.value, 0), Quaternion.identity);
+            }
         }
     }
-
 }
