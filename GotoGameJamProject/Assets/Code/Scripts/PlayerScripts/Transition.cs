@@ -9,12 +9,20 @@ public class Transition : MonoBehaviour
     [SerializeField] private float alphaSpeed;
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip audioClip;
+    [SerializeField] private ShakeCamera shakeCamera;
+    [SerializeField] private float shakeDuration;
+    [SerializeField] private float shakeMagnitude;
+    
     bool pv;
     private void OnEnable()
     {
         pv = true;
         audioSource.pitch = 0.8f;
         audioSource.PlayOneShot(audioClip);
+        if(shakeCamera != null)
+        {
+            shakeCamera.StartCoroutine(shakeCamera.Shake(shakeDuration, shakeMagnitude));
+        }
     }
     private void FixedUpdate()
     {

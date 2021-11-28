@@ -45,6 +45,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 315964610491423190}
+  - component: {fileID: 1659112502292984230}
   - component: {fileID: 315964610491423191}
   - component: {fileID: 315964610491423184}
   - component: {fileID: 5864892857968279099}
@@ -87,6 +88,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659112502292984230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315964610491423185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe08b777cbb6b141a0929361bc42a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &315964610491423191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1457,6 +1470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1195510242723383810}
+  - component: {fileID: 9173740509248763140}
   - component: {fileID: 1702200931398563431}
   - component: {fileID: 6203085344563726299}
   - component: {fileID: 441738259202714294}
@@ -1481,6 +1495,18 @@ Transform:
   m_Father: {fileID: 315964610491423190}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9173740509248763140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562655097765740377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe08b777cbb6b141a0929361bc42a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &1702200931398563431
 Camera:
   m_ObjectHideFlags: 0
@@ -1957,6 +1983,22 @@ PrefabInstance:
       propertyPath: transition
       value: 
       objectReference: {fileID: 75783200691283158}
+    - target: {fileID: 7846036261358998963, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
+      propertyPath: shakeCamera
+      value: 
+      objectReference: {fileID: 9173740509248763140}
+    - target: {fileID: 7846036261358998963, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
+      propertyPath: objectCamera
+      value: 
+      objectReference: {fileID: 5562655097765740377}
+    - target: {fileID: 7846036261358998963, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
+      propertyPath: shakeDuration
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846036261358998963, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
+      propertyPath: shakeMagnitude
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aa2a8ab01b85e5439a4ee3d6ada5703, type: 3}
 --- !u!224 &4618737009818497865 stripped
