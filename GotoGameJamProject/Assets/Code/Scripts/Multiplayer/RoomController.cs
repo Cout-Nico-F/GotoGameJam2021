@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Photon.Pun;
@@ -16,8 +15,6 @@ public class RoomController : MonoBehaviour, IPunObservable
     [SerializeField] public int goal;
     [SerializeField] private TextMeshProUGUI textMeshPro;
     [SerializeField] private Image image;
-    bool firstTime = true;
-    private LevelUI levelUI;
 
     private void Awake()
     {
@@ -31,7 +28,6 @@ public class RoomController : MonoBehaviour, IPunObservable
             instance = this;
         }
         goalActual = 0;
-        firstTime = true;
         AudioJam.SoundManager.instance.Stop("Tema3");
     }
     private void Update()
