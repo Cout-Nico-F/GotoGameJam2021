@@ -3,11 +3,9 @@ using UnityEngine;
 
 namespace AudioJam
 {
-
     [System.Serializable]// this makes this custom class appear on the editor when another class has a public or serialized field of this type
     public class Sound
     {
-
         public string name;
 
         public AudioClip clip;
@@ -28,6 +26,5 @@ namespace AudioJam
 
         [HideInInspector]
         public AudioSource source;
-
     }
 }

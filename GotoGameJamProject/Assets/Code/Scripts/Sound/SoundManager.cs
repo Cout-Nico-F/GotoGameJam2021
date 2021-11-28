@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace AudioJam
 {
-
     public class SoundManager : MonoBehaviour
     {
         public static SoundManager instance;
@@ -69,6 +68,4 @@ namespace AudioJam
             return UnityEngine.Random.Range(0, s.Length);
         }
     }
-
-
 }
