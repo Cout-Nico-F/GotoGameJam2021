@@ -411,10 +411,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
-    textColor: {r: 0.8490566, g: 0.3964934, b: 0.8150501, a: 1}
+    textColor: {r: 0.3960784, g: 0.8509804, b: 0.82455236, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50

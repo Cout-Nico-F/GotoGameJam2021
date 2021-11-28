@@ -85,17 +85,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
-    textColor: {r: 0.7704029, g: 0.3972944, b: 0.9056604, a: 1}
+    textColor: {r: 0.5752492, g: 0.8773584, b: 0.8773585, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
     input: Este H2O es increible!!
   - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
-    textColor: {r: 0.7686275, g: 0.39607847, b: 0.9058824, a: 1}
+    textColor: {r: 0.5764706, g: 0.87843144, b: 0.87843144, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50

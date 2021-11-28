@@ -49,7 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba471856f3ad4c9706aa1a94ea217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenDialogues: 2
   textValues:
   - characterSprite: {fileID: 21300000, guid: e864b76a5ae62494a9230a5528fcd6f1, type: 3}
     textColor: {r: 0.63999647, g: 0.9622642, b: 0.64378786, a: 1}
@@ -59,40 +58,47 @@ MonoBehaviour:
     nameFXsound: FriskFX
     input: Hey!! aqui te traje toma!!
   - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
-    textColor: {r: 0.72217363, g: 0.48104307, b: 0.8867924, a: 1}
+    textColor: {r: 0.48235294, g: 0.8862745, b: 0.85593617, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
     input: '*GLU* *GLU* *GLU* '
   - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
-    textColor: {r: 0.72217363, g: 0.48104307, b: 0.8867924, a: 1}
+    textColor: {r: 0.48235297, g: 0.8862746, b: 0.854902, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
     input: Ahh.. agradecido con el de arriba
   - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
-    textColor: {r: 0.72217363, g: 0.48104307, b: 0.8867924, a: 1}
-    textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
-    delay: 0.04
-    fontSize: 50
-    nameFXsound: Lisa
-    input: Estuve a punto de perecer
-  - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
-    textColor: {r: 0.72217363, g: 0.48104307, b: 0.8867924, a: 1}
+    textColor: {r: 0.48235297, g: 0.8862746, b: 0.854902, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
     input: A nosotros los Kawalopus nos ha faltado H20 hace ya mucho tiempo
   - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
-    textColor: {r: 0.72217363, g: 0.48104307, b: 0.8867924, a: 1}
+    textColor: {r: 0.48235297, g: 0.8862746, b: 0.854902, a: 1}
     textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
     delay: 0.04
     fontSize: 50
     nameFXsound: Lisa
-    input: Gracias por tu ayuda.. nunca te olvidare..
+    input: Gracias por tu ayuda.. sigue trayendome mas
+  - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
+    textColor: {r: 0.48235297, g: 0.8862746, b: 0.854902, a: 1}
+    textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
+    delay: 0.04
+    fontSize: 50
+    nameFXsound: Lisa
+    input: Gracias por tu ayuda.. sigue trayendome mas
+  - characterSprite: {fileID: 21300000, guid: be61a257ba421f34e93bc390e6975818, type: 3}
+    textColor: {r: 0.48235297, g: 0.8862746, b: 0.854902, a: 1}
+    textFont: {fileID: 11400000, guid: eb3edde6fd47ad741a8477c8a44fdbe3, type: 2}
+    delay: 0.04
+    fontSize: 50
+    nameFXsound: Lisa
+    input: MAS!!!!!
   textHolder: {fileID: 8899172462637741959}
   imgageHolder: {fileID: 6064189860216102841}
 --- !u!1 &5945256236296849506
