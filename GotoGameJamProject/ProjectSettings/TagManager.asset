@@ -48,6 +48,9 @@ TagManager:
   - name: Background
     uniqueID: 1147717209
     locked: 0
+  - name: WhiteDimension
+    uniqueID: 2859947883
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
