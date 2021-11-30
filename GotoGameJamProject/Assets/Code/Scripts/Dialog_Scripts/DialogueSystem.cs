@@ -11,6 +11,7 @@ namespace DialogueJam
     public class DialogueSystem : MonoBehaviour
     {
         [Header("Configuration")]
+        [SerializeField] private PlayerMovementTOPDOWN playerMovementTOPDOWN;
         private float delayBetweenDialogues = 1;
         [SerializeField] private TextoValues[] textValues;
         [SerializeField] private TextMeshProUGUI textHolder;
@@ -38,6 +39,10 @@ namespace DialogueJam
         public void OnEnable()
         {
             StartCoroutine(RecibeText());
+            if(playerMovementTOPDOWN!=null)
+            {
+                playerMovementTOPDOWN.IsTalking = true;
+            }
         }
         public IEnumerator RecibeText()
         {
@@ -51,6 +56,10 @@ namespace DialogueJam
             
             gameObject.transform.parent.gameObject.SetActive(false);
             OnDialogueEnds?.Invoke(true);
+            if (playerMovementTOPDOWN != null)
+            {
+                playerMovementTOPDOWN.IsTalking = false;
+            }
         }
         public IEnumerator WriteText(string input, TextMeshProUGUI textHolder, Color textColor, TMP_FontAsset textFont, float delay, int textSize, string nameFXsound,Sprite characterSprite)
         {
