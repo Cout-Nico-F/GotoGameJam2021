@@ -533,8 +533,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780940259658832153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.75, y: 1.56, z: 0}
-  m_LocalScale: {x: 0.14064595, y: 0.14064595, z: 0.050632544}
+  m_LocalPosition: {x: 0.92, y: 1.56, z: 0}
+  m_LocalScale: {x: 0.87443805, y: 0.87443805, z: 0.3147977}
   m_Children: []
   m_Father: {fileID: 315964610491423190}
   m_RootOrder: 5
@@ -578,8 +578,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -6007857137893288414, guid: 2c05b15c4df0fd5479b48c234677a757, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -551289577078846130, guid: 67f19b521587647419771e870f96eed9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -589,7 +589,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
 --- !u!95 &696514803384052736
 Animator:
   serializedVersion: 3
@@ -600,7 +600,7 @@ Animator:
   m_GameObject: {fileID: 780940259658832153}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d50d3ff4207338540b90ba92cfc3b553, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2a4c378bb59336641ab7361bf70523db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1475,6 +1475,7 @@ GameObject:
   - component: {fileID: 1702200931398563431}
   - component: {fileID: 6203085344563726299}
   - component: {fileID: 441738259202714294}
+  - component: {fileID: 3546302369441530295}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1579,6 +1580,38 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!114 &3546302369441530295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562655097765740377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &6992926011909679783
 GameObject:
   m_ObjectHideFlags: 0
