@@ -1,6 +1,7 @@
 using UnityEngine;
 using DialogueJam;
 using System;
+using Photon.Pun;
 
 public class QuestGiver : MonoBehaviour
 {
@@ -71,12 +72,21 @@ public class QuestGiver : MonoBehaviour
 
     private void DialogueInteract(GameObject go)
     {
-        playerMovement = FindObjectOfType<PlayerMovementTOPDOWN>();
-        if (playerMovement != null)
+        var photonViews = UnityEngine.Object.FindObjectsOfType<PhotonView>();
+        foreach (var view in photonViews)
         {
-            playerMovement.IsTalking = true;
+            var player = view.Owner;
+            //Objects in the scene don't have an owner, its means view.owner will be null
+            if (player != null)
+            {
+                var playerPrefabObject = view.gameObject;
+                if (playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>() != null)
+                {
+                    playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>().IsTalking = true;
+                }
+            }
         }
-     
+
         var ui = Instantiate(go, dialogueCanvas.transform);
         ui.SetActive(true);
         isTalking = true;
@@ -92,7 +102,20 @@ public class QuestGiver : MonoBehaviour
     {
         if (dialogueEnds)
         {
-            playerMovement.IsTalking = false;
+            var photonViews = UnityEngine.Object.FindObjectsOfType<PhotonView>();
+            foreach (var view in photonViews)
+            {
+                var player = view.Owner;
+                //Objects in the scene don't have an owner, its means view.owner will be null
+                if (player != null)
+                {
+                    var playerPrefabObject = view.gameObject;
+                    if (playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>() != null)
+                    {
+                        playerPrefabObject.GetComponent<PlayerMovementTOPDOWN>().IsTalking = false;
+                    }
+                }
+            }
             isTalking = false;
             questUI.SetLeaveQuestButtonState(true);
             OnDialogueEnds?.Invoke(true);

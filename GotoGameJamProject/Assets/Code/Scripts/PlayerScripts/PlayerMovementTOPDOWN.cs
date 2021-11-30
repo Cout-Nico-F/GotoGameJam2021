@@ -14,7 +14,7 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
     private Animator animator;
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
-    private bool isTalking;
+    private bool isTalking=false;
     private bool isChating = false;
     [SerializeField] private GameObject bubbleChat;
 
@@ -39,34 +39,25 @@ public class PlayerMovementTOPDOWN : MonoBehaviourPun, IPunObservable
     void Update()
     {
         if (!photonView.IsMine)
-        { Destroy(cam); }
+        { Destroy(cam);}
         if (photonView.IsMine)
         {
-            if (!isTalking || !isChating)
+            if (IsTalking == false && IsChating == false)
             {
                 movement.x = Input.GetAxisRaw("Horizontal");
                 movement.y = Input.GetAxisRaw("Vertical");
-                
-                if (!isTalking)
-                {
-                    cam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
-                }
-            }
-            if(isTalking || IsChating)
-            {
-                movement = Vector2.zero;
-                if (isTalking)
-                {
-                    cam.transform.position = new Vector3(transform.position.x, transform.position.y, -5);
-                }
-            }
-            if(!IsChating)
-            {
+                cam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
                 photonView.RPC("SetActiveBubbleChat", RpcTarget.All, false);
             }
             else
             {
-                photonView.RPC("SetActiveBubbleChat", RpcTarget.All, true);
+                photonView.RPC("SetActiveBubbleChat",RpcTarget.All,true);
+                bubbleChat.SetActive(false);
+                movement = Vector2.zero;
+                if(IsTalking)
+                {
+                    cam.transform.position = new Vector3(transform.position.x, transform.position.y, -5);
+                }
             }
             ControlAnimaciones();
         }
