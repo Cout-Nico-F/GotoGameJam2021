@@ -6,6 +6,7 @@ public class RaycastTextActivator : MonoBehaviour
 {
     [Header("Enter objects")]
     [SerializeField] private GameObject e_Letter;
+    [SerializeField] private PlayerMovementTOPDOWN playerMovementTOPDOWN;
 
     [Header("Setting")]
     [SerializeField] private float rayRadius;//used for assigning length to raycast
@@ -47,7 +48,7 @@ public class RaycastTextActivator : MonoBehaviour
     {
         foreach (var o in myObjectsHit)
         {
-            if (o.transform.gameObject.GetComponent<Interactable>() != null)
+            if (o.transform.gameObject.GetComponent<Interactable>() != null && playerMovementTOPDOWN.IsTalking == false)
             {
                 e_Letter.SetActive(true);
                 return o.gameObject.GetComponent<Interactable>();

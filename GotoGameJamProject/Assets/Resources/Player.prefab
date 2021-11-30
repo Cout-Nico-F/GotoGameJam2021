@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   e_Letter: {fileID: 2764571345782003049}
+  playerMovementTOPDOWN: {fileID: 315964610491423189}
   rayRadius: 1
 --- !u!114 &1415808040887303723
 MonoBehaviour:
